@@ -1346,10 +1346,7 @@
 						y="348"
 						width="10"
 						height="8"
-						key="textField-86">
-							<printWhenExpression><![CDATA[
-]]></printWhenExpression>
-						</reportElement>
+						key="textField-86"/>
 					<box>					<topPen lineWidth="0.5" lineStyle="Solid"/>
 					<leftPen lineWidth="0.5" lineStyle="Solid"/>
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
