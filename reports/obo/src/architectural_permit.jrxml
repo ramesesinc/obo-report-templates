@@ -134,7 +134,7 @@
 	<field name="corridors" class="java.lang.String"/>
 	<field name="doors_entrance_thresholds" class="java.lang.String"/>
 	<field name="washroom_and_toilets" class="java.lang.String"/>
-	<field name="lift_elevators" class="java.lang.String"/>
+	<field name="lifts_elevators" class="java.lang.String"/>
 	<field name="ramps" class="java.lang.String"/>
 	<field name="parking_areas" class="java.lang.String"/>
 	<field name="switch_control_buzzers" class="java.lang.String"/>
@@ -314,7 +314,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="14" isBold="true"/>
 					</textElement>
-				<text><![CDATA[ARCHITECTURAL PERMIT]]></text>
+				<text><![CDATA[ARCHITECTURAL PERMIT1]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -1688,7 +1688,7 @@
 						height="12"
 						key="staticText-190"/>
 					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[STAIRS]]></text>
@@ -1701,7 +1701,7 @@
 						height="12"
 						key="staticText-191"/>
 					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[WALKWAYS]]></text>
@@ -1714,7 +1714,7 @@
 						height="12"
 						key="staticText-192"/>
 					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[CORRIDORS]]></text>
@@ -1828,7 +1828,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="5" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{lift_elevators} == null ? null : "X")]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{lifts_elevators} == null ? null : "X")]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -1838,7 +1838,7 @@
 						height="12"
 						key="staticText-195"/>
 					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[LIFT/ELEVATORS]]></text>
@@ -1868,7 +1868,7 @@
 						height="12"
 						key="staticText-196"/>
 					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[RAMPS]]></text>
@@ -1898,7 +1898,7 @@
 						height="12"
 						key="staticText-197"/>
 					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[PARKING AREAS]]></text>
@@ -1958,7 +1958,7 @@
 						height="12"
 						key="staticText-199"/>
 					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[HANDRAILS]]></text>
@@ -1988,7 +1988,7 @@
 						height="12"
 						key="staticText-200"/>
 					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[THRESHOLDS]]></text>
@@ -2001,7 +2001,7 @@
 						height="12"
 						key="staticText-201"/>
 					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[FLOOR FINISHES]]></text>
@@ -2048,7 +2048,7 @@
 						height="12"
 						key="staticText-202"/>
 					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[DRINKING FOUNTAINS]]></text>
@@ -2078,7 +2078,7 @@
 						height="12"
 						key="staticText-203"/>
 					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[PUBLIC TELEPHONES]]></text>
