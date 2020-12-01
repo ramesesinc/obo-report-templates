@@ -132,6 +132,8 @@
 	<field name="worktypes.upgrading_of_service_entrance" class="java.lang.String"/>
 	<field name="worktypes.relocation_service_entrance" class="java.lang.String"/>
 	<field name="worktypes.new_installation" class="java.lang.String"/>
+	<field name="worktypes.new_construction" class="java.lang.String"/>
+	<field name="worktypes.relocation_of_service_entrance" class="java.lang.String"/>
 
 
 		<group  name="P1" >
@@ -2477,7 +2479,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{worktypes.relocation_service_entrance} ? "X" : null]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{worktypes.relocation_of_service_entrance} ? "X" : null]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
