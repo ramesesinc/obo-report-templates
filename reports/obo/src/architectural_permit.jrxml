@@ -314,7 +314,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="14" isBold="true"/>
 					</textElement>
-				<text><![CDATA[ARCHITECTURAL PERMIT1]]></text>
+				<text><![CDATA[ARCHITECTURAL PERMIT]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
