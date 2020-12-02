@@ -24,6 +24,8 @@
 	<import value="net.sf.jasperreports.engine.*" />
 	<import value="net.sf.jasperreports.engine.data.*" />
 
+	<parameter name="PROVINCE_NAME" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="LGU_NAME" isForPrompting="false" class="java.lang.String"/>
 
 	<field name="designprofessional.prc.placeissued" class="java.lang.String"/>
 	<field name="designprofessional.prc.dtvalid" class="java.util.Date"/>
@@ -132,7 +134,7 @@
 	<field name="stalking" class="java.lang.Boolean"/>
 	<field name="staking" class="java.lang.Boolean"/>
 	<field name="excavation" class="java.lang.Boolean"/>
-	<field name="soil_stabilazation" class="java.lang.Boolean"/>
+	<field name="soil_stabilization" class="java.lang.Boolean"/>
 	<field name="piling_works" class="java.lang.Boolean"/>
 	<field name="foundation" class="java.lang.Boolean"/>
 	<field name="erection/lifting" class="java.lang.Boolean"/>
@@ -144,10 +146,10 @@
 	<field name="material_testing" class="java.lang.Boolean"/>
 	<field name="tanks" class="java.lang.Boolean"/>
 	<field name="others" class="java.lang.Boolean"/>
-	<field name="erection_lifting" class="java.lang.Boolean"/>
-	<field name="steel_towers" class="java.lang.Boolean"/>
+	<field name="erection" class="java.lang.Boolean"/>
+	<field name="steel_tower" class="java.lang.Boolean"/>
 	<field name="worktypes.other" class="java.lang.String"/>
-	<field name="worktypes.accessory_building_structure" class="java.lang.String"/>
+	<field name="worktypes.accssory_building_structure" class="java.lang.String"/>
 	<field name="worktypes.raising" class="java.lang.String"/>
 	<field name="worktypes.moving" class="java.lang.String"/>
 	<field name="worktypes.repair" class="java.lang.String"/>
@@ -279,7 +281,7 @@
 					<textElement textAlignment="Center">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.capitalize( $F{org.fullname} ? $F{org.fullname} : $F{org.group.fullname})]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[( $P{LGU_NAME} ? $P{LGU_NAME} : $P{PROVINCE_NAME})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -292,7 +294,7 @@
 					<textElement textAlignment="Center">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.capitalize($F{org.group.fullname} ? $F{org.group.fullname} : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[( $P{PROVINCE_NAME} ? $P{PROVINCE_NAME} : null)]]></textFieldExpression>
 				</textField>
 				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -1079,7 +1081,7 @@
 					<textElement textAlignment="Center">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{org.title} ? $F{org.title}.toUpperCase() : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[( $P{LGU_NAME} ? $P{LGU_NAME} : $P{PROVINCE_NAME})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -1264,7 +1266,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="5" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{worktypes.accessory_building_structure} ? "X" : null]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{worktypes.accssory_building_structure} ? "X" : null]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -1482,7 +1484,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="5" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{stalking} ? "X" : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{staking} ? "X" : null)]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -1555,7 +1557,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="5" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{soil_stabilazation} ? "X" : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{soil_stabilization} ? "X" : null)]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -1676,7 +1678,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="5" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{erection_lifting} ? "X" : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{erection} ? "X" : null)]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -1899,7 +1901,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="5" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{steel_towers} ? "X" : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{steel_tower} ? "X" : null)]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -2006,7 +2008,7 @@
 					<reportElement
 						mode="Transparent"
 						x="0"
-						y="511"
+						y="505"
 						width="275"
 						height="163"
 						key="rectangle-48"/>
@@ -2015,7 +2017,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="589"
+						y="583"
 						width="275"
 						height="12"
 						key="staticText-360"/>
@@ -2032,7 +2034,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="45"
-						y="589"
+						y="583"
 						width="227"
 						height="12"
 						key="textField-174"/>
@@ -2046,7 +2048,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="512"
+						y="506"
 						width="275"
 						height="12"
 						key="staticText-361"/>
@@ -2060,12 +2062,12 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="498"
+						y="492"
 						width="275"
 						height="12"
 						key="staticText-362"/>
 					<box leftPadding="5"></box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
 				<text><![CDATA[BOX 3]]></text>
@@ -2073,12 +2075,12 @@
 				<staticText>
 					<reportElement
 						x="284"
-						y="498"
+						y="492"
 						width="275"
 						height="12"
 						key="staticText-363"/>
 					<box leftPadding="5"></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
 				<text><![CDATA[BOX 4]]></text>
@@ -2086,7 +2088,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="572"
+						y="566"
 						width="275"
 						height="12"
 						key="staticText-364"/>
@@ -2100,7 +2102,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="35"
-						y="546"
+						y="540"
 						width="150"
 						height="14"
 						key="textField-175"/>
@@ -2114,7 +2116,7 @@
 				<staticText>
 					<reportElement
 						x="187"
-						y="546"
+						y="540"
 						width="25"
 						height="12"
 						key="staticText-365"/>
@@ -2128,7 +2130,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="208"
-						y="546"
+						y="540"
 						width="59"
 						height="14"
 						key="textField-176"/>
@@ -2142,7 +2144,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="560"
+						y="554"
 						width="275"
 						height="12"
 						key="textField-177"/>
@@ -2156,7 +2158,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="601"
+						y="595"
 						width="148"
 						height="12"
 						key="staticText-366"/>
@@ -2173,7 +2175,7 @@
 				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="45"
-						y="601"
+						y="595"
 						width="100"
 						height="12"
 						key="textField-178"/>
@@ -2187,7 +2189,7 @@
 				<staticText>
 					<reportElement
 						x="148"
-						y="601"
+						y="595"
 						width="127"
 						height="12"
 						key="staticText-367"/>
@@ -2204,7 +2206,7 @@
 				<textField isStretchWithOverflow="false" pattern="MMM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="181"
-						y="601"
+						y="595"
 						width="90"
 						height="12"
 						key="textField-179"/>
@@ -2218,7 +2220,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="613"
+						y="607"
 						width="93"
 						height="24"
 						key="staticText-368"/>
@@ -2235,7 +2237,7 @@
 				<staticText>
 					<reportElement
 						x="93"
-						y="613"
+						y="607"
 						width="91"
 						height="24"
 						key="staticText-369"/>
@@ -2252,7 +2254,7 @@
 				<staticText>
 					<reportElement
 						x="184"
-						y="613"
+						y="607"
 						width="91"
 						height="24"
 						key="staticText-370"/>
@@ -2269,7 +2271,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="637"
+						y="631"
 						width="93"
 						height="24"
 						key="staticText-371"/>
@@ -2286,7 +2288,7 @@
 				<staticText>
 					<reportElement
 						x="93"
-						y="637"
+						y="631"
 						width="91"
 						height="24"
 						key="staticText-372"/>
@@ -2303,7 +2305,7 @@
 				<staticText>
 					<reportElement
 						x="184"
-						y="637"
+						y="631"
 						width="91"
 						height="24"
 						key="staticText-373"/>
@@ -2320,7 +2322,7 @@
 				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="647"
+						y="641"
 						width="93"
 						height="12"
 						key="textField-180"/>
@@ -2334,7 +2336,7 @@
 				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="93"
-						y="647"
+						y="641"
 						width="91"
 						height="12"
 						key="textField-181"/>
@@ -2348,7 +2350,7 @@
 				<textField isStretchWithOverflow="false" pattern="MMM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="184"
-						y="647"
+						y="641"
 						width="91"
 						height="12"
 						key="textField-182"/>
@@ -2362,7 +2364,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="661"
+						y="655"
 						width="275"
 						height="12"
 						key="staticText-374"/>
@@ -2379,7 +2381,7 @@
 				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="29"
-						y="661"
+						y="655"
 						width="133"
 						height="12"
 						key="textField-183"/>
@@ -2394,7 +2396,7 @@
 					<reportElement
 						mode="Transparent"
 						x="284"
-						y="511"
+						y="505"
 						width="275"
 						height="163"
 						key="rectangle-49"/>
@@ -2403,7 +2405,7 @@
 				<staticText>
 					<reportElement
 						x="284"
-						y="589"
+						y="583"
 						width="275"
 						height="12"
 						key="staticText-375"/>
@@ -2420,7 +2422,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="329"
-						y="589"
+						y="583"
 						width="227"
 						height="12"
 						key="textField-184"/>
@@ -2434,7 +2436,7 @@
 				<staticText>
 					<reportElement
 						x="284"
-						y="512"
+						y="506"
 						width="275"
 						height="12"
 						key="staticText-376"/>
@@ -2448,7 +2450,7 @@
 				<staticText>
 					<reportElement
 						x="284"
-						y="572"
+						y="566"
 						width="275"
 						height="12"
 						key="staticText-377"/>
@@ -2462,7 +2464,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="319"
-						y="546"
+						y="540"
 						width="150"
 						height="14"
 						key="textField-185"/>
@@ -2476,7 +2478,7 @@
 				<staticText>
 					<reportElement
 						x="471"
-						y="546"
+						y="540"
 						width="25"
 						height="12"
 						key="staticText-378"/>
@@ -2490,7 +2492,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="492"
-						y="546"
+						y="540"
 						width="59"
 						height="14"
 						key="textField-186"/>
@@ -2504,7 +2506,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="284"
-						y="560"
+						y="554"
 						width="275"
 						height="12"
 						key="textField-187"/>
@@ -2518,7 +2520,7 @@
 				<staticText>
 					<reportElement
 						x="284"
-						y="601"
+						y="595"
 						width="148"
 						height="12"
 						key="staticText-379"/>
@@ -2535,7 +2537,7 @@
 				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="329"
-						y="601"
+						y="595"
 						width="100"
 						height="12"
 						key="textField-188"/>
@@ -2549,7 +2551,7 @@
 				<staticText>
 					<reportElement
 						x="432"
-						y="601"
+						y="595"
 						width="127"
 						height="12"
 						key="staticText-380"/>
@@ -2566,7 +2568,7 @@
 				<textField isStretchWithOverflow="false" pattern="MMM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="465"
-						y="601"
+						y="595"
 						width="90"
 						height="12"
 						key="textField-189"/>
@@ -2580,7 +2582,7 @@
 				<staticText>
 					<reportElement
 						x="284"
-						y="613"
+						y="607"
 						width="93"
 						height="24"
 						key="staticText-381"/>
@@ -2597,7 +2599,7 @@
 				<staticText>
 					<reportElement
 						x="377"
-						y="613"
+						y="607"
 						width="91"
 						height="24"
 						key="staticText-382"/>
@@ -2614,7 +2616,7 @@
 				<staticText>
 					<reportElement
 						x="468"
-						y="613"
+						y="607"
 						width="91"
 						height="24"
 						key="staticText-383"/>
@@ -2631,7 +2633,7 @@
 				<staticText>
 					<reportElement
 						x="284"
-						y="637"
+						y="631"
 						width="93"
 						height="24"
 						key="staticText-384"/>
@@ -2648,7 +2650,7 @@
 				<staticText>
 					<reportElement
 						x="377"
-						y="637"
+						y="631"
 						width="91"
 						height="24"
 						key="staticText-385"/>
@@ -2665,7 +2667,7 @@
 				<staticText>
 					<reportElement
 						x="468"
-						y="637"
+						y="631"
 						width="91"
 						height="24"
 						key="staticText-386"/>
@@ -2682,7 +2684,7 @@
 				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="284"
-						y="647"
+						y="641"
 						width="93"
 						height="12"
 						key="textField-190"/>
@@ -2696,7 +2698,7 @@
 				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="377"
-						y="647"
+						y="641"
 						width="91"
 						height="12"
 						key="textField-191"/>
@@ -2710,7 +2712,7 @@
 				<textField isStretchWithOverflow="false" pattern="MMM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="468"
-						y="647"
+						y="641"
 						width="91"
 						height="12"
 						key="textField-192"/>
@@ -2724,7 +2726,7 @@
 				<staticText>
 					<reportElement
 						x="284"
-						y="661"
+						y="655"
 						width="275"
 						height="12"
 						key="staticText-387"/>
@@ -2741,7 +2743,7 @@
 				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="313"
-						y="661"
+						y="655"
 						width="133"
 						height="12"
 						key="textField-193"/>
@@ -2751,6 +2753,455 @@
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{supervisor.tin}]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement
+						mode="Transparent"
+						x="0"
+						y="682"
+						width="275"
+						height="104"
+						key="rectangle-26"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="0"
+						y="749"
+						width="275"
+						height="12"
+						key="staticText-249"/>
+					<box leftPadding="5">					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[Address]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement
+						mode="Transparent"
+						x="284"
+						y="682"
+						width="275"
+						height="104"
+						key="rectangle-27"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="284"
+						y="749"
+						width="275"
+						height="12"
+						key="staticText-250"/>
+					<box leftPadding="5">					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[Address]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="332"
+						y="749"
+						width="225"
+						height="12"
+						key="textField-145"/>
+					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{lotowner.address.bldgno}, $F{lotowner.address.bldgname}, $F{lotowner.address.unitno}, $F{lotowner.address.subdivision}, $F{lotowner.address.street}, $F{lotowner.address.barangay.name}, $F{lotowner.address.citymunicipality})]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="45"
+						y="749"
+						width="225"
+						height="12"
+						key="textField-146"/>
+					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{applicant.address.bldgno}, $F{applicant.address.bldgname}, $F{applicant.address.unitno}, $F{applicant.address.subdivision}, $F{applicant.address.street}, $F{applicant.address.barangay.name}, $F{applicant.address.citymunicipality})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="1"
+						y="683"
+						width="269"
+						height="12"
+						key="staticText-251"/>
+					<box leftPadding="4"></box>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<text><![CDATA[BUILDING OWNER]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="670"
+						width="275"
+						height="12"
+						key="staticText-252"/>
+					<box leftPadding="5"></box>
+					<textElement>
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<text><![CDATA[BOX 5]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="284"
+						y="670"
+						width="275"
+						height="12"
+						key="staticText-253"/>
+					<box leftPadding="5"></box>
+					<textElement>
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<text><![CDATA[BOX 6]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="45"
+						y="720"
+						width="184"
+						height="12"
+						key="staticText-254"/>
+					<box>					<topPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[(Signature Over Printed Name)]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="45"
+						y="706"
+						width="184"
+						height="14"
+						key="textField-147"/>
+					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{applicant.firstname}, $F{applicant.middlename}, $F{applicant.lastname})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="45"
+						y="732"
+						width="56"
+						height="12"
+						key="staticText-255"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[Date]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="103"
+						y="732"
+						width="88"
+						height="12"
+						key="textField-148"/>
+					<box topPadding="1">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[null]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="380"
+						y="683"
+						width="120"
+						height="12"
+						key="staticText-256"/>
+					<box leftPadding="4"></box>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<text><![CDATA[LOT OWNER]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="285"
+						y="683"
+						width="95"
+						height="12"
+						key="staticText-257"/>
+					<box leftPadding="4"></box>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[WITH MY CONSENT:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="332"
+						y="706"
+						width="184"
+						height="14"
+						key="textField-149"/>
+					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{lotowner.firstname}, $F{lotowner.middlename}, $F{lotowner.lastname})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="332"
+						y="720"
+						width="184"
+						height="12"
+						key="staticText-258"/>
+					<box>					<topPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[(Signature Over Printed Name)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="332"
+						y="732"
+						width="56"
+						height="12"
+						key="staticText-259"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[Date]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="390"
+						y="732"
+						width="88"
+						height="12"
+						key="textField-150"/>
+					<box topPadding="1">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[null]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="0"
+						y="761"
+						width="100"
+						height="25"
+						key="staticText-260"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[C.T.C. No.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="100"
+						y="761"
+						width="73"
+						height="25"
+						key="staticText-261"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[Date Issued]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="172"
+						y="761"
+						width="104"
+						height="25"
+						key="staticText-262"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[Place Issued]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="772"
+						width="100"
+						height="12"
+						key="textField-151"/>
+					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.idno}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="100"
+						y="772"
+						width="73"
+						height="12"
+						key="textField-152"/>
+					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{applicant.id.dtissued}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="172"
+						y="773"
+						width="104"
+						height="12"
+						key="textField-153"/>
+					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.placeissued}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="284"
+						y="761"
+						width="98"
+						height="25"
+						key="staticText-263"/>
+					<box leftPadding="5">					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[C.T.C. No.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="382"
+						y="761"
+						width="73"
+						height="25"
+						key="staticText-264"/>
+					<box leftPadding="5">					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[Date Issued]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="455"
+						y="761"
+						width="104"
+						height="25"
+						key="staticText-265"/>
+					<box leftPadding="5">					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[Place Issued]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="284"
+						y="772"
+						width="98"
+						height="12"
+						key="textField-154"/>
+					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{lotowner.id.idno}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="382"
+						y="772"
+						width="73"
+						height="12"
+						key="textField-155"/>
+					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{lotowner.id.dtissued}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="455"
+						y="773"
+						width="104"
+						height="12"
+						key="textField-156"/>
+					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{lotowner.id.placeissued}]]></textFieldExpression>
 				</textField>
 			</band>
 			</groupHeader>
@@ -2766,7 +3217,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="325"
+						y="136"
 						width="559"
 						height="16"
 						key="staticText-290"/>
@@ -2785,9 +3236,9 @@
 					<reportElement
 						mode="Transparent"
 						x="0"
-						y="324"
+						y="135"
 						width="559"
-						height="109"
+						height="93"
 						key="rectangle-46"/>
 					<graphicElement stretchType="NoStretch">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
@@ -2797,470 +3248,9 @@
 					<reportElement
 						mode="Transparent"
 						x="0"
-						y="17"
-						width="275"
-						height="104"
-						key="rectangle-26"/>
-					<graphicElement stretchType="NoStretch">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-</graphicElement>
-				</rectangle>
-				<staticText>
-					<reportElement
-						x="0"
-						y="84"
-						width="275"
-						height="12"
-						key="staticText-249"/>
-					<box leftPadding="5">					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement verticalAlignment="Middle">
-						<font pdfFontName="Helvetica" size="8" isBold="false"/>
-					</textElement>
-				<text><![CDATA[Address]]></text>
-				</staticText>
-				<rectangle>
-					<reportElement
-						mode="Transparent"
-						x="284"
-						y="17"
-						width="275"
-						height="104"
-						key="rectangle-27"/>
-					<graphicElement stretchType="NoStretch">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-</graphicElement>
-				</rectangle>
-				<staticText>
-					<reportElement
-						x="284"
-						y="84"
-						width="275"
-						height="12"
-						key="staticText-250"/>
-					<box leftPadding="5">					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement verticalAlignment="Middle">
-						<font pdfFontName="Helvetica" size="8" isBold="false"/>
-					</textElement>
-				<text><![CDATA[Address]]></text>
-				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="332"
-						y="84"
-						width="225"
-						height="12"
-						key="textField-145"/>
-					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{lotowner.address.bldgno}, $F{lotowner.address.bldgname}, $F{lotowner.address.unitno}, $F{lotowner.address.subdivision}, $F{lotowner.address.street}, $F{lotowner.address.barangay.name}, $F{lotowner.address.citymunicipality})]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="45"
-						y="84"
-						width="225"
-						height="12"
-						key="textField-146"/>
-					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{applicant.address.bldgno}, $F{applicant.address.bldgname}, $F{applicant.address.unitno}, $F{applicant.address.subdivision}, $F{applicant.address.street}, $F{applicant.address.barangay.name}, $F{applicant.address.citymunicipality})]]></textFieldExpression>
-				</textField>
-				<staticText>
-					<reportElement
-						x="1"
-						y="18"
-						width="269"
-						height="12"
-						key="staticText-251"/>
-					<box leftPadding="4"></box>
-					<textElement verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
-					</textElement>
-				<text><![CDATA[BUILDING OWNER]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="0"
-						y="5"
-						width="275"
-						height="12"
-						key="staticText-252"/>
-					<box leftPadding="5"></box>
-					<textElement>
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
-					</textElement>
-				<text><![CDATA[BOX 5]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="284"
-						y="5"
-						width="275"
-						height="12"
-						key="staticText-253"/>
-					<box leftPadding="5"></box>
-					<textElement>
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
-					</textElement>
-				<text><![CDATA[BOX 6]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="45"
-						y="55"
-						width="184"
-						height="12"
-						key="staticText-254"/>
-					<box>					<topPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Bottom">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[(Signature Over Printed Name)]]></text>
-				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="45"
-						y="41"
-						width="184"
-						height="14"
-						key="textField-147"/>
-					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{applicant.firstname}, $F{applicant.middlename}, $F{applicant.lastname})]]></textFieldExpression>
-				</textField>
-				<staticText>
-					<reportElement
-						x="45"
-						y="67"
-						width="56"
-						height="12"
-						key="staticText-255"/>
-					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Right" verticalAlignment="Middle">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[Date]]></text>
-				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="103"
-						y="67"
-						width="88"
-						height="12"
-						key="textField-148"/>
-					<box topPadding="1">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[null]]></textFieldExpression>
-				</textField>
-				<staticText>
-					<reportElement
-						x="380"
-						y="18"
-						width="120"
-						height="12"
-						key="staticText-256"/>
-					<box leftPadding="4"></box>
-					<textElement verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
-					</textElement>
-				<text><![CDATA[LOT OWNER]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="285"
-						y="18"
-						width="95"
-						height="12"
-						key="staticText-257"/>
-					<box leftPadding="4"></box>
-					<textElement verticalAlignment="Middle">
-						<font pdfFontName="Helvetica" size="8" isBold="false"/>
-					</textElement>
-				<text><![CDATA[WITH MY CONSENT:]]></text>
-				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="332"
-						y="41"
-						width="184"
-						height="14"
-						key="textField-149"/>
-					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{lotowner.firstname}, $F{lotowner.middlename}, $F{lotowner.lastname})]]></textFieldExpression>
-				</textField>
-				<staticText>
-					<reportElement
-						x="332"
-						y="55"
-						width="184"
-						height="12"
-						key="staticText-258"/>
-					<box>					<topPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Bottom">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[(Signature Over Printed Name)]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="332"
-						y="67"
-						width="56"
-						height="12"
-						key="staticText-259"/>
-					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Right" verticalAlignment="Middle">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[Date]]></text>
-				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="390"
-						y="67"
-						width="88"
-						height="12"
-						key="textField-150"/>
-					<box topPadding="1">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[null]]></textFieldExpression>
-				</textField>
-				<staticText>
-					<reportElement
-						x="0"
-						y="96"
-						width="100"
-						height="25"
-						key="staticText-260"/>
-					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica" size="8" isBold="false"/>
-					</textElement>
-				<text><![CDATA[C.T.C. No.]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="100"
-						y="96"
-						width="73"
-						height="25"
-						key="staticText-261"/>
-					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica" size="8" isBold="false"/>
-					</textElement>
-				<text><![CDATA[Date Issued]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="172"
-						y="96"
-						width="104"
-						height="25"
-						key="staticText-262"/>
-					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica" size="8" isBold="false"/>
-					</textElement>
-				<text><![CDATA[Place Issued]]></text>
-				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="0"
-						y="107"
-						width="100"
-						height="12"
-						key="textField-151">
-							<printWhenExpression><![CDATA[($F{applicant.id.type.name} == "ctc")]]></printWhenExpression>
-						</reportElement>
-					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.idno}]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="100"
-						y="107"
-						width="73"
-						height="12"
-						key="textField-152">
-							<printWhenExpression><![CDATA[($F{applicant.id.type.name} == "ctc")]]></printWhenExpression>
-						</reportElement>
-					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.util.Date"><![CDATA[$F{applicant.id.dtissued}]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="172"
-						y="108"
-						width="104"
-						height="12"
-						key="textField-153">
-							<printWhenExpression><![CDATA[($F{applicant.id.type.name} == "ctc")]]></printWhenExpression>
-						</reportElement>
-					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.placeissued}]]></textFieldExpression>
-				</textField>
-				<staticText>
-					<reportElement
-						x="284"
-						y="96"
-						width="98"
-						height="25"
-						key="staticText-263"/>
-					<box leftPadding="5">					<topPen lineWidth="0.0" lineStyle="Solid"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica" size="8" isBold="false"/>
-					</textElement>
-				<text><![CDATA[C.T.C. No.]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="382"
-						y="96"
-						width="73"
-						height="25"
-						key="staticText-264"/>
-					<box leftPadding="5">					<topPen lineWidth="0.0" lineStyle="Solid"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica" size="8" isBold="false"/>
-					</textElement>
-				<text><![CDATA[Date Issued]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="455"
-						y="96"
-						width="104"
-						height="25"
-						key="staticText-265"/>
-					<box leftPadding="5">					<topPen lineWidth="0.0" lineStyle="Solid"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica" size="8" isBold="false"/>
-					</textElement>
-				<text><![CDATA[Place Issued]]></text>
-				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="284"
-						y="107"
-						width="98"
-						height="12"
-						key="textField-154">
-							<printWhenExpression><![CDATA[($F{lotowner.id.type.name} == "ctc")]]></printWhenExpression>
-						</reportElement>
-					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{lotowner.id.idno}]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="382"
-						y="107"
-						width="73"
-						height="12"
-						key="textField-155">
-							<printWhenExpression><![CDATA[($F{lotowner.id.type.name} == "ctc")]]></printWhenExpression>
-						</reportElement>
-					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.util.Date"><![CDATA[$F{lotowner.id.dtissued}]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="455"
-						y="108"
-						width="104"
-						height="12"
-						key="textField-156">
-							<printWhenExpression><![CDATA[($F{lotowner.id.type.name} == "ctc")]]></printWhenExpression>
-						</reportElement>
-					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{lotowner.id.placeissued}]]></textFieldExpression>
-				</textField>
-				<rectangle>
-					<reportElement
-						mode="Transparent"
-						x="0"
-						y="139"
+						y="20"
 						width="559"
-						height="165"
+						height="99"
 						key="rectangle-28"/>
 					<graphicElement stretchType="NoStretch">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
@@ -3269,7 +3259,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="126"
+						y="7"
 						width="559"
 						height="12"
 						key="staticText-266"/>
@@ -3282,7 +3272,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="140"
+						y="21"
 						width="279"
 						height="18"
 						key="staticText-267"/>
@@ -3297,7 +3287,7 @@
 				<staticText>
 					<reportElement
 						x="279"
-						y="140"
+						y="21"
 						width="280"
 						height="18"
 						key="staticText-268"/>
@@ -3311,7 +3301,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="168"
+						y="49"
 						width="559"
 						height="12"
 						key="staticText-269"/>
@@ -3319,12 +3309,12 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[FIVE (5) SETS OF ARCHITECTURAL DOCUMENTS]]></text>
+				<text><![CDATA[FIVE (5) SETS OF CIVIL/STRUCTURAL DOCUMENTS]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="41"
-						y="189"
+						y="70"
 						width="190"
 						height="24"
 						key="staticText-270"/>
@@ -3332,26 +3322,12 @@
 					<textElement textAlignment="Left" verticalAlignment="Top">
 						<font size="8"/>
 					</textElement>
-				<text><![CDATA[VICINITY MAP/LOCATION PLAN WITHIN A TWO-KILOMETER RADIUS]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="306"
-						y="189"
-						width="220"
-						height="24"
-						key="staticText-274"/>
-					<box></box>
-					<textElement textAlignment="Left">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[DETAILS OF RAMPS, PARKING FOR THE DISABLED
-STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
+				<text><![CDATA[CIVIL/STRUCTURE DESIGNS COMPUTATIONS, PLANS AND SPECIFICATION]]></text>
 				</staticText>
 				<rectangle>
 					<reportElement
 						x="21"
-						y="191"
+						y="72"
 						width="10"
 						height="8"
 						key="rectangle-29"/>
@@ -3359,17 +3335,8 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				</rectangle>
 				<rectangle>
 					<reportElement
-						x="286"
-						y="191"
-						width="10"
-						height="8"
-						key="rectangle-33"/>
-					<graphicElement stretchType="NoStretch"/>
-				</rectangle>
-				<rectangle>
-					<reportElement
 						x="21"
-						y="214"
+						y="95"
 						width="10"
 						height="8"
 						key="rectangle-34"/>
@@ -3378,7 +3345,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="41"
-						y="213"
+						y="94"
 						width="190"
 						height="12"
 						key="staticText-275"/>
@@ -3386,210 +3353,12 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 					<textElement textAlignment="Left" verticalAlignment="Top">
 						<font size="8"/>
 					</textElement>
-				<text><![CDATA[SITE DEVELOPMENT PLAN]]></text>
-				</staticText>
-				<rectangle>
-					<reportElement
-						x="21"
-						y="226"
-						width="10"
-						height="8"
-						key="rectangle-35"/>
-					<graphicElement stretchType="NoStretch"/>
-				</rectangle>
-				<staticText>
-					<reportElement
-						x="41"
-						y="225"
-						width="190"
-						height="12"
-						key="staticText-276"/>
-					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[PERSPECTIVE]]></text>
-				</staticText>
-				<rectangle>
-					<reportElement
-						x="21"
-						y="238"
-						width="10"
-						height="8"
-						key="rectangle-36"/>
-					<graphicElement stretchType="NoStretch"/>
-				</rectangle>
-				<staticText>
-					<reportElement
-						x="41"
-						y="237"
-						width="190"
-						height="12"
-						key="staticText-277"/>
-					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[FLOOR PLANS]]></text>
-				</staticText>
-				<rectangle>
-					<reportElement
-						x="21"
-						y="250"
-						width="10"
-						height="8"
-						key="rectangle-37"/>
-					<graphicElement stretchType="NoStretch"/>
-				</rectangle>
-				<staticText>
-					<reportElement
-						x="41"
-						y="249"
-						width="190"
-						height="12"
-						key="staticText-278"/>
-					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[ELEVATIONS AT LEAST FOUR (4)]]></text>
-				</staticText>
-				<rectangle>
-					<reportElement
-						x="21"
-						y="262"
-						width="10"
-						height="8"
-						key="rectangle-38"/>
-					<graphicElement stretchType="NoStretch"/>
-				</rectangle>
-				<staticText>
-					<reportElement
-						x="41"
-						y="261"
-						width="190"
-						height="12"
-						key="staticText-279"/>
-					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[SECTIONS AT LEAST TWO (2)]]></text>
-				</staticText>
-				<rectangle>
-					<reportElement
-						x="21"
-						y="274"
-						width="10"
-						height="8"
-						key="rectangle-39"/>
-					<graphicElement stretchType="NoStretch"/>
-				</rectangle>
-				<staticText>
-					<reportElement
-						x="41"
-						y="273"
-						width="190"
-						height="24"
-						key="staticText-280"/>
-					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[CEILING PLANS SHOWING LIGHTING FIXTURES AND DIFFUSERS]]></text>
-				</staticText>
-				<rectangle>
-					<reportElement
-						x="286"
-						y="215"
-						width="10"
-						height="8"
-						key="rectangle-40"/>
-					<graphicElement stretchType="NoStretch"/>
-				</rectangle>
-				<staticText>
-					<reportElement
-						x="306"
-						y="213"
-						width="220"
-						height="12"
-						key="staticText-281"/>
-					<box></box>
-					<textElement textAlignment="Left">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[SCHEDULE OF DOORS AND WINDOWS]]></text>
-				</staticText>
-				<rectangle>
-					<reportElement
-						x="286"
-						y="227"
-						width="10"
-						height="8"
-						key="rectangle-41"/>
-					<graphicElement stretchType="NoStretch"/>
-				</rectangle>
-				<staticText>
-					<reportElement
-						x="306"
-						y="225"
-						width="250"
-						height="12"
-						key="staticText-282"/>
-					<box></box>
-					<textElement textAlignment="Left">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[SCHEDULE OF FINISHES FOR FLOORS, CEILINGS AND WALLS]]></text>
-				</staticText>
-				<rectangle>
-					<reportElement
-						x="286"
-						y="239"
-						width="10"
-						height="8"
-						key="rectangle-42"/>
-					<graphicElement stretchType="NoStretch"/>
-				</rectangle>
-				<staticText>
-					<reportElement
-						x="306"
-						y="237"
-						width="250"
-						height="12"
-						key="staticText-283"/>
-					<box></box>
-					<textElement textAlignment="Left">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[ARCHITECTURAL INTERIOR]]></text>
-				</staticText>
-				<rectangle>
-					<reportElement
-						x="286"
-						y="251"
-						width="10"
-						height="8"
-						key="rectangle-43"/>
-					<graphicElement stretchType="NoStretch"/>
-				</rectangle>
-				<staticText>
-					<reportElement
-						x="306"
-						y="249"
-						width="250"
-						height="12"
-						key="staticText-284"/>
-					<box></box>
-					<textElement textAlignment="Left">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[SPECIFICATIONS]]></text>
+				<text><![CDATA[BILL OF MATERIALS]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="306"
-						y="261"
+						x="289"
+						y="70"
 						width="250"
 						height="12"
 						key="staticText-285"/>
@@ -3601,8 +3370,8 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				</staticText>
 				<rectangle>
 					<reportElement
-						x="286"
-						y="263"
+						x="269"
+						y="72"
 						width="10"
 						height="8"
 						key="rectangle-44"/>
@@ -3610,8 +3379,8 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				</rectangle>
 				<rectangle>
 					<reportElement
-						x="286"
-						y="275"
+						x="269"
+						y="84"
 						width="10"
 						height="8"
 						key="rectangle-45"/>
@@ -3619,35 +3388,21 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				</rectangle>
 				<staticText>
 					<reportElement
-						x="306"
-						y="273"
+						x="289"
+						y="83"
 						width="250"
 						height="12"
 						key="staticText-286"/>
 					<box></box>
-					<textElement textAlignment="Left">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[OTHERS  (Specify)]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="306"
-						y="285"
-						width="244"
-						height="12"
-						key="staticText-287"/>
-					<box>					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Left">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="383"
-						y="278"
+						x="366"
+						y="81"
 						width="167"
 						height="12"
 						key="staticText-288"/>
@@ -3661,7 +3416,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="310"
+						y="121"
 						width="559"
 						height="12"
 						key="staticText-289"/>
@@ -3676,7 +3431,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="369"
+						y="180"
 						width="173"
 						height="16"
 						key="staticText-291"/>
@@ -3686,12 +3441,12 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
-				<text><![CDATA[ARCHITECTURAL DRAWINGS]]></text>
+				<text><![CDATA[CIVL/STRUCTURE]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="0"
-						y="385"
+						y="196"
 						width="173"
 						height="16"
 						key="staticText-292"/>
@@ -3701,12 +3456,12 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
-				<text><![CDATA[SPECIFICATIONS]]></text>
+				<text><![CDATA[OTHERS  (Specify)]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="173"
-						y="341"
+						y="152"
 						width="120"
 						height="14"
 						key="staticText-293"/>
@@ -3721,7 +3476,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="173"
-						y="355"
+						y="166"
 						width="60"
 						height="14"
 						key="staticText-294"/>
@@ -3736,7 +3491,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="233"
-						y="355"
+						y="166"
 						width="60"
 						height="14"
 						key="staticText-295"/>
@@ -3751,7 +3506,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="413"
-						y="341"
+						y="152"
 						width="146"
 						height="28"
 						key="staticText-296"/>
@@ -3765,7 +3520,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="341"
+						y="152"
 						width="173"
 						height="28"
 						key="staticText-299"/>
@@ -3780,7 +3535,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="293"
-						y="341"
+						y="152"
 						width="120"
 						height="14"
 						key="staticText-300"/>
@@ -3795,7 +3550,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="293"
-						y="355"
+						y="166"
 						width="60"
 						height="14"
 						key="staticText-301"/>
@@ -3810,7 +3565,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="353"
-						y="355"
+						y="166"
 						width="60"
 						height="14"
 						key="staticText-302"/>
@@ -3824,23 +3579,8 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="0"
-						y="417"
-						width="173"
-						height="16"
-						key="staticText-303"/>
-					<box leftPadding="5">					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
 						x="173"
-						y="369"
+						y="180"
 						width="60"
 						height="16"
 						key="staticText-304"/>
@@ -3855,7 +3595,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="233"
-						y="369"
+						y="180"
 						width="60"
 						height="16"
 						key="staticText-305"/>
@@ -3870,7 +3610,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="293"
-						y="369"
+						y="180"
 						width="60"
 						height="16"
 						key="staticText-306"/>
@@ -3885,7 +3625,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="353"
-						y="369"
+						y="180"
 						width="60"
 						height="16"
 						key="staticText-307"/>
@@ -3900,7 +3640,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="173"
-						y="385"
+						y="196"
 						width="60"
 						height="16"
 						key="staticText-308"/>
@@ -3915,7 +3655,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="233"
-						y="385"
+						y="196"
 						width="60"
 						height="16"
 						key="staticText-309"/>
@@ -3930,7 +3670,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="293"
-						y="385"
+						y="196"
 						width="60"
 						height="16"
 						key="staticText-310"/>
@@ -3945,7 +3685,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="353"
-						y="385"
+						y="196"
 						width="60"
 						height="16"
 						key="staticText-311"/>
@@ -3959,68 +3699,8 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="173"
-						y="417"
-						width="60"
-						height="16"
-						key="staticText-312"/>
-					<box leftPadding="5">					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="233"
-						y="417"
-						width="60"
-						height="16"
-						key="staticText-313"/>
-					<box leftPadding="5">					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="293"
-						y="417"
-						width="60"
-						height="16"
-						key="staticText-314"/>
-					<box leftPadding="5">					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="353"
-						y="417"
-						width="60"
-						height="16"
-						key="staticText-315"/>
-					<box leftPadding="5">					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
 						x="0"
-						y="401"
+						y="212"
 						width="173"
 						height="16"
 						key="staticText-320"/>
@@ -4030,12 +3710,12 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
-				<text><![CDATA[OTHERS  (Specify)]]></text>
+				<text><![CDATA[]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="173"
-						y="401"
+						y="212"
 						width="60"
 						height="16"
 						key="staticText-321"/>
@@ -4050,7 +3730,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="233"
-						y="401"
+						y="212"
 						width="60"
 						height="16"
 						key="staticText-322"/>
@@ -4065,7 +3745,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="293"
-						y="401"
+						y="212"
 						width="60"
 						height="16"
 						key="staticText-323"/>
@@ -4080,7 +3760,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="353"
-						y="401"
+						y="212"
 						width="60"
 						height="16"
 						key="staticText-324"/>
@@ -4095,7 +3775,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="413"
-						y="369"
+						y="180"
 						width="146"
 						height="16"
 						key="staticText-325"/>
@@ -4110,7 +3790,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="413"
-						y="385"
+						y="196"
 						width="146"
 						height="16"
 						key="staticText-326"/>
@@ -4125,7 +3805,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="413"
-						y="401"
+						y="212"
 						width="146"
 						height="16"
 						key="staticText-327"/>
@@ -4139,23 +3819,8 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="413"
-						y="417"
-						width="146"
-						height="16"
-						key="staticText-328"/>
-					<box leftPadding="5">					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
 						x="0"
-						y="438"
+						y="236"
 						width="559"
 						height="12"
 						key="staticText-329"/>
@@ -4169,9 +3834,9 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 					<reportElement
 						mode="Transparent"
 						x="0"
-						y="452"
+						y="249"
 						width="559"
-						height="336"
+						height="537"
 						key="rectangle-47"/>
 					<graphicElement stretchType="NoStretch">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
@@ -4180,7 +3845,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="463"
+						y="261"
 						width="559"
 						height="12"
 						key="staticText-330"/>
@@ -4193,7 +3858,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="493"
+						y="291"
 						width="559"
 						height="16"
 						key="staticText-331"/>
@@ -4206,7 +3871,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="16"
-						y="517"
+						y="315"
 						width="12"
 						height="12"
 						key="staticText-332"/>
@@ -4219,7 +3884,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="36"
-						y="517"
+						y="315"
 						width="508"
 						height="54"
 						key="staticText-333"/>
@@ -4235,7 +3900,7 @@ shall be solidarily liable with the contractor should the edifice collapse due t
 				<staticText>
 					<reportElement
 						x="16"
-						y="567"
+						y="376"
 						width="12"
 						height="12"
 						key="staticText-334"/>
@@ -4248,7 +3913,7 @@ shall be solidarily liable with the contractor should the edifice collapse due t
 				<staticText>
 					<reportElement
 						x="36"
-						y="567"
+						y="374"
 						width="508"
 						height="32"
 						key="staticText-335"/>
@@ -4262,7 +3927,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="16"
-						y="594"
+						y="420"
 						width="12"
 						height="12"
 						key="staticText-336"/>
@@ -4275,7 +3940,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="36"
-						y="594"
+						y="416"
 						width="508"
 						height="32"
 						key="staticText-337"/>
@@ -4289,7 +3954,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="16"
-						y="620"
+						y="453"
 						width="12"
 						height="12"
 						key="staticText-338"/>
@@ -4302,7 +3967,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="36"
-						y="621"
+						y="454"
 						width="508"
 						height="42"
 						key="staticText-339"/>
@@ -4315,7 +3980,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="16"
-						y="663"
+						y="505"
 						width="12"
 						height="12"
 						key="staticText-340"/>
@@ -4328,7 +3993,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="36"
-						y="664"
+						y="506"
 						width="508"
 						height="12"
 						key="staticText-341"/>
@@ -4341,7 +4006,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="0"
-						y="686"
+						y="544"
 						width="559"
 						height="16"
 						key="staticText-342"/>
@@ -4354,7 +4019,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="183"
-						y="708"
+						y="566"
 						width="192"
 						height="14"
 						key="textField-157">
@@ -4374,7 +4039,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="723"
+						y="581"
 						width="559"
 						height="12"
 						key="textField-158"/>
@@ -4392,7 +4057,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="738"
+						y="596"
 						width="559"
 						height="12"
 						key="textField-159"/>
@@ -4405,7 +4070,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="0"
-						y="750"
+						y="608"
 						width="559"
 						height="12"
 						key="staticText-343"/>
@@ -4418,7 +4083,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="226"
-						y="762"
+						y="620"
 						width="33"
 						height="12"
 						key="staticText-344"/>
@@ -4431,7 +4096,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="252"
-						y="762"
+						y="620"
 						width="81"
 						height="12"
 						key="staticText-345"/>

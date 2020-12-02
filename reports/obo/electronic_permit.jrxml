@@ -24,6 +24,8 @@
 	<import value="net.sf.jasperreports.engine.*" />
 	<import value="net.sf.jasperreports.engine.data.*" />
 
+	<parameter name="PROVINCE_NAME" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="LGU_NAME" isForPrompting="false" class="java.lang.String"/>
 
 	<field name="designprofessional.prc.placeissued" class="java.lang.String"/>
 	<field name="designprofessional.prc.dtvalid" class="java.util.Date"/>
@@ -430,7 +432,7 @@
 					<textElement textAlignment="Center">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.capitalize( $F{org.fullname} ? $F{org.fullname} : $F{org.group.fullname})]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[( $P{LGU_NAME} ? $P{LGU_NAME} : $P{PROVINCE_NAME})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -443,7 +445,7 @@
 					<textElement textAlignment="Center">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.capitalize($F{org.group.fullname} ? $F{org.group.fullname} : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[( $P{PROVINCE_NAME} ? $P{PROVINCE_NAME} : null)]]></textFieldExpression>
 				</textField>
 				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -1165,7 +1167,7 @@
 					<textElement textAlignment="Center">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{org.title} ? $F{org.title}.toUpperCase() : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[( $P{LGU_NAME} ? $P{LGU_NAME} : $P{PROVINCE_NAME})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -2681,9 +2683,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 						y="747"
 						width="100"
 						height="12"
-						key="textField-74">
-							<printWhenExpression><![CDATA[($F{applicant.id.type.name} == "ctc")]]></printWhenExpression>
-						</reportElement>
+						key="textField-74"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Center" verticalAlignment="Top">
@@ -2697,9 +2697,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 						y="747"
 						width="73"
 						height="12"
-						key="textField-75">
-							<printWhenExpression><![CDATA[($F{applicant.id.type.name} == "ctc")]]></printWhenExpression>
-						</reportElement>
+						key="textField-75"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Center" verticalAlignment="Top">
@@ -2713,9 +2711,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 						y="748"
 						width="104"
 						height="12"
-						key="textField-76">
-							<printWhenExpression><![CDATA[($F{applicant.id.type.name} == "ctc")]]></printWhenExpression>
-						</reportElement>
+						key="textField-76"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Center" verticalAlignment="Top">
@@ -2780,9 +2776,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 						y="747"
 						width="98"
 						height="12"
-						key="textField-78">
-							<printWhenExpression><![CDATA[($F{lotowner.id.type.name} == "ctc")]]></printWhenExpression>
-						</reportElement>
+						key="textField-78"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Center" verticalAlignment="Top">
@@ -2796,9 +2790,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 						y="747"
 						width="73"
 						height="12"
-						key="textField-79">
-							<printWhenExpression><![CDATA[($F{lotowner.id.type.name} == "ctc")]]></printWhenExpression>
-						</reportElement>
+						key="textField-79"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Center" verticalAlignment="Top">
@@ -2812,9 +2804,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 						y="748"
 						width="104"
 						height="12"
-						key="textField-80">
-							<printWhenExpression><![CDATA[($F{lotowner.id.type.name} == "ctc")]]></printWhenExpression>
-						</reportElement>
+						key="textField-80"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Center" verticalAlignment="Top">
@@ -2837,7 +2827,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{water_tank_reservior} ? "X" : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[""]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
