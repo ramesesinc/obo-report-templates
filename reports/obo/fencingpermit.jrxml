@@ -295,7 +295,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="14" isBold="true"/>
 					</textElement>
-				<text><![CDATA[FENCING PERMIT]]></text>
+				<text><![CDATA[FENCING PERMIT1]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
