@@ -2314,7 +2314,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="5" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{number_and_width_of_exit_doors}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{number_and_width_of_exit_doors} == null ? null : "X"]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -2344,7 +2344,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="5" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{width_of_corridors}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{width_of_corridors} == null ? null : "X"]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -2374,7 +2374,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="5" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{distance_to_fire_exits}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{distance_to_fire_exits} == null ? null : "X"]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -2404,7 +2404,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="5" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{fire_walls}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{fire_walls} == null ? null : "X"]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -2434,7 +2434,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="5" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{fire_fighting_and_safety_facilities}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{fire_fighting_and_safety_facilities} == null ? null : "X"]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -2464,7 +2464,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="5" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{smoke_detectors}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{smoke_detectors} == null ? null : "X"]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -2494,7 +2494,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="5" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{emergency_lights}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{emergency_lights} == null ? null : "X"]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement

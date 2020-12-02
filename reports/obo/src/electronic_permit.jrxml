@@ -3244,21 +3244,6 @@ FIBER OPTIC CABLE OR OTHER MEDIAL ELECTRONICS SYSTEM]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="0"
-						y="221"
-						width="173"
-						height="24"
-						key="staticText-140"/>
-					<box leftPadding="5">					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[OTHERS (Specify)]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
 						x="173"
 						y="197"
 						width="60"
@@ -3758,6 +3743,21 @@ Philippines, the National Building Code and its IRR.]]></text>
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="221"
+						width="173"
+						height="24"
+						key="staticText-289"/>
+					<box leftPadding="5">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[OTHERS (Specify)]]></text>
 				</staticText>
 			</band>
 			</groupHeader>
