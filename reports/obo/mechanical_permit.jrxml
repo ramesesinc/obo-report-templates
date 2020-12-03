@@ -2,7 +2,7 @@
 <!-- Created with iReport - A designer for JasperReports -->
 <!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
 <jasperReport
-		 name="mechanicalpermit"
+		 name="mechanical_permit"
 
 		 language="groovy"		 columnCount="1"
 		 printOrder="Vertical"
@@ -2002,7 +2002,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{pressure_vessel} ? "X" : null)]]></textFieldExpression>
@@ -2019,7 +2019,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{boiler} ? "X" : null)]]></textFieldExpression>
@@ -2036,7 +2036,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{internal_combustion_engine} ? "X" : null)]]></textFieldExpression>
@@ -2053,7 +2053,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{refrigeration} ? "X" : null)]]></textFieldExpression>
@@ -2066,7 +2066,7 @@
 						height="12"
 						key="staticText-182"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[REFRIGARTION AND ICE MAKING]]></text>
@@ -2079,7 +2079,7 @@
 						height="12"
 						key="staticText-183"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[INTERNAL COMBUSTION ENGINE]]></text>
@@ -2092,7 +2092,7 @@
 						height="12"
 						key="staticText-184"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[PRESSURE VESSEL]]></text>
@@ -2105,7 +2105,7 @@
 						height="12"
 						key="staticText-185"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[BOILER]]></text>
@@ -2135,7 +2135,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{packaged_split_type_aircon} ? "X" : null)]]></textFieldExpression>
@@ -2148,7 +2148,7 @@
 						height="12"
 						key="staticText-189"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[PACKAGED/ SPLIT TYPE AIRCONDITIONING ]]></text>
@@ -2165,7 +2165,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{window_type_aircon} ? "X" : null)]]></textFieldExpression>
@@ -2178,7 +2178,7 @@
 						height="12"
 						key="staticText-190"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[WINDOW TYPE AIRCONDITIONING]]></text>
@@ -2192,7 +2192,7 @@
 						key="textField-108"/>
 					<box leftPadding="2" rightPadding="2">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[null]]></textFieldExpression>
@@ -2205,7 +2205,7 @@
 						height="12"
 						key="staticText-191"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[OTHERS (specify)]]></text>
@@ -2222,7 +2222,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{other_machinery_equipment} ? "X" : null)]]></textFieldExpression>
@@ -2239,7 +2239,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{central_aircon} ? "X" : null)]]></textFieldExpression>
@@ -2256,7 +2256,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{mechanical_ventilation} ? "X" : null)]]></textFieldExpression>
@@ -2273,7 +2273,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{escalator} ? "X" : null)]]></textFieldExpression>
@@ -2290,7 +2290,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{moving_walk} ? "X" : null)]]></textFieldExpression>
@@ -2303,7 +2303,7 @@
 						height="12"
 						key="staticText-192"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[MOVING SIDEWALK]]></text>
@@ -2316,7 +2316,7 @@
 						height="12"
 						key="staticText-193"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[ESCALATOR]]></text>
@@ -2329,7 +2329,7 @@
 						height="12"
 						key="staticText-194"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[MECHANICAL VENTILLATION]]></text>
@@ -2342,7 +2342,7 @@
 						height="12"
 						key="staticText-195"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[CENTRAL AIRCONDITIONING]]></text>
@@ -2359,7 +2359,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{freight_elevator} ? "X" : null)]]></textFieldExpression>
@@ -2372,7 +2372,7 @@
 						height="12"
 						key="staticText-196"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[FREIGHT ELEVATOR]]></text>
@@ -2385,7 +2385,7 @@
 						height="12"
 						key="staticText-197"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[PASSENGER ELEVATOR]]></text>
@@ -2402,7 +2402,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{passenger_elevator} ? "X" : null)]]></textFieldExpression>
@@ -2415,7 +2415,7 @@
 						height="12"
 						key="staticText-198"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[CABLE CAR]]></text>
@@ -2432,7 +2432,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{cable_car} ? "X" : null)]]></textFieldExpression>
@@ -2449,7 +2449,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{dumbwaiter} ? "X" : null)]]></textFieldExpression>
@@ -2466,7 +2466,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{pump} ? "X" : null)]]></textFieldExpression>
@@ -2479,7 +2479,7 @@
 						height="12"
 						key="staticText-199"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[PUMPS]]></text>
@@ -2492,7 +2492,7 @@
 						height="12"
 						key="staticText-200"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[DUMBWATER]]></text>
@@ -2509,7 +2509,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{compressed_air_vacuum} ? "X" : null)]]></textFieldExpression>
@@ -2522,7 +2522,7 @@
 						height="12"
 						key="staticText-201"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[COMPRESSED AIR, VACUUM, INSTITUTIONAL]]></text>
@@ -2535,7 +2535,7 @@
 						height="12"
 						key="staticText-202"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[and/or INDUSTRIAL GAS]]></text>
@@ -2552,7 +2552,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{pneumatic_tube_conveyor_monorail} ? "X" : null)]]></textFieldExpression>
@@ -2565,7 +2565,7 @@
 						height="12"
 						key="staticText-203"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[PNEUMATIC TUBES, CONVEYORS ]]></text>
@@ -2578,7 +2578,7 @@
 						height="12"
 						key="staticText-204"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[and/or MONORAILS]]></text>
@@ -2595,7 +2595,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{funicular} ? "X" : null)]]></textFieldExpression>
@@ -2608,7 +2608,7 @@
 						height="12"
 						key="staticText-205"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[FUNICULAR]]></text>
@@ -3644,15 +3644,6 @@
 					</textElement>
 				<text><![CDATA[PROCESSED BY:]]></text>
 				</staticText>
-				<line direction="TopDown">
-					<reportElement
-						x="414"
-						y="275"
-						width="144"
-						height="0"
-						key="line-29"/>
-					<graphicElement stretchType="NoStretch"/>
-				</line>
 				<staticText>
 					<reportElement
 						x="0"
@@ -4002,7 +3993,7 @@ signed and sealed to the building official including as-built plans and other do
 				<staticText>
 					<reportElement
 						x="42"
-						y="497"
+						y="500"
 						width="500"
 						height="18"
 						key="staticText-163"/>
@@ -4015,7 +4006,7 @@ signed and sealed to the building official including as-built plans and other do
 				<staticText>
 					<reportElement
 						x="42"
-						y="523"
+						y="518"
 						width="500"
 						height="24"
 						key="staticText-164"/>
@@ -4067,7 +4058,7 @@ signed and sealed to the building official including as-built plans and other do
 				<staticText>
 					<reportElement
 						x="22"
-						y="497"
+						y="500"
 						width="12"
 						height="12"
 						key="staticText-170"/>
@@ -4080,7 +4071,7 @@ signed and sealed to the building official including as-built plans and other do
 				<staticText>
 					<reportElement
 						x="22"
-						y="523"
+						y="518"
 						width="12"
 						height="12"
 						key="staticText-171"/>
@@ -4194,8 +4185,8 @@ signed and sealed to the building official including as-built plans and other do
 				</textField>
 				<staticText>
 					<reportElement
-						x="413"
-						y="202"
+						x="412"
+						y="203"
 						width="146"
 						height="24"
 						key="staticText-207"/>
@@ -4214,21 +4205,6 @@ signed and sealed to the building official including as-built plans and other do
 						width="146"
 						height="24"
 						key="staticText-208"/>
-					<box>					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="413"
-						y="251"
-						width="146"
-						height="24"
-						key="staticText-209"/>
 					<box>					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>

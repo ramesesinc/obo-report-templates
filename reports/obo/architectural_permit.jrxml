@@ -288,7 +288,7 @@
 					<textElement>
 						<font size="7"/>
 					</textElement>
-				<text><![CDATA[NBC FORM NO. A-03]]></text>
+				<text><![CDATA[NBC FORM NO. A-01]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -844,7 +844,7 @@
 						height="12"
 						key="staticText-32"/>
 					<box></box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[NEW CONSTRUCTION]]></text>
@@ -857,7 +857,7 @@
 						height="12"
 						key="staticText-33"/>
 					<box></box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[ERECTION]]></text>
@@ -870,7 +870,7 @@
 						height="12"
 						key="staticText-34"/>
 					<box></box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[ADDITION]]></text>
@@ -883,7 +883,7 @@
 						height="12"
 						key="staticText-35"/>
 					<box></box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[RENOVATION]]></text>
@@ -896,7 +896,7 @@
 						height="12"
 						key="staticText-36"/>
 					<box></box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[CONVERSION]]></text>
@@ -909,7 +909,7 @@
 						height="12"
 						key="staticText-37"/>
 					<box></box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[RAISING]]></text>
@@ -922,7 +922,7 @@
 						height="12"
 						key="staticText-38"/>
 					<box></box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[ACCESSORY BUILDING/STRUCTURE]]></text>
@@ -935,7 +935,7 @@
 						height="12"
 						key="staticText-39"/>
 					<box></box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[REPAIR]]></text>
@@ -1214,7 +1214,7 @@
 						key="textField-27"/>
 					<box leftPadding="2" rightPadding="2">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[null]]></textFieldExpression>
@@ -1470,7 +1470,7 @@
 						height="12"
 						key="staticText-178"/>
 					<box></box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[ALTERATION]]></text>
@@ -1483,7 +1483,7 @@
 						height="12"
 						key="staticText-179"/>
 					<box></box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[MOVING]]></text>
@@ -1496,7 +1496,7 @@
 						height="12"
 						key="staticText-180"/>
 					<box></box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[OTHERS (specify)]]></text>
@@ -1561,7 +1561,7 @@
 						key="staticText-181"/>
 					<box rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[]]></text>
@@ -1575,7 +1575,7 @@
 						key="staticText-182"/>
 					<box rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[]]></text>
@@ -1589,7 +1589,7 @@
 						key="staticText-183"/>
 					<box rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[]]></text>
@@ -1603,7 +1603,7 @@
 						key="staticText-184"/>
 					<box rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[]]></text>
@@ -1617,7 +1617,7 @@
 						key="staticText-185"/>
 					<box rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[]]></text>
@@ -1645,7 +1645,7 @@
 						key="staticText-187"/>
 					<box rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[]]></text>

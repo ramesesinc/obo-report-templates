@@ -801,7 +801,7 @@
 						height="12"
 						key="staticText-32"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[NEW CONSTRUCTION]]></text>
@@ -814,7 +814,7 @@
 						height="12"
 						key="staticText-33"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[ERECTION]]></text>
@@ -827,7 +827,7 @@
 						height="12"
 						key="staticText-34"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[ADDITION]]></text>
@@ -840,7 +840,7 @@
 						height="12"
 						key="staticText-35"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[RENOVATION]]></text>
@@ -853,7 +853,7 @@
 						height="12"
 						key="staticText-36"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[CONVERSION]]></text>
@@ -861,12 +861,12 @@
 				<staticText>
 					<reportElement
 						x="358"
-						y="348"
+						y="364"
 						width="72"
 						height="12"
 						key="staticText-38"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[OTHERS (specify)]]></text>
@@ -879,7 +879,7 @@
 						height="12"
 						key="staticText-39"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[REPAIR]]></text>
@@ -1152,7 +1152,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="430"
-						y="347"
+						y="363"
 						width="116"
 						height="12"
 						key="textField-27"/>
@@ -1618,7 +1618,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="340"
-						y="349"
+						y="365"
 						width="12"
 						height="10"
 						key="textField-88"/>
@@ -1640,7 +1640,7 @@
 						height="12"
 						key="staticText-178"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[ALTERATION]]></text>
@@ -1670,7 +1670,7 @@
 						height="12"
 						key="staticText-179"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[MOVING]]></text>
@@ -1695,7 +1695,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="340"
-						y="323"
+						y="339"
 						width="12"
 						height="10"
 						key="textField-98"/>
@@ -1712,7 +1712,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="340"
-						y="336"
+						y="352"
 						width="12"
 						height="10"
 						key="textField-99"/>
@@ -1729,12 +1729,12 @@
 				<staticText>
 					<reportElement
 						x="359"
-						y="335"
+						y="351"
 						width="188"
 						height="12"
 						key="staticText-180"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[ACCESSORY BUILDING/STRUCTURE]]></text>
@@ -1742,12 +1742,12 @@
 				<staticText>
 					<reportElement
 						x="359"
-						y="322"
+						y="338"
 						width="188"
 						height="12"
 						key="staticText-181"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[DEMOLITION]]></text>
@@ -2639,6 +2639,49 @@
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[Place Issued]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="5"
+						y="3"
+						width="115"
+						height="12"
+						key="staticText-255"/>
+					<box leftPadding="5"></box>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+				<text><![CDATA[NBC FORM NO. B- 06]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="340"
+						y="325"
+						width="12"
+						height="10"
+						key="textField-151"/>
+					<box>					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{worktypes.raising} ? "X" : null]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="359"
+						y="324"
+						width="188"
+						height="12"
+						key="staticText-256"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[RAISING]]></text>
 				</staticText>
 			</band>
 			</groupHeader>

@@ -897,7 +897,7 @@
 						height="12"
 						key="staticText-32"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[NEW INSTALLATION]]></text>
@@ -910,7 +910,7 @@
 						height="12"
 						key="staticText-35"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[ANNUAL INSPECTION]]></text>
@@ -923,7 +923,7 @@
 						height="12"
 						key="staticText-38"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[OTHERS (specify)]]></text>
@@ -1202,7 +1202,7 @@
 						key="textField-27"/>
 					<box leftPadding="2" rightPadding="2">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[null]]></textFieldExpression>
@@ -1232,7 +1232,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{worktypes.new_installation} ? "X" : null]]></textFieldExpression>
@@ -1249,7 +1249,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{worktypes.annual_inspection} ? "X" : null]]></textFieldExpression>
@@ -1266,7 +1266,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{worktypes.other} ? "X" : null]]></textFieldExpression>
@@ -1292,7 +1292,7 @@
 						height="12"
 						key="staticText-205"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[TELECOMMUNICATION SYSTEM ]]></text>
@@ -1988,7 +1988,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{telecom_system} ? "X" : null)]]></textFieldExpression>
@@ -2005,7 +2005,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{broadcasting_system} ? "X" : null)]]></textFieldExpression>
@@ -2018,7 +2018,7 @@
 						height="12"
 						key="staticText-248"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[BROADCASTING SYSTEM]]></text>
@@ -2031,7 +2031,7 @@
 						height="12"
 						key="staticText-249"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[TELEVISION SYSTEM ]]></text>
@@ -2048,7 +2048,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{telephone_booth} ? "X" : null)]]></textFieldExpression>
@@ -2065,7 +2065,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{information_technology_system} ? "X" : null)]]></textFieldExpression>
@@ -2078,7 +2078,7 @@
 						height="12"
 						key="staticText-250"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[INFORMATION TECHNOLOGY SYSTEM]]></text>
@@ -2091,7 +2091,7 @@
 						height="12"
 						key="staticText-251"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[SECURITY AND ALARM SYSTEM]]></text>
@@ -2108,7 +2108,7 @@
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{security_alarm_system} ? "X" : null)]]></textFieldExpression>
@@ -2153,7 +2153,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 						height="12"
 						key="staticText-253"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[ ELECTRONICS FIRE ALARM SYSTEM
@@ -2171,7 +2171,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{electronic_fire_alarm_system} ? "X" : null)]]></textFieldExpression>
@@ -2188,7 +2188,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{sound_communication_system} ? "X" : null)]]></textFieldExpression>
@@ -2201,7 +2201,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 						height="12"
 						key="staticText-254"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[SOUND COMMUNICATION SYSTEM]]></text>
@@ -2214,7 +2214,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 						height="12"
 						key="staticText-255"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[CENTRALIZED CLOCK SYSTEM
@@ -2234,7 +2234,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{centralized_clock_system} ? "X" : null)]]></textFieldExpression>
@@ -2253,7 +2253,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{sound_communication_system} ? "X" : null)]]></textFieldExpression>
@@ -2266,7 +2266,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 						height="12"
 						key="staticText-256"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[SOUND SYSTEM
@@ -2280,7 +2280,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 						height="12"
 						key="staticText-257"/>
 					<box></box>
-					<textElement>
+					<textElement verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[ELECTRONICS CONTROL AND CONVEYOR SYSTEM
@@ -2298,7 +2298,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[($F{electronic_conveyance_system} ? "X" : null)]]></textFieldExpression>
@@ -2967,7 +2967,7 @@ FIBER OPTIC CABLE OR OTHER MEDIAL ELECTRONICS SYSTEM]]></text>
 					<textElement textAlignment="Left" verticalAlignment="Top">
 						<font size="8"/>
 					</textElement>
-				<text><![CDATA[ELECTRONICS PLAN AND SPECIFICATIONS]]></text>
+				<text><![CDATA[ELECTRONICS PLANS AND SPECIFICATIONS]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
