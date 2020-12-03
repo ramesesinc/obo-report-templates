@@ -2,7 +2,7 @@
 <!-- Created with iReport - A designer for JasperReports -->
 <!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
 <jasperReport
-		 name="temporary_sidewalk_enclosure_and_occupancypermit"
+		 name="scaffolding_permit"
 
 		 language="groovy"		 columnCount="1"
 		 printOrder="Vertical"
@@ -78,7 +78,7 @@
 	<field name="app.org.province" class="java.lang.String"/>
 	<field name="app.org.formalname" class="java.lang.String"/>
 	<field name="appid" class="java.lang.String"/>
-	<field name="tseop" class="java.lang.String"/>
+	<field name="spno" class="java.lang.String"/>
 	<field name="bldgpermitno" class="java.lang.String"/>
 	<field name="designprofessional.address.text" class="java.lang.String"/>
 	<field name="designprofessional.prc.expirydate" class="java.util.Date"/>
@@ -284,8 +284,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
 					</textElement>
-				<text><![CDATA[TEMPORARY PERMIT
-ECLOSURE AND OCCUPANCY PERMIT]]></text>
+				<text><![CDATA[SCAFFOLDING PERMIT]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -311,7 +310,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 					<textElement>
 						<font size="8"/>
 					</textElement>
-				<text><![CDATA[TSEOP NO.]]></text>
+				<text><![CDATA[SP NO.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -389,7 +388,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 					<textElement textAlignment="Left" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="9" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{tseop}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{spno}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -2372,6 +2371,275 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{supervisor.profession}]]></textFieldExpression>
 				</textField>
+				<rectangle>
+					<reportElement
+						mode="Transparent"
+						x="0"
+						y="667"
+						width="559"
+						height="114"
+						key="rectangle-28"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="173"
+						y="694"
+						width="207"
+						height="12"
+						key="staticText-240"/>
+					<box>					<topPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<text><![CDATA[APPLICANT
+(Signature Over Printed Name)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="197"
+						y="717"
+						width="56"
+						height="12"
+						key="staticText-241"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[Date]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="255"
+						y="717"
+						width="88"
+						height="12"
+						key="textField-146"/>
+					<box topPadding="1">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[null]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="1"
+						y="734"
+						width="190"
+						height="34"
+						key="staticText-242"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="189"
+						y="734"
+						width="180"
+						height="34"
+						key="staticText-243"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="369"
+						y="734"
+						width="189"
+						height="34"
+						key="staticText-244"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="3"
+						y="752"
+						width="187"
+						height="12"
+						key="textField-147"/>
+					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.idno}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="190"
+						y="752"
+						width="178"
+						height="12"
+						key="textField-148"/>
+					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{applicant.id.dtissued}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="370"
+						y="752"
+						width="187"
+						height="12"
+						key="textField-149"/>
+					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.placeissued}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="0"
+						y="655"
+						width="559"
+						height="12"
+						key="staticText-245"/>
+					<box leftPadding="5"></box>
+					<textElement>
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<text><![CDATA[BOX 6]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="705"
+						width="559"
+						height="12"
+						key="staticText-246"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Dashed"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[(Signature Over Printed Name)]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="734"
+						width="559"
+						height="0"
+						key="line-32"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="748"
+						width="559"
+						height="0"
+						key="line-33"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="767"
+						width="559"
+						height="0"
+						key="line-34"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<staticText>
+					<reportElement
+						x="4"
+						y="769"
+						width="46"
+						height="12"
+						key="staticText-247"/>
+					<box leftPadding="5"></box>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[TIN]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="186"
+						y="682"
+						width="184"
+						height="14"
+						key="textField-150"/>
+					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{applicant.firstname}, $F{applicant.middlename}, $F{applicant.lastname})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="65"
+						y="735"
+						width="56"
+						height="12"
+						key="staticText-252"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[C.T.C. No.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="250"
+						y="735"
+						width="56"
+						height="12"
+						key="staticText-253"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[Date Issued]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="434"
+						y="735"
+						width="56"
+						height="12"
+						key="staticText-254"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[Place Issued]]></text>
+				</staticText>
 			</band>
 			</groupHeader>
 			<groupFooter>
@@ -2387,7 +2655,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 					<reportElement
 						mode="Transparent"
 						x="0"
-						y="163"
+						y="23"
 						width="559"
 						height="51"
 						key="rectangle-17"/>
@@ -2398,7 +2666,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="150"
+						y="10"
 						width="559"
 						height="12"
 						key="staticText-110"/>
@@ -2411,7 +2679,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 				<staticText>
 					<reportElement
 						x="17"
-						y="174"
+						y="34"
 						width="64"
 						height="12"
 						key="staticText-114"/>
@@ -2424,7 +2692,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 				<staticText>
 					<reportElement
 						x="17"
-						y="192"
+						y="52"
 						width="64"
 						height="12"
 						key="staticText-115"/>
@@ -2437,7 +2705,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 				<staticText>
 					<reportElement
 						x="300"
-						y="193"
+						y="53"
 						width="107"
 						height="12"
 						key="staticText-117"/>
@@ -2450,7 +2718,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 				<staticText>
 					<reportElement
 						x="300"
-						y="175"
+						y="35"
 						width="107"
 						height="11"
 						key="staticText-118"/>
@@ -2463,7 +2731,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 				<staticText>
 					<reportElement
 						x="394"
-						y="193"
+						y="53"
 						width="157"
 						height="12"
 						key="staticText-121"/>
@@ -2477,7 +2745,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="220"
+						y="82"
 						width="559"
 						height="12"
 						key="staticText-157"/>
@@ -2491,7 +2759,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 					<reportElement
 						mode="Transparent"
 						x="0"
-						y="237"
+						y="99"
 						width="559"
 						height="550"
 						key="rectangle-24"/>
@@ -2502,7 +2770,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="258"
+						y="120"
 						width="559"
 						height="12"
 						key="staticText-158"/>
@@ -2515,7 +2783,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 				<staticText>
 					<reportElement
 						x="42"
-						y="412"
+						y="274"
 						width="500"
 						height="24"
 						key="staticText-160"/>
@@ -2529,64 +2797,46 @@ general public and his/her personnel, third parties, the works, equipment and th
 				<staticText>
 					<reportElement
 						x="42"
-						y="441"
+						y="303"
 						width="500"
-						height="24"
+						height="17"
 						key="staticText-161"/>
 					<box leftPadding="5"></box>
 					<textElement textAlignment="Justified" verticalAlignment="Top" markup="html">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[ That no enclosure shall be made without first providing the required temporary sidewalk plank which shall be properly
-maintained at all times.]]></text>
+				<text><![CDATA[The the scaffolding shall not be erected on the roadway area nor shall it obstruct the free passage of pedestrians]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="42"
-						y="470"
+						y="321"
 						width="500"
-						height="42"
+						height="18"
 						key="staticText-162"/>
 					<box leftPadding="5"></box>
 					<textElement textAlignment="Justified" verticalAlignment="Top">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[ The enclosure shall be made of wooden T&G, Gauge 26 corrugated G.I., or any other similar materials at least two (2.00)
-meters high, structurally sound and luminously painted for the safety and convenience of pedestrians. The width of the
-sidewalk shall be as indicated at the back hereof. The horizontal length of the enclosure and plank shall not extend
-beyond the affected area of the project.]]></text>
+				<text><![CDATA[That surface drains and other utility fixtures or lines shall not be obstructed.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="42"
-						y="516"
+						y="340"
 						width="500"
-						height="18"
+						height="44"
 						key="staticText-163"/>
 					<box leftPadding="5"></box>
 					<textElement textAlignment="Justified" verticalAlignment="Top">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[That no commercial sign whatsoever shall be painted on, attached to or displayed at the sidewalk enclosure.]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="42"
-						y="538"
-						width="500"
-						height="24"
-						key="staticText-164"/>
-					<box leftPadding="5"></box>
-					<textElement textAlignment="Justified" verticalAlignment="Top" markup="html">
-						<font pdfFontName="Helvetica" size="8" isBold="false"/>
-					</textElement>
-				<text><![CDATA[ That this permit shall not serve as exemption from securing permits/written clearances from various government
-authorities exercising regulatory function affecting buildings and other related structures.]]></text>
+				<text><![CDATA[That this permit shall not serve as exemption from securing permits/written clearances from various government authorities exercising regulatory function affecting buildings and other related structures.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="22"
-						y="412"
+						y="274"
 						width="12"
 						height="12"
 						key="staticText-167"/>
@@ -2599,7 +2849,7 @@ authorities exercising regulatory function affecting buildings and other related
 				<staticText>
 					<reportElement
 						x="22"
-						y="441"
+						y="303"
 						width="12"
 						height="12"
 						key="staticText-168"/>
@@ -2612,7 +2862,7 @@ authorities exercising regulatory function affecting buildings and other related
 				<staticText>
 					<reportElement
 						x="22"
-						y="470"
+						y="321"
 						width="12"
 						height="12"
 						key="staticText-169"/>
@@ -2625,7 +2875,7 @@ authorities exercising regulatory function affecting buildings and other related
 				<staticText>
 					<reportElement
 						x="22"
-						y="516"
+						y="340"
 						width="12"
 						height="12"
 						key="staticText-170"/>
@@ -2637,21 +2887,8 @@ authorities exercising regulatory function affecting buildings and other related
 				</staticText>
 				<staticText>
 					<reportElement
-						x="22"
-						y="538"
-						width="12"
-						height="12"
-						key="staticText-171"/>
-					<box leftPadding="5"></box>
-					<textElement>
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[5.]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
 						x="0"
-						y="618"
+						y="480"
 						width="559"
 						height="16"
 						key="staticText-174"/>
@@ -2664,7 +2901,7 @@ authorities exercising regulatory function affecting buildings and other related
 				<staticText>
 					<reportElement
 						x="0"
-						y="712"
+						y="574"
 						width="559"
 						height="12"
 						key="staticText-175"/>
@@ -2677,7 +2914,7 @@ authorities exercising regulatory function affecting buildings and other related
 				<staticText>
 					<reportElement
 						x="226"
-						y="724"
+						y="586"
 						width="33"
 						height="12"
 						key="staticText-176"/>
@@ -2690,7 +2927,7 @@ authorities exercising regulatory function affecting buildings and other related
 				<staticText>
 					<reportElement
 						x="252"
-						y="724"
+						y="586"
 						width="81"
 						height="12"
 						key="staticText-177"/>
@@ -2704,7 +2941,7 @@ authorities exercising regulatory function affecting buildings and other related
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="700"
+						y="562"
 						width="559"
 						height="12"
 						key="textField-92"/>
@@ -2717,7 +2954,7 @@ authorities exercising regulatory function affecting buildings and other related
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="183"
-						y="670"
+						y="532"
 						width="192"
 						height="14"
 						key="textField-93"/>
@@ -2735,7 +2972,7 @@ authorities exercising regulatory function affecting buildings and other related
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="685"
+						y="547"
 						width="559"
 						height="12"
 						key="textField-94"/>
@@ -2750,223 +2987,10 @@ authorities exercising regulatory function affecting buildings and other related
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{permit.issuedby.name}]]></textFieldExpression>
 				</textField>
-				<rectangle>
-					<reportElement
-						mode="Transparent"
-						x="0"
-						y="18"
-						width="559"
-						height="114"
-						key="rectangle-28"/>
-					<graphicElement stretchType="NoStretch"/>
-				</rectangle>
-				<staticText>
-					<reportElement
-						x="173"
-						y="45"
-						width="207"
-						height="12"
-						key="staticText-240"/>
-					<box>					<topPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Bottom">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
-					</textElement>
-				<text><![CDATA[APPLICANT
-(Signature Over Printed Name)]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="197"
-						y="68"
-						width="56"
-						height="12"
-						key="staticText-241"/>
-					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Right" verticalAlignment="Middle">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[Date]]></text>
-				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="255"
-						y="68"
-						width="88"
-						height="12"
-						key="textField-146"/>
-					<box topPadding="1">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[null]]></textFieldExpression>
-				</textField>
-				<staticText>
-					<reportElement
-						x="1"
-						y="85"
-						width="190"
-						height="34"
-						key="staticText-242"/>
-					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica" size="8" isBold="false"/>
-					</textElement>
-				<text><![CDATA[]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="189"
-						y="85"
-						width="180"
-						height="34"
-						key="staticText-243"/>
-					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica" size="8" isBold="false"/>
-					</textElement>
-				<text><![CDATA[]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="369"
-						y="85"
-						width="189"
-						height="34"
-						key="staticText-244"/>
-					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica" size="8" isBold="false"/>
-					</textElement>
-				<text><![CDATA[]]></text>
-				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="3"
-						y="103"
-						width="187"
-						height="12"
-						key="textField-147"/>
-					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.idno}]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="190"
-						y="103"
-						width="178"
-						height="12"
-						key="textField-148"/>
-					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.util.Date"><![CDATA[$F{applicant.id.dtissued}]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="370"
-						y="103"
-						width="187"
-						height="12"
-						key="textField-149"/>
-					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.placeissued}]]></textFieldExpression>
-				</textField>
-				<staticText>
-					<reportElement
-						x="0"
-						y="6"
-						width="559"
-						height="12"
-						key="staticText-245"/>
-					<box leftPadding="5"></box>
-					<textElement>
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
-					</textElement>
-				<text><![CDATA[BOX 6]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="0"
-						y="56"
-						width="559"
-						height="12"
-						key="staticText-246"/>
-					<box>					<topPen lineWidth="0.0" lineStyle="Dashed"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Bottom">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[(Signature Over Printed Name)]]></text>
-				</staticText>
-				<line direction="TopDown">
-					<reportElement
-						x="0"
-						y="85"
-						width="559"
-						height="0"
-						key="line-32"/>
-					<graphicElement stretchType="NoStretch"/>
-				</line>
-				<line direction="TopDown">
-					<reportElement
-						x="0"
-						y="99"
-						width="559"
-						height="0"
-						key="line-33"/>
-					<graphicElement stretchType="NoStretch"/>
-				</line>
-				<line direction="TopDown">
-					<reportElement
-						x="0"
-						y="118"
-						width="559"
-						height="0"
-						key="line-34"/>
-					<graphicElement stretchType="NoStretch"/>
-				</line>
-				<staticText>
-					<reportElement
-						x="4"
-						y="120"
-						width="46"
-						height="12"
-						key="staticText-247"/>
-					<box leftPadding="5"></box>
-					<textElement>
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[TIN]]></text>
-				</staticText>
 				<staticText>
 					<reportElement
 						x="81"
-						y="192"
+						y="52"
 						width="157"
 						height="12"
 						key="staticText-248"/>
@@ -2980,7 +3004,7 @@ authorities exercising regulatory function affecting buildings and other related
 				<staticText>
 					<reportElement
 						x="81"
-						y="174"
+						y="34"
 						width="157"
 						height="12"
 						key="staticText-249"/>
@@ -2994,7 +3018,7 @@ authorities exercising regulatory function affecting buildings and other related
 				<staticText>
 					<reportElement
 						x="390"
-						y="174"
+						y="34"
 						width="157"
 						height="12"
 						key="staticText-250"/>
@@ -3008,9 +3032,9 @@ authorities exercising regulatory function affecting buildings and other related
 				<staticText>
 					<reportElement
 						x="20"
-						y="289"
+						y="151"
 						width="509"
-						height="85"
+						height="108"
 						key="staticText-251"/>
 					<box></box>
 					<textElement textAlignment="Justified" verticalAlignment="Top" lineSpacing="1_1_2">
@@ -3018,68 +3042,11 @@ authorities exercising regulatory function affecting buildings and other related
 					</textElement>
 				<text><![CDATA[Permit is hereby issued/granted to _____________________________________________________________________
 with postal address at _____________________________________________________________________________________
-for the enclosure and occupancy of the sidewalk with a frontage of _______________________ ( ) meters and a width of
-________________________ ( ) meters or _________________________ ( ) square meters at the premises of
-________________________________________________________________ for the storage of construction materials for a
-period of ____________( ) days inclusive from _____________________, _______ to ________________________, ______
-pursuant to pertinent provisions of the “National Building Code” (PD 1096) and its Implementing Rules and Regulations and to the
-following conditions:]]></text>
-				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="186"
-						y="33"
-						width="184"
-						height="14"
-						key="textField-150"/>
-					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{applicant.firstname}, $F{applicant.middlename}, $F{applicant.lastname})]]></textFieldExpression>
-				</textField>
-				<staticText>
-					<reportElement
-						x="65"
-						y="86"
-						width="56"
-						height="12"
-						key="staticText-252"/>
-					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[C.T.C. No.]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="250"
-						y="86"
-						width="56"
-						height="12"
-						key="staticText-253"/>
-					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[Date Issued]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="434"
-						y="86"
-						width="56"
-						height="12"
-						key="staticText-254"/>
-					<box>					<topPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[Place Issued]]></text>
+to erect a SCAFFOLDING for ________________________________________________________________________________
+with a frontage of ____________________________________(  ) lineal meters at the premises of ____________________
+for the period of _________ (   ) days inclusive from ___________________, ______ to  __________________, _________
+pursuant to pertinent of the "National Building Code" (PD 1096) and its Implementing Rules and
+Regulations and to the following conditions:]]></text>
 				</staticText>
 			</band>
 			</groupHeader>
