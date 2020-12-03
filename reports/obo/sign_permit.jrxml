@@ -3925,12 +3925,12 @@ building/structure is responsible for damages if within fifteen (15) years from 
 					<reportElement
 						x="21"
 						y="229"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-167"/>
 					<box leftPadding="5"></box>
 					<textElement>
-						<font size="7"/>
+						<font size="8"/>
 					</textElement>
 				<text><![CDATA[1.]]></text>
 				</staticText>
@@ -3938,12 +3938,12 @@ building/structure is responsible for damages if within fifteen (15) years from 
 					<reportElement
 						x="20"
 						y="267"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-168"/>
 					<box leftPadding="5"></box>
 					<textElement>
-						<font size="7"/>
+						<font size="8"/>
 					</textElement>
 				<text><![CDATA[2.]]></text>
 				</staticText>
@@ -3951,7 +3951,7 @@ building/structure is responsible for damages if within fifteen (15) years from 
 					<reportElement
 						x="22"
 						y="404"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-169"/>
 					<box leftPadding="5"></box>
@@ -3964,7 +3964,7 @@ building/structure is responsible for damages if within fifteen (15) years from 
 					<reportElement
 						x="22"
 						y="436"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-170"/>
 					<box leftPadding="5"></box>
@@ -3977,7 +3977,7 @@ building/structure is responsible for damages if within fifteen (15) years from 
 					<reportElement
 						x="22"
 						y="458"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-171"/>
 					<box leftPadding="5"></box>
@@ -4242,12 +4242,12 @@ of the “National Building Code” (PD 1096) and its Implementing Rules and Reg
 					<reportElement
 						x="40"
 						y="281"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-302"/>
 					<box leftPadding="5"></box>
 					<textElement>
-						<font size="7"/>
+						<font size="8"/>
 					</textElement>
 				<text><![CDATA[a.]]></text>
 				</staticText>
@@ -4268,12 +4268,12 @@ of the “National Building Code” (PD 1096) and its Implementing Rules and Reg
 					<reportElement
 						x="39"
 						y="298"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-304"/>
 					<box leftPadding="5"></box>
 					<textElement>
-						<font size="7"/>
+						<font size="8"/>
 					</textElement>
 				<text><![CDATA[b.]]></text>
 				</staticText>
@@ -4294,12 +4294,12 @@ of the “National Building Code” (PD 1096) and its Implementing Rules and Reg
 					<reportElement
 						x="40"
 						y="317"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-306"/>
 					<box leftPadding="5"></box>
 					<textElement>
-						<font size="7"/>
+						<font size="8"/>
 					</textElement>
 				<text><![CDATA[c.]]></text>
 				</staticText>
@@ -4321,12 +4321,12 @@ of the “National Building Code” (PD 1096) and its Implementing Rules and Reg
 					<reportElement
 						x="40"
 						y="333"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-308"/>
 					<box leftPadding="5"></box>
 					<textElement>
-						<font size="7"/>
+						<font size="8"/>
 					</textElement>
 				<text><![CDATA[d.]]></text>
 				</staticText>
@@ -4348,12 +4348,12 @@ of the “National Building Code” (PD 1096) and its Implementing Rules and Reg
 					<reportElement
 						x="40"
 						y="363"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-310"/>
 					<box leftPadding="5"></box>
 					<textElement>
-						<font size="7"/>
+						<font size="8"/>
 					</textElement>
 				<text><![CDATA[e.]]></text>
 				</staticText>
@@ -4374,12 +4374,12 @@ of the “National Building Code” (PD 1096) and its Implementing Rules and Reg
 					<reportElement
 						x="40"
 						y="385"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-312"/>
 					<box leftPadding="5"></box>
 					<textElement>
-						<font size="7"/>
+						<font size="8"/>
 					</textElement>
 				<text><![CDATA[f.]]></text>
 				</staticText>
@@ -4413,7 +4413,7 @@ of the “National Building Code” (PD 1096) and its Implementing Rules and Reg
 					<reportElement
 						x="22"
 						y="480"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-315"/>
 					<box leftPadding="5"></box>
@@ -4439,7 +4439,7 @@ of the “National Building Code” (PD 1096) and its Implementing Rules and Reg
 					<reportElement
 						x="22"
 						y="513"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-317"/>
 					<box leftPadding="5"></box>
@@ -4466,7 +4466,7 @@ of the “National Building Code” (PD 1096) and its Implementing Rules and Reg
 					<reportElement
 						x="22"
 						y="525"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-319"/>
 					<box leftPadding="5"></box>
@@ -4492,7 +4492,7 @@ of the “National Building Code” (PD 1096) and its Implementing Rules and Reg
 					<reportElement
 						x="22"
 						y="547"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-321"/>
 					<box leftPadding="5"></box>
@@ -4518,7 +4518,7 @@ of the “National Building Code” (PD 1096) and its Implementing Rules and Reg
 					<reportElement
 						x="22"
 						y="570"
-						width="17"
+						width="19"
 						height="12"
 						key="staticText-323"/>
 					<box leftPadding="5"></box>

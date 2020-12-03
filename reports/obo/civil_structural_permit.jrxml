@@ -3872,7 +3872,7 @@
 					<reportElement
 						x="16"
 						y="315"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-332"/>
 					<box leftPadding="5"></box>
@@ -3892,16 +3892,13 @@
 					<textElement textAlignment="Justified" verticalAlignment="Top">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[That under Article 1723 of the Civil Code of the Philippines, the architect (and engineer) who drew up the plans and specifications for the
-building/structure is responsible for damages if within fifteen (15) years from the completion of the building/structure, the same should
-collapse due to defect in the plans or specifications or defects in the ground. The engineer or architect who supervises the construction 
-shall be solidarily liable with the contractor should the edifice collapse due to defect in the construction of the use of inferior materials.]]></text>
+				<text><![CDATA[That under Article 1723 of the Civil Code of the Philippines, the architect (and engineer) who drew up the plans and specifications for the building/structure is responsible for damages if within fifteen (15) years from the completion of the building/structure, the same should collapse due to defect in the plans or specifications or defects in the ground. The engineer or architect who supervises the construction shall be solidarily liable with the contractor should the edifice collapse due to defect in the construction of the use of inferior materials.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="16"
-						y="376"
-						width="12"
+						y="372"
+						width="18"
 						height="12"
 						key="staticText-334"/>
 					<box leftPadding="5"></box>
@@ -3913,22 +3910,21 @@ shall be solidarily liable with the contractor should the edifice collapse due t
 				<staticText>
 					<reportElement
 						x="36"
-						y="374"
+						y="370"
 						width="508"
-						height="32"
+						height="22"
 						key="staticText-335"/>
 					<box leftPadding="5"></box>
 					<textElement textAlignment="Justified" verticalAlignment="Top">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[That the proposed architectural works shall be in accordance with the architectural plans filed with this Office and in conformity with the 
-latest Architectural Code of the Philippines, the National Building Code and its IRR.]]></text>
+				<text><![CDATA[That the proposed architectural works shall be in accordance with the architectural plans filed with this Office and in conformity with the latest Architectural Code of the Philippines, the National Building Code and its IRR.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="16"
-						y="420"
-						width="12"
+						y="399"
+						width="18"
 						height="12"
 						key="staticText-336"/>
 					<box leftPadding="5"></box>
@@ -3940,22 +3936,21 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="36"
-						y="416"
+						y="395"
 						width="508"
-						height="32"
+						height="24"
 						key="staticText-337"/>
 					<box leftPadding="5"></box>
 					<textElement textAlignment="Justified" verticalAlignment="Top" markup="html">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[That prior to any construction activity, a duly accomplished prescribed "<b>Notice of Construction</b>" shall be submitted to the Office of the Building Official
-]]></text>
+				<text><![CDATA[That prior to any construction activity, a duly accomplished prescribed "<b>Notice of Construction</b>" shall be submitted to the Office of the Building Official.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="16"
-						y="453"
-						width="12"
+						y="420"
+						width="18"
 						height="12"
 						key="staticText-338"/>
 					<box leftPadding="5"></box>
@@ -3967,7 +3962,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="36"
-						y="454"
+						y="421"
 						width="508"
 						height="42"
 						key="staticText-339"/>
@@ -3980,8 +3975,8 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="16"
-						y="505"
-						width="12"
+						y="464"
+						width="18"
 						height="12"
 						key="staticText-340"/>
 					<box leftPadding="5"></box>
@@ -3993,7 +3988,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="36"
-						y="506"
+						y="465"
 						width="508"
 						height="12"
 						key="staticText-341"/>

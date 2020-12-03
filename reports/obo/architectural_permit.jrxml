@@ -4680,12 +4680,12 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="16"
-						y="517"
-						width="12"
+						y="516"
+						width="19"
 						height="12"
 						key="staticText-332"/>
 					<box leftPadding="5"></box>
-					<textElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[1.]]></text>
@@ -4693,7 +4693,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="36"
-						y="517"
+						y="516"
 						width="508"
 						height="54"
 						key="staticText-333"/>
@@ -4701,16 +4701,13 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 					<textElement textAlignment="Justified" verticalAlignment="Top">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[That under Article 1723 of the Civil Code of the Philippines, the architect (and engineer) who drew up the plans and specifications for the
-building/structure is responsible for damages if within fifteen (15) years from the completion of the building/structure, the same should
-collapse due to defect in the plans or specifications or defects in the ground. The engineer or architect who supervises the construction 
-shall be solidarily liable with the contractor should the edifice collapse due to defect in the construction of the use of inferior materials.]]></text>
+				<text><![CDATA[That under Article 1723 of the Civil Code of the Philippines, the architect (and engineer) who drew up the plans and specifications for the building/structure is responsible for damages if within fifteen (15) years from the completion of the building/structure, the same should collapse due to defect in the plans or specifications or defects in the ground. The engineer or architect who supervises the construction  shall be solidarily liable with the contractor should the edifice collapse due to defect in the construction of the use of inferior materials.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="16"
 						y="567"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-334"/>
 					<box leftPadding="5"></box>
@@ -4724,20 +4721,19 @@ shall be solidarily liable with the contractor should the edifice collapse due t
 						x="36"
 						y="567"
 						width="508"
-						height="32"
+						height="26"
 						key="staticText-335"/>
 					<box leftPadding="5"></box>
 					<textElement textAlignment="Justified" verticalAlignment="Top">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[That the proposed architectural works shall be in accordance with the architectural plans filed with this Office and in conformity with the 
-latest Architectural Code of the Philippines, the National Building Code and its IRR.]]></text>
+				<text><![CDATA[That the proposed architectural works shall be in accordance with the architectural plans filed with this Office and in conformity with the latest Architectural Code of the Philippines, the National Building Code and its IRR.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="16"
-						y="594"
-						width="12"
+						y="591"
+						width="19"
 						height="12"
 						key="staticText-336"/>
 					<box leftPadding="5"></box>
@@ -4749,7 +4745,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="36"
-						y="594"
+						y="591"
 						width="508"
 						height="32"
 						key="staticText-337"/>
@@ -4757,14 +4753,14 @@ latest Architectural Code of the Philippines, the National Building Code and its
 					<textElement textAlignment="Justified" verticalAlignment="Top" markup="html">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[That prior to any construction activity, a duly accomplished prescribed "<b>Notice of Construction</b>" shall be submitted to the Office of the Building Official
+				<text><![CDATA[That prior to any construction activity, a duly accomplished prescribed "<b>Notice of Construction</b>" shall be submitted to the Office of the Building Official.
 ]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="16"
-						y="620"
-						width="12"
+						y="615"
+						width="19"
 						height="12"
 						key="staticText-338"/>
 					<box leftPadding="5"></box>
@@ -4776,7 +4772,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="36"
-						y="621"
+						y="616"
 						width="508"
 						height="42"
 						key="staticText-339"/>
@@ -4789,8 +4785,8 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="16"
-						y="663"
-						width="12"
+						y="657"
+						width="19"
 						height="12"
 						key="staticText-340"/>
 					<box leftPadding="5"></box>
@@ -4802,7 +4798,7 @@ latest Architectural Code of the Philippines, the National Building Code and its
 				<staticText>
 					<reportElement
 						x="36"
-						y="664"
+						y="658"
 						width="508"
 						height="12"
 						key="staticText-341"/>

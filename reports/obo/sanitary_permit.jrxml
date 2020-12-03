@@ -2941,9 +2941,9 @@
 				<staticText>
 					<reportElement
 						x="42"
-						y="384"
+						y="378"
 						width="500"
-						height="17"
+						height="23"
 						key="staticText-161"/>
 					<box leftPadding="5"></box>
 					<textElement textAlignment="Justified" verticalAlignment="Top" markup="html">
@@ -2954,7 +2954,7 @@
 				<staticText>
 					<reportElement
 						x="42"
-						y="403"
+						y="400"
 						width="500"
 						height="41"
 						key="staticText-162"/>
@@ -2967,7 +2967,7 @@
 				<staticText>
 					<reportElement
 						x="42"
-						y="447"
+						y="441"
 						width="500"
 						height="44"
 						key="staticText-163"/>
@@ -2975,13 +2975,13 @@
 					<textElement textAlignment="Justified" verticalAlignment="Top">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[4. That this permit is null and void unless accompanied by the building permit.]]></text>
+				<text><![CDATA[That this permit is null and void unless accompanied by the building permit.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="22"
 						y="356"
-						width="12"
+						width="17"
 						height="12"
 						key="staticText-167"/>
 					<box leftPadding="5"></box>
@@ -2993,8 +2993,8 @@
 				<staticText>
 					<reportElement
 						x="22"
-						y="384"
-						width="12"
+						y="378"
+						width="17"
 						height="12"
 						key="staticText-168"/>
 					<box leftPadding="5"></box>
@@ -3006,8 +3006,8 @@
 				<staticText>
 					<reportElement
 						x="22"
-						y="403"
-						width="12"
+						y="400"
+						width="17"
 						height="12"
 						key="staticText-169"/>
 					<box leftPadding="5"></box>
@@ -3019,8 +3019,8 @@
 				<staticText>
 					<reportElement
 						x="22"
-						y="447"
-						width="12"
+						y="441"
+						width="17"
 						height="12"
 						key="staticText-170"/>
 					<box leftPadding="5"></box>

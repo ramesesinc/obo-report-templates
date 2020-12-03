@@ -2529,7 +2529,7 @@ general public and his/her personnel, third parties, the works, equipment and th
 				<staticText>
 					<reportElement
 						x="42"
-						y="441"
+						y="436"
 						width="500"
 						height="24"
 						key="staticText-161"/>
@@ -2543,7 +2543,7 @@ maintained at all times.]]></text>
 				<staticText>
 					<reportElement
 						x="42"
-						y="470"
+						y="460"
 						width="500"
 						height="42"
 						key="staticText-162"/>
@@ -2551,15 +2551,13 @@ maintained at all times.]]></text>
 					<textElement textAlignment="Justified" verticalAlignment="Top">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[ The enclosure shall be made of wooden T&G, Gauge 26 corrugated G.I., or any other similar materials at least two (2.00)
-meters high, structurally sound and luminously painted for the safety and convenience of pedestrians. The width of the
-sidewalk shall be as indicated at the back hereof. The horizontal length of the enclosure and plank shall not extend
+				<text><![CDATA[ The enclosure shall be made of wooden T&G, Gauge 26 corrugated G.I., or any other similar materials at least two (2.00) meters high, structurally sound and luminously painted for the safety and convenience of pedestrians. The width of the sidewalk shall be as indicated at the back hereof. The horizontal length of the enclosure and plank shall not extend
 beyond the affected area of the project.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="42"
-						y="516"
+						y="502"
 						width="500"
 						height="18"
 						key="staticText-163"/>
@@ -2572,7 +2570,7 @@ beyond the affected area of the project.]]></text>
 				<staticText>
 					<reportElement
 						x="42"
-						y="538"
+						y="520"
 						width="500"
 						height="24"
 						key="staticText-164"/>
@@ -2587,7 +2585,7 @@ authorities exercising regulatory function affecting buildings and other related
 					<reportElement
 						x="22"
 						y="412"
-						width="12"
+						width="23"
 						height="12"
 						key="staticText-167"/>
 					<box leftPadding="5"></box>
@@ -2599,8 +2597,8 @@ authorities exercising regulatory function affecting buildings and other related
 				<staticText>
 					<reportElement
 						x="22"
-						y="441"
-						width="12"
+						y="436"
+						width="23"
 						height="12"
 						key="staticText-168"/>
 					<box leftPadding="5"></box>
@@ -2612,8 +2610,8 @@ authorities exercising regulatory function affecting buildings and other related
 				<staticText>
 					<reportElement
 						x="22"
-						y="470"
-						width="12"
+						y="460"
+						width="23"
 						height="12"
 						key="staticText-169"/>
 					<box leftPadding="5"></box>
@@ -2625,8 +2623,8 @@ authorities exercising regulatory function affecting buildings and other related
 				<staticText>
 					<reportElement
 						x="22"
-						y="516"
-						width="12"
+						y="502"
+						width="23"
 						height="12"
 						key="staticText-170"/>
 					<box leftPadding="5"></box>
@@ -2638,8 +2636,8 @@ authorities exercising regulatory function affecting buildings and other related
 				<staticText>
 					<reportElement
 						x="22"
-						y="538"
-						width="12"
+						y="520"
+						width="23"
 						height="12"
 						key="staticText-171"/>
 					<box leftPadding="5"></box>

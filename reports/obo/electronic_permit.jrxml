@@ -3465,7 +3465,7 @@ conformity with the latest Electronics Code of the Philippines, the National Bui
 				<staticText>
 					<reportElement
 						x="42"
-						y="405"
+						y="401"
 						width="500"
 						height="24"
 						key="staticText-161"/>
@@ -3479,9 +3479,9 @@ the Office of the Building Official.]]></text>
 				<staticText>
 					<reportElement
 						x="42"
-						y="434"
+						y="425"
 						width="500"
-						height="49"
+						height="40"
 						key="staticText-162"/>
 					<box leftPadding="5"></box>
 					<textElement textAlignment="Justified" verticalAlignment="Top">
@@ -3495,7 +3495,7 @@ Philippines, the National Building Code and its IRR.]]></text>
 				<staticText>
 					<reportElement
 						x="42"
-						y="483"
+						y="465"
 						width="500"
 						height="18"
 						key="staticText-163"/>
@@ -3509,7 +3509,7 @@ Philippines, the National Building Code and its IRR.]]></text>
 					<reportElement
 						x="22"
 						y="376"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-167"/>
 					<box leftPadding="5"></box>
@@ -3521,8 +3521,8 @@ Philippines, the National Building Code and its IRR.]]></text>
 				<staticText>
 					<reportElement
 						x="22"
-						y="405"
-						width="12"
+						y="401"
+						width="18"
 						height="12"
 						key="staticText-168"/>
 					<box leftPadding="5"></box>
@@ -3534,8 +3534,8 @@ Philippines, the National Building Code and its IRR.]]></text>
 				<staticText>
 					<reportElement
 						x="22"
-						y="434"
-						width="12"
+						y="425"
+						width="18"
 						height="12"
 						key="staticText-169"/>
 					<box leftPadding="5"></box>
@@ -3547,8 +3547,8 @@ Philippines, the National Building Code and its IRR.]]></text>
 				<staticText>
 					<reportElement
 						x="22"
-						y="483"
-						width="12"
+						y="465"
+						width="18"
 						height="12"
 						key="staticText-170"/>
 					<box leftPadding="5"></box>

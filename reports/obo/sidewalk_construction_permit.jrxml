@@ -2989,7 +2989,7 @@
 					<reportElement
 						x="25"
 						y="583"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-171"/>
 					<box leftPadding="5"></box>
@@ -4059,14 +4059,13 @@
 						x="44"
 						y="621"
 						width="505"
-						height="11"
+						height="43"
 						key="staticText-311"/>
 					<box></box>
 					<textElement textAlignment="Left" verticalAlignment="Top">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[That this permit shall not serve as an exemption from securing permits/written clearances from various government authorities exercising
-regulatory function affecting buildings and other related structures.]]></text>
+				<text><![CDATA[That this permit shall not serve as an exemption from securing permits/written clearances from various government authorities exercising regulatory function affecting buildings and other related structures.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -4087,14 +4086,13 @@ IMPORTANT: Notify this Office at least twenty four (24) hours before pouring of 
 						x="44"
 						y="583"
 						width="505"
-						height="20"
+						height="25"
 						key="staticText-313"/>
 					<box></box>
 					<textElement textAlignment="Left" verticalAlignment="Top">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[Absolutely no letterings, signs or markings of any kind except those duly authorized for official purposes only shall be placed, printed on or
-embedded in the pavements of public streets and sidewalks.
+				<text><![CDATA[Absolutely no letterings, signs or markings of any kind except those duly authorized for official purposes only shall be placed, printed on or embedded in the pavements of public streets and sidewalks.
 ]]></text>
 				</staticText>
 				<staticText>
@@ -4135,7 +4133,7 @@ street intersections shall not be less than the width of the wider sidewalk at s
 					<textElement textAlignment="Left" verticalAlignment="Top">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[That the lines and grades indicated in the attached sketch and established by this Office shall be strictly followed]]></text>
+				<text><![CDATA[That the lines and grades indicated in the attached sketch and established by this Office shall be strictly followed.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -4173,7 +4171,7 @@ following conditions:
 					<reportElement
 						x="26"
 						y="493"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-319"/>
 					<box leftPadding="5"></box>
@@ -4186,7 +4184,7 @@ following conditions:
 					<reportElement
 						x="25"
 						y="518"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-320"/>
 					<box leftPadding="5"></box>
@@ -4199,7 +4197,7 @@ following conditions:
 					<reportElement
 						x="25"
 						y="534"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-321"/>
 					<box leftPadding="5"></box>
@@ -4212,7 +4210,7 @@ following conditions:
 					<reportElement
 						x="25"
 						y="558"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-322"/>
 					<box leftPadding="5"></box>
@@ -4225,7 +4223,7 @@ following conditions:
 					<reportElement
 						x="24"
 						y="607"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-323"/>
 					<box leftPadding="5"></box>
@@ -4238,7 +4236,7 @@ following conditions:
 					<reportElement
 						x="25"
 						y="621"
-						width="12"
+						width="19"
 						height="12"
 						key="staticText-324"/>
 					<box leftPadding="5"></box>

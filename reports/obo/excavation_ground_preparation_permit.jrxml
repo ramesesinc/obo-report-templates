@@ -2891,7 +2891,7 @@
 					<reportElement
 						x="21"
 						y="157"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-167"/>
 					<box leftPadding="5"></box>
@@ -2904,7 +2904,7 @@
 					<reportElement
 						x="20"
 						y="209"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-168"/>
 					<box leftPadding="5"></box>
@@ -2917,7 +2917,7 @@
 					<reportElement
 						x="22"
 						y="399"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-169"/>
 					<box leftPadding="5"></box>
@@ -2930,7 +2930,7 @@
 					<reportElement
 						x="22"
 						y="444"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-170"/>
 					<box leftPadding="5"></box>
@@ -2943,7 +2943,7 @@
 					<reportElement
 						x="22"
 						y="487"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-171"/>
 					<box leftPadding="5"></box>
@@ -3058,7 +3058,7 @@
 					<reportElement
 						x="40"
 						y="243"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-302"/>
 					<box leftPadding="5"></box>
@@ -3084,7 +3084,7 @@
 					<reportElement
 						x="39"
 						y="267"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-304"/>
 					<box leftPadding="5"></box>
@@ -3110,7 +3110,7 @@
 					<reportElement
 						x="40"
 						y="295"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-306"/>
 					<box leftPadding="5"></box>
@@ -3136,7 +3136,7 @@
 					<reportElement
 						x="40"
 						y="317"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-308"/>
 					<box leftPadding="5"></box>
@@ -3162,7 +3162,7 @@
 					<reportElement
 						x="40"
 						y="359"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-310"/>
 					<box leftPadding="5"></box>
@@ -3201,7 +3201,7 @@
 					<reportElement
 						x="22"
 						y="512"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-315"/>
 					<box leftPadding="5"></box>
@@ -3435,7 +3435,7 @@
 					<reportElement
 						x="22"
 						y="542"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-355"/>
 					<box leftPadding="5"></box>
