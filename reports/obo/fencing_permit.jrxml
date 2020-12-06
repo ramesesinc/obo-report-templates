@@ -2,7 +2,7 @@
 <!-- Created with iReport - A designer for JasperReports -->
 <!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
 <jasperReport
-		 name="fencingpermit"
+		 name="fencing_permit"
 
 		 language="groovy"		 columnCount="1"
 		 printOrder="Vertical"
@@ -128,6 +128,8 @@
 	<field name="worktypes.accssory_building_structure" class="java.lang.String"/>
 	<field name="worktypes.other" class="java.lang.String"/>
 	<field name="supervisor.prc.dtvalid" class="java.util.Date"/>
+	<field name="applicant.id.type.caption" class="java.lang.String"/>
+	<field name="lotowner.id.type.caption" class="java.lang.String"/>
 
 
 		<group  name="P1" >
@@ -347,7 +349,7 @@
 					<textElement textAlignment="Center">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[( $P{LGU_NAME} ? $P{LGU_NAME} : $P{PROVINCE_NAME})]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[( $P{PROVINCE_NAME} ? $P{PROVINCE_NAME} : $P{LGU_NAME})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -360,7 +362,7 @@
 					<textElement textAlignment="Center">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[( $P{PROVINCE_NAME} ? $P{PROVINCE_NAME} : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[( $P{PROVINCE_NAME} ? $P{LGU_NAME} : null)]]></textFieldExpression>
 				</textField>
 				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -1312,7 +1314,7 @@
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[null]]></textFieldExpression>
 				</textField>
-				<staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
 						y="558"
@@ -1327,8 +1329,8 @@
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[C.T.C. No.]]></text>
-				</staticText>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{applicant.id.type.caption} ? $F{applicant.id.type.caption} : "ID No.")]]></textFieldExpression>
+				</textField>
 				<staticText>
 					<reportElement
 						x="100"
@@ -1405,7 +1407,7 @@
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.placeissued}]]></textFieldExpression>
 				</textField>
-				<staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="284"
 						y="558"
@@ -1420,8 +1422,8 @@
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[C.T.C. No.]]></text>
-				</staticText>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{lotowner.id.type.caption} ? $F{lotowner.id.type.caption} : "ID No.")]]></textFieldExpression>
+				</textField>
 				<staticText>
 					<reportElement
 						x="382"
