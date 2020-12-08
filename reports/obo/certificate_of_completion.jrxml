@@ -159,6 +159,9 @@
 	<field name="supervisor.prc.dtissued" class="java.util.Date"/>
 	<field name="supervisor.id.idno" class="java.lang.String"/>
 	<field name="supervisor.id.dtissued" class="java.util.Date"/>
+	<field name="bldgpermit.permitno" class="java.lang.String"/>
+	<field name="bldgpermit.dtissued" class="java.util.Date"/>
+	<field name="dtfiled" class="java.util.Date"/>
 
 
 		<group  name="P1" >
@@ -464,24 +467,24 @@
 					<reportElement
 						x="107"
 						y="167"
-						width="150"
+						width="151"
 						height="12"
 						key="textField-6"/>
 					<box rightPadding="5"></box>
-					<textElement verticalAlignment="Middle">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.lastname}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="257"
+						x="280"
 						y="167"
-						width="216"
+						width="193"
 						height="12"
 						key="textField-7"/>
 					<box rightPadding="5"></box>
-					<textElement verticalAlignment="Middle">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.firstname}]]></textFieldExpression>
@@ -494,7 +497,7 @@
 						height="12"
 						key="textField-8"/>
 					<box></box>
-					<textElement verticalAlignment="Middle">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.middleinitial}]]></textFieldExpression>
@@ -2881,6 +2884,63 @@
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{dtactualstarted}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="291"
+						y="129"
+						width="120"
+						height="12"
+						key="textField-61"/>
+					<box rightPadding="5"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{bldgpermit.permitno}]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="281"
+						y="140"
+						width="120"
+						height="0"
+						key="line-34"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="463"
+						y="129"
+						width="82"
+						height="12"
+						key="textField-62"/>
+					<box rightPadding="5"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{bldgpermit.dtissued}]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="449"
+						y="140"
+						width="90"
+						height="0"
+						key="line-35"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="429"
+						y="106"
+						width="95"
+						height="12"
+						key="textField-63"/>
+					<box rightPadding="5"></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{dtfiled}]]></textFieldExpression>
 				</textField>
 			</band>
 			</groupHeader>
