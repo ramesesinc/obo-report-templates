@@ -318,6 +318,8 @@
 	<field name="worktypes.accssory_building_structure" class="java.lang.String"/>
 	<field name="worktypes.other" class="java.lang.String"/>
 	<field name="worktypes.demolition" class="java.lang.String"/>
+	<field name="supervisor.prc.dtvalid" class="java.util.Date"/>
+	<field name="supervisor.prc.dtissued" class="java.util.Date"/>
 
 
 		<group  name="P1" >
@@ -973,7 +975,7 @@
 					</textElement>
 				<text><![CDATA[BOX 1 (TO BE ACCOMPLISHED IN PRINT BY THE OWNER/APPLICANT)]]></text>
 				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="107"
 						y="172"
@@ -986,7 +988,7 @@
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.lastname}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="257"
 						y="172"
@@ -1447,7 +1449,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.util.Date"><![CDATA[null]]></textFieldExpression>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{designprofessional.prc.dtissued}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -1556,7 +1558,7 @@
 					<textElement textAlignment="Left">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.util.Date"><![CDATA[$F{designprofessional.prc.expirydate}]]></textFieldExpression>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{designprofessional.prc.dtvalid}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -1726,7 +1728,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.util.Date"><![CDATA[null]]></textFieldExpression>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{supervisor.prc.dtissued}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -1956,7 +1958,7 @@
 					<textElement textAlignment="Left">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.util.Date"><![CDATA[$F{supervisor.prc.expirydate}]]></textFieldExpression>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{supervisor.prc.dtvalid}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement

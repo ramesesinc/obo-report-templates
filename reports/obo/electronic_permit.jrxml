@@ -305,6 +305,7 @@
 	<field name="supervisor.prc.dtvalid" class="java.util.Date"/>
 	<field name="applicant.id.type.caption" class="java.lang.String"/>
 	<field name="lotowner.id.type.caption" class="java.lang.String"/>
+	<field name="supervisor.prc.dtissued" class="java.util.Date"/>
 
 
 		<group  name="P1" >
@@ -943,7 +944,7 @@
 					</textElement>
 				<text><![CDATA[BOX 1 (TO BE ACCOMPLISHED IN PRINT BY THE OWNER/APPLICANT)]]></text>
 				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="107"
 						y="173"
@@ -956,7 +957,7 @@
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.lastname}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="257"
 						y="173"
@@ -1379,7 +1380,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.util.Date"><![CDATA[null]]></textFieldExpression>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{designprofessional.prc.dtissued}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -1658,7 +1659,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.util.Date"><![CDATA[null]]></textFieldExpression>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{supervisor.prc.dtissued}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
