@@ -1437,42 +1437,42 @@
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="322"
+						x="327"
 						y="589"
-						width="142"
+						width="137"
 						height="13"
 						key="textField-20"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.idno}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="255"
+						x="269"
 						y="601"
-						width="171"
+						width="150"
 						height="13"
 						key="textField-21"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.util.Date"><![CDATA[$F{applicant.id.dtissued}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="255"
+						x="269"
 						y="613"
-						width="171"
+						width="150"
 						height="13"
 						key="textField-22"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.placeissued}]]></textFieldExpression>

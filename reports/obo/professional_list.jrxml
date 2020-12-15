@@ -31,11 +31,12 @@
 	<field name="middlename" class="java.lang.String"/>
 	<field name="address.text" class="java.lang.String"/>
 	<field name="prc.idno" class="java.lang.String"/>
-	<field name="prc.expirydate" class="java.util.Date"/>
+	<field name="prc.dtvalid" class="java.util.Date"/>
 	<field name="ptr.refno" class="java.lang.String"/>
 	<field name="ptr.dtissued" class="java.util.Date"/>
 	<field name="ptr.placeissued" class="java.lang.String"/>
 	<field name="tin" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
 
 		<background>
 			<band height="0"  isSplitAllowed="true" >
@@ -231,7 +232,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="9"
-						y="4"
+						y="2"
 						width="102"
 						height="13"
 						key="textField-9"/>
@@ -253,7 +254,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Bottom">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ",$F{firstname},$F{middlename},$F{lastname})]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{name}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -332,7 +333,7 @@
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.util.Date"><![CDATA[$F{prc.expirydate}]]></textFieldExpression>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{prc.dtvalid}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement

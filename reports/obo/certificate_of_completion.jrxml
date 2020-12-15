@@ -2595,7 +2595,7 @@
 						key="textField"/>
 					<box></box>
 					<textElement verticalAlignment="Middle">
-						<font fontName="Arial" size="7"/>
+						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{contractor.contactno}]]></textFieldExpression>
 				</textField>
@@ -2608,7 +2608,7 @@
 						key="textField"/>
 					<box></box>
 					<textElement verticalAlignment="Middle">
-						<font fontName="Arial" size="7"/>
+						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{contractor.address}]]></textFieldExpression>
 				</textField>
@@ -2621,7 +2621,7 @@
 						key="textField"/>
 					<box></box>
 					<textElement verticalAlignment="Middle">
-						<font fontName="Arial" size="7"/>
+						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{contractor.tin}]]></textFieldExpression>
 				</textField>
@@ -2634,7 +2634,7 @@
 						key="textField"/>
 					<box></box>
 					<textElement verticalAlignment="Middle">
-						<font fontName="Arial" size="7"/>
+						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.util.Date"><![CDATA[$F{contractor.pcab.dtvalid}]]></textFieldExpression>
 				</textField>
@@ -2647,7 +2647,7 @@
 						key="textField"/>
 					<box></box>
 					<textElement verticalAlignment="Middle">
-						<font fontName="Arial" size="7"/>
+						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{contractor.pcab.idno}]]></textFieldExpression>
 				</textField>
