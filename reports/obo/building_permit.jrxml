@@ -2,7 +2,7 @@
 <!-- Created with iReport - A designer for JasperReports -->
 <!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
 <jasperReport
-		 name="unified-building-permit"
+		 name="building_permit"
 
 		 language="groovy"		 columnCount="1"
 		 printOrder="Vertical"
@@ -24,6 +24,8 @@
 	<import value="net.sf.jasperreports.engine.*" />
 	<import value="net.sf.jasperreports.engine.data.*" />
 
+	<parameter name="LGU_NAME" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="PROVINCE_NAME" isForPrompting="false" class="java.lang.String"/>
 
 	<field name="designprofessional.prc.placeissued" class="java.lang.String"/>
 	<field name="designprofessional.prc.dtvalid" class="java.util.Date"/>
@@ -143,6 +145,7 @@
 	<field name="contractor.id.idno" class="java.lang.String"/>
 	<field name="contractor.id.dtissued" class="java.util.Date"/>
 	<field name="contractor.id.placeissued" class="java.lang.String"/>
+	<field name="txntype" class="java.lang.String"/>
 
 
 		<group  name="P1" >
@@ -323,7 +326,7 @@ $F{org.fullname}.toString().toUpperCase()]]></textFieldExpression>
 					<textElement textAlignment="Center">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.capitalize( $F{org.fullname} ? $F{org.fullname} : $F{org.group.fullname})]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{LGU_NAME}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -336,7 +339,7 @@ $F{org.fullname}.toString().toUpperCase()]]></textFieldExpression>
 					<textElement textAlignment="Center">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.capitalize($F{org.group.fullname} ? $F{org.group.fullname} : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{PROVINCE_NAME}]]></textFieldExpression>
 				</textField>
 				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -364,7 +367,7 @@ $F{org.fullname}.toString().toUpperCase()]]></textFieldExpression>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{apptype}.toString().equalsIgnoreCase("NEW") ? "X" : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{apptype} == "NEW") ? "X" : null]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -394,7 +397,7 @@ $F{org.fullname}.toString().toUpperCase()]]></textFieldExpression>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{apptype}.toString().equalsIgnoreCase("RENEW") ? "X" : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{apptype} == "RENEW") ? "X" : null]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -424,7 +427,7 @@ $F{org.fullname}.toString().toUpperCase()]]></textFieldExpression>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{apptype}.toString().equalsIgnoreCase("AMEND") ? "X" : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{apptype} == "AMEND") ? "X" : null]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -1223,7 +1226,7 @@ LOAD 1,000 OR MORE)]]></text>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{org.title} ? $F{org.title}.toUpperCase() : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{LGU_NAME}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -4250,7 +4253,7 @@ LOAD 1,000 OR MORE)]]></text>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{apptype}.toString().equalsIgnoreCase("SIMPLE") ? "X" : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{txntype} == "SIMPLE") ? "X" : null]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -4280,7 +4283,7 @@ LOAD 1,000 OR MORE)]]></text>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{apptype}.toString().equalsIgnoreCase("COMPLEX") ? "X" : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{txntype} == "COMPLEX") ? "X" : null]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -4310,7 +4313,7 @@ LOAD 1,000 OR MORE)]]></text>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{apptype}.toString().equalsIgnoreCase("NEW") ? "X" : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA["X"]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -4340,7 +4343,7 @@ LOAD 1,000 OR MORE)]]></text>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{apptype}.toString().equalsIgnoreCase("AMEND") ? "X" : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA["X"]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
