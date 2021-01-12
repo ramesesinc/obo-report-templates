@@ -42,15 +42,6 @@
 	<field name="applicant.address.unitno" class="java.lang.String"/>
 	<field name="applicant.address.bldgname" class="java.lang.String"/>
 	<field name="applicant.address.bldgno" class="java.lang.String"/>
-	<field name="designprofessional.ptr.placeissued" class="java.lang.String"/>
-	<field name="designprofessional.tin" class="java.lang.String"/>
-	<field name="designprofessional.ptr.dtissued" class="java.util.Date"/>
-	<field name="designprofessional.prc.idno" class="java.lang.String"/>
-	<field name="designprofessional.prc.dtissued" class="java.util.Date"/>
-	<field name="designprofessional.ptr.refno" class="java.lang.String"/>
-	<field name="designprofessional.middlename" class="java.lang.String"/>
-	<field name="designprofessional.lastname" class="java.lang.String"/>
-	<field name="designprofessional.firstname" class="java.lang.String"/>
 	<field name="supervisor.middlename" class="java.lang.String"/>
 	<field name="supervisor.lastname" class="java.lang.String"/>
 	<field name="supervisor.firstname" class="java.lang.String"/>
@@ -71,18 +62,13 @@
 	<field name="applicant.middleinitial" class="java.lang.String"/>
 	<field name="applicant.firstname" class="java.lang.String"/>
 	<field name="applicant.lastname" class="java.lang.String"/>
-	<field name="appid" class="java.lang.String"/>
-	<field name="epno" class="java.lang.String"/>
-	<field name="bldgpermitno" class="java.lang.String"/>
-	<field name="designprofessional.address.text" class="java.lang.String"/>
-	<field name="designprofessional.prc.expirydate" class="java.util.Date"/>
 	<field name="supervisor.prc.idno" class="java.lang.String"/>
 	<field name="supervisor.ptr.refno" class="java.lang.String"/>
 	<field name="supervisor.ptr.placeissued" class="java.lang.String"/>
 	<field name="supervisor.address.text" class="java.lang.String"/>
 	<field name="supervisor.prc.expirydate" class="java.lang.String"/>
 	<field name="supervisor.ptr.dtissued" class="java.util.Date"/>
-	<field name="contractor.tin" class="java.lang.String"/>
+	<field name="supervisor.tin" class="java.lang.String"/>
 	<field name="applicant.id.type.name" class="java.lang.String"/>
 	<field name="applicant.id.idno" class="java.lang.String"/>
 	<field name="applicant.id.dtissued" class="java.util.Date"/>
@@ -101,7 +87,6 @@
 	<field name="location.tctno" class="java.lang.String"/>
 	<field name="location.tdno" class="java.lang.String"/>
 	<field name="worktypes" class="java.lang.Object"/>
-	<field name="designprofessional.profession" class="java.lang.String"/>
 	<field name="apptype" class="java.lang.String"/>
 	<field name="dtproposedconstruction" class="java.util.Date"/>
 	<field name="dtexpectedcompletion" class="java.util.Date"/>
@@ -5675,7 +5660,7 @@ STEEL/CONCRETE TANK]]></text>
 					</textElement>
 				<text><![CDATA[ELECTRICAL]]></text>
 				</staticText>
-				<textField isStretchWithOverflow="false" pattern="#,##0.0000" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="94"
 						y="498"
@@ -6093,7 +6078,7 @@ STEEL/CONCRETE TANK]]></text>
 					<textElement textAlignment="Left" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{supervisor.address.bldgno}, $F{supervisor.address.bldgname}, $F{supervisor.address.unitno}, $F{supervisor.address.subdivision}, $F{supervisor.address.street}, $F{supervisor.address.barangay.name}, $F{supervisor.address.citymunicipality}, $F{supervisor.address.province})]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{supervisor.address.text}.toUpperCase()]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -6315,7 +6300,7 @@ STEEL/CONCRETE TANK]]></text>
 					<textElement textAlignment="Left">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{contractor.tin}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{supervisor.tin}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -6359,27 +6344,27 @@ STEEL/CONCRETE TANK]]></text>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="20"
-						y="36"
-						width="150"
+						x="0"
+						y="28"
+						width="114"
 						height="12"
 						key="textField"/>
 					<box></box>
 					<textElement>
-						<font/>
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{objid}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
-						x="20"
-						y="20"
-						width="89"
-						height="15"
+						x="0"
+						y="18"
+						width="115"
+						height="11"
 						key="staticText-746"/>
-					<box></box>
+					<box leftPadding="5"></box>
 					<textElement>
-						<font/>
+						<font size="7"/>
 					</textElement>
 				<text><![CDATA[TRACKING NO]]></text>
 				</staticText>
@@ -6402,16 +6387,16 @@ STEEL/CONCRETE TANK]]></text>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="119"
-						y="121"
-						width="213"
+						x="29"
+						y="-14"
+						width="478"
 						height="12"
 						key="textField"/>
 					<box></box>
 					<textElement>
-						<font size="6"/>
+						<font/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.address.text}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[""+$F{worktypes}]]></textFieldExpression>
 				</textField>
 			</band>
 			</groupHeader>
