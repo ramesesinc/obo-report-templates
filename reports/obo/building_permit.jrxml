@@ -113,6 +113,7 @@
 	<field name="numfloors" class="java.lang.Number"/>
 	<field name="applicant.address.text" class="java.lang.String"/>
 	<field name="supervisor.profession" class="java.lang.String"/>
+	<field name="occupancytype.division.objid" class="java.lang.String"/>
 
 
 		<group  name="P1" >
@@ -3861,7 +3862,7 @@ LOAD 1,000 OR MORE)]]></text>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{supervisor.firstname}, $F{supervisor.middlename}, $F{supervisor.lastname})]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{supervisor.firstname} + ' '+ $F{supervisor.middlename} + ' ' + $F{supervisor.lastname}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -6364,7 +6365,7 @@ STEEL/CONCRETE TANK]]></text>
 					</textElement>
 				<text><![CDATA[TRACKING NO]]></text>
 				</staticText>
-				<elementGroup><!--  Start: 1 !-->
+				<elementGroup><!--  Start: 2 !-->
 				<line direction="TopDown">
 					<reportElement
 						x="14"
@@ -6446,8 +6447,8 @@ STEEL/CONCRETE TANK]]></text>
 						key="line-9"/>
 					<graphicElement stretchType="NoStretch"/>
 				</line>
-				</elementGroup><!-- End 1 !-->
-				<elementGroup><!--  Start: 2 !-->
+				</elementGroup><!-- End 2 !-->
+				<elementGroup><!--  Start: 3 !-->
 				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="336"
@@ -6501,7 +6502,7 @@ STEEL/CONCRETE TANK]]></text>
 						key="line-13"/>
 					<graphicElement stretchType="NoStretch"/>
 				</line>
-				</elementGroup><!-- End 2 !-->
+				</elementGroup><!-- End 3 !-->
 				<line direction="TopDown">
 					<reportElement
 						x="385"
@@ -6511,7 +6512,7 @@ STEEL/CONCRETE TANK]]></text>
 						key="line-14"/>
 					<graphicElement stretchType="NoStretch"/>
 				</line>
-				<elementGroup><!--  Start: 2 !-->
+				<elementGroup><!--  Start: 4 !-->
 				<line direction="TopDown">
 					<reportElement
 						x="395"
@@ -6548,7 +6549,46 @@ STEEL/CONCRETE TANK]]></text>
 						key="line-18"/>
 					<graphicElement stretchType="NoStretch"/>
 				</line>
-				</elementGroup><!-- End 2 !-->
+				</elementGroup><!-- End 4 !-->
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="139"
+						y="305"
+						width="151"
+						height="12"
+						key="textField"/>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{occupancytype.objid}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="140"
+						y="439"
+						width="162"
+						height="12"
+						key="textField-324"/>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{occupancytype.group.objid}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="114"
+						y="448"
+						width="177"
+						height="12"
+						key="textField-325"/>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{occupancytype.division.objid}]]></textFieldExpression>
+				</textField>
 			</band>
 			</groupHeader>
 			<groupFooter>
@@ -9073,7 +9113,7 @@ STEEL/CONCRETE TANK]]></text>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{occupancytype.group.title}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA["(" + $F{occupancytype.group.objid} + ") " + $F{occupancytype.group.title}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
