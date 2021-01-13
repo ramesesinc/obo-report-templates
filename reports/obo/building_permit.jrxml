@@ -5706,10 +5706,10 @@ STEEL/CONCRETE TANK]]></text>
 						key="textField-300"/>
 					<box leftPadding="3" rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[(""+ $F{occupancytype.objid} + " - "+ $F{occupancytype.title})]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[("("+ $F{occupancytype.group.objid} + ")"+ $F{occupancytype.title})]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
