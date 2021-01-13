@@ -3656,7 +3656,7 @@ LOAD 1,000 OR MORE)]]></text>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica" size="6" isBold="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{supervisor.profession}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA["LICENSED ARCHITECT OR CIVIL ENGINEER"]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -5771,7 +5771,7 @@ STEEL/CONCRETE TANK]]></text>
 					</textElement>
 				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{plumbing.equipmentcost}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" pattern="MMM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="329"
 						y="526"
@@ -6441,7 +6441,7 @@ STEEL/CONCRETE TANK]]></text>
 					</textElement>
 				<text><![CDATA[PROPOSED DATE OF CONSTRUCTION:]]></text>
 				</staticText>
-				<textField isStretchWithOverflow="false" pattern="MMM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="130"
 						y="526"
@@ -6686,7 +6686,7 @@ STEEL/CONCRETE TANK]]></text>
 				</line>
 				<line direction="TopDown">
 					<reportElement
-						x="177"
+						x="176"
 						y="686"
 						width="0"
 						height="12"
@@ -6695,7 +6695,7 @@ STEEL/CONCRETE TANK]]></text>
 				</line>
 				<line direction="TopDown">
 					<reportElement
-						x="379"
+						x="376"
 						y="686"
 						width="0"
 						height="12"
@@ -6704,7 +6704,7 @@ STEEL/CONCRETE TANK]]></text>
 				</line>
 				<line direction="TopDown">
 					<reportElement
-						x="471"
+						x="470"
 						y="686"
 						width="0"
 						height="12"
