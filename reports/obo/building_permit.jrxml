@@ -1980,14 +1980,14 @@ LOAD 1,000 OR MORE)]]></text>
 					<reportElement
 						x="151"
 						y="686"
-						width="20"
+						width="35"
 						height="12"
 						key="textField-193">
 							<printWhenExpression><![CDATA[($F{applicant.id.type.name} == "ctc")]]></printWhenExpression>
 						</reportElement>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.util.Date"><![CDATA[$F{applicant.id.dtissued}]]></textFieldExpression>
@@ -5397,7 +5397,7 @@ STEEL/CONCRETE TANK]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="180"
+						x="224"
 						y="462"
 						width="87"
 						height="11"
@@ -5450,9 +5450,9 @@ STEEL/CONCRETE TANK]]></text>
 				</textField>
 				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="269"
+						x="287"
 						y="462"
-						width="102"
+						width="81"
 						height="11"
 						key="textField-296"/>
 					<box leftPadding="3" rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
@@ -6593,14 +6593,14 @@ STEEL/CONCRETE TANK]]></text>
 					<reportElement
 						x="441"
 						y="686"
-						width="20"
+						width="42"
 						height="12"
 						key="textField-327">
 							<printWhenExpression><![CDATA[($F{applicant.id.type.name} == "ctc")]]></printWhenExpression>
 						</reportElement>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.util.Date"><![CDATA[$F{applicant.id.dtissued}]]></textFieldExpression>
@@ -6609,7 +6609,7 @@ STEEL/CONCRETE TANK]]></text>
 					<reportElement
 						x="390"
 						y="687"
-						width="73"
+						width="48"
 						height="11"
 						key="staticText-760"/>
 					<box leftPadding="5" topPadding="2">					<topPen lineWidth="0.0" lineStyle="Solid"/>
