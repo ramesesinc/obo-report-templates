@@ -4337,7 +4337,7 @@ LOAD 1,000 OR MORE)]]></text>
 					<rightPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="6" isBold="true"/>
+						<font pdfFontName="Helvetica-Bold" size="4" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[( $F{occupancytype.objid} == "A102" ) ? "X" : null]]></textFieldExpression>
 				</textField>
