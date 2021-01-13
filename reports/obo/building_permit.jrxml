@@ -5463,7 +5463,7 @@ STEEL/CONCRETE TANK]]></text>
 					</textElement>
 				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{projectcost}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" pattern="¤ #,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="269"
 						y="473"
@@ -5477,7 +5477,7 @@ STEEL/CONCRETE TANK]]></text>
 					</textElement>
 				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{buildingcost}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" pattern="¤ #,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="269"
 						y="484"
@@ -5517,7 +5517,7 @@ STEEL/CONCRETE TANK]]></text>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[("("+ $F{occupancytype.group.objid} + ")"+ $F{occupancytype.title})]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[("("+ $F{occupancytype.group.objid} + ")"+ $F{occupancytype.group.title})]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -5599,7 +5599,7 @@ STEEL/CONCRETE TANK]]></text>
 					</textElement>
 				<text><![CDATA[MECHANICAL]]></text>
 				</staticText>
-				<textField isStretchWithOverflow="false" pattern="¤ #,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="269"
 						y="494"
@@ -5626,7 +5626,7 @@ STEEL/CONCRETE TANK]]></text>
 					</textElement>
 				<text><![CDATA[ELECTRONICS]]></text>
 				</staticText>
-				<textField isStretchWithOverflow="false" pattern="¤ #,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="269"
 						y="504"
@@ -5638,7 +5638,7 @@ STEEL/CONCRETE TANK]]></text>
 					<textElement textAlignment="Right" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.util.Date"><![CDATA[$F{electronic.projectcost}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{electronic.projectcost}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -5653,7 +5653,7 @@ STEEL/CONCRETE TANK]]></text>
 					</textElement>
 				<text><![CDATA[PLUMBING]]></text>
 				</staticText>
-				<textField isStretchWithOverflow="false" pattern="MMM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="269"
 						y="514"
@@ -5706,21 +5706,21 @@ STEEL/CONCRETE TANK]]></text>
 					</textElement>
 				<text><![CDATA[P]]></text>
 				</staticText>
-				<textField isStretchWithOverflow="false" pattern="¤ #,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="352"
 						y="485"
 						width="96"
 						height="11"
 						key="textField-307"/>
-					<box leftPadding="3" rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<box leftPadding="2" rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Right" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{electrical.equipmentcost}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" pattern="¤ #,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="352"
 						y="496"
@@ -5747,7 +5747,7 @@ STEEL/CONCRETE TANK]]></text>
 					</textElement>
 				<text><![CDATA[P]]></text>
 				</staticText>
-				<textField isStretchWithOverflow="false" pattern="¤ #,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="352"
 						y="506"
@@ -5774,7 +5774,7 @@ STEEL/CONCRETE TANK]]></text>
 					</textElement>
 				<text><![CDATA[P]]></text>
 				</staticText>
-				<textField isStretchWithOverflow="false" pattern="¤ #,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="352"
 						y="516"
