@@ -5577,9 +5577,9 @@ STEEL/CONCRETE TANK]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="159"
+						x="154"
 						y="498"
-						width="28"
+						width="21"
 						height="11"
 						key="staticText-718"/>
 					<box leftPadding="2"></box>
@@ -5590,7 +5590,7 @@ STEEL/CONCRETE TANK]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="190"
+						x="180"
 						y="467"
 						width="87"
 						height="11"
@@ -5603,7 +5603,7 @@ STEEL/CONCRETE TANK]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="190"
+						x="180"
 						y="478"
 						width="87"
 						height="11"
@@ -5616,7 +5616,7 @@ STEEL/CONCRETE TANK]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="190"
+						x="180"
 						y="489"
 						width="87"
 						height="11"
@@ -5643,9 +5643,9 @@ STEEL/CONCRETE TANK]]></text>
 				</textField>
 				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="277"
+						x="269"
 						y="467"
-						width="39"
+						width="47"
 						height="11"
 						key="textField-296"/>
 					<box leftPadding="3" rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
@@ -5657,9 +5657,9 @@ STEEL/CONCRETE TANK]]></text>
 				</textField>
 				<textField isStretchWithOverflow="false" pattern="MMM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="277"
+						x="269"
 						y="478"
-						width="39"
+						width="47"
 						height="11"
 						key="textField-297"/>
 					<box leftPadding="3" rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
@@ -5671,9 +5671,9 @@ STEEL/CONCRETE TANK]]></text>
 				</textField>
 				<textField isStretchWithOverflow="false" pattern="MMM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="277"
+						x="269"
 						y="489"
-						width="39"
+						width="47"
 						height="11"
 						key="textField-298"/>
 					<box leftPadding="2" rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
@@ -5701,7 +5701,7 @@ STEEL/CONCRETE TANK]]></text>
 					<reportElement
 						x="94"
 						y="467"
-						width="60"
+						width="77"
 						height="11"
 						key="textField-300"/>
 					<box leftPadding="3" rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
@@ -5753,9 +5753,9 @@ STEEL/CONCRETE TANK]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="158"
+						x="154"
 						y="508"
-						width="29"
+						width="22"
 						height="11"
 						key="staticText-724"/>
 					<box leftPadding="2"></box>
@@ -5780,7 +5780,7 @@ STEEL/CONCRETE TANK]]></text>
 				</textField>
 				<staticText>
 					<reportElement
-						x="190"
+						x="180"
 						y="499"
 						width="87"
 						height="11"
@@ -5793,9 +5793,9 @@ STEEL/CONCRETE TANK]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" pattern="MMM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="277"
+						x="269"
 						y="499"
-						width="39"
+						width="47"
 						height="11"
 						key="textField-303"/>
 					<box leftPadding="2" rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
@@ -5807,7 +5807,7 @@ STEEL/CONCRETE TANK]]></text>
 				</textField>
 				<staticText>
 					<reportElement
-						x="190"
+						x="180"
 						y="509"
 						width="87"
 						height="11"
@@ -5820,9 +5820,9 @@ STEEL/CONCRETE TANK]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" pattern="MMM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="277"
+						x="269"
 						y="509"
-						width="39"
+						width="47"
 						height="11"
 						key="textField-304"/>
 					<box leftPadding="2" rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
@@ -5834,7 +5834,7 @@ STEEL/CONCRETE TANK]]></text>
 				</textField>
 				<staticText>
 					<reportElement
-						x="190"
+						x="180"
 						y="519"
 						width="87"
 						height="11"
@@ -5847,9 +5847,9 @@ STEEL/CONCRETE TANK]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" pattern="MMM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="277"
+						x="269"
 						y="519"
-						width="39"
+						width="47"
 						height="11"
 						key="textField-305"/>
 					<box leftPadding="2" rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
@@ -5870,7 +5870,7 @@ STEEL/CONCRETE TANK]]></text>
 					<textElement verticalAlignment="Middle">
 						<font size="6"/>
 					</textElement>
-				<text><![CDATA[COST OF EQUIPMENT INSTALLES]]></text>
+				<text><![CDATA[COST OF EQUIPMENT INSTALLED]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
