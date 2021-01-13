@@ -6608,24 +6608,6 @@ STEEL/CONCRETE TANK]]></text>
 				</staticText>
 				<line direction="TopDown">
 					<reportElement
-						x="40"
-						y="242"
-						width="77"
-						height="0"
-						key="line-20"/>
-					<graphicElement stretchType="NoStretch"/>
-				</line>
-				<line direction="TopDown">
-					<reportElement
-						x="178"
-						y="243"
-						width="90"
-						height="0"
-						key="line-21"/>
-					<graphicElement stretchType="NoStretch"/>
-				</line>
-				<line direction="TopDown">
-					<reportElement
 						x="337"
 						y="244"
 						width="120"
@@ -6727,6 +6709,24 @@ STEEL/CONCRETE TANK]]></text>
 						width="0"
 						height="12"
 						key="line-26"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="37"
+						y="242"
+						width="87"
+						height="0"
+						key="line-27"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="171"
+						y="243"
+						width="105"
+						height="0"
+						key="line-28"/>
 					<graphicElement stretchType="NoStretch"/>
 				</line>
 			</band>
