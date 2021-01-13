@@ -114,6 +114,7 @@
 	<field name="applicant.address.text" class="java.lang.String"/>
 	<field name="supervisor.profession" class="java.lang.String"/>
 	<field name="occupancytype.division.objid" class="java.lang.String"/>
+	<field name="qrcode" class="java.net.URL"/>
 
 
 		<group  name="P1" >
@@ -887,10 +888,10 @@ LOAD 1,000 OR MORE)]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="361"
-						y="146"
-						width="80"
-						height="22"
+						x="360"
+						y="144"
+						width="81"
+						height="24"
 						key="staticText-237"/>
 					<box leftPadding="5" topPadding="1">					<leftPen lineWidth="0.5" lineStyle="Solid"/>
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
@@ -1759,9 +1760,9 @@ LOAD 1,000 OR MORE)]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="109"
+						x="88"
 						y="267"
-						width="37"
+						width="58"
 						height="9"
 						key="staticText-417"/>
 					<box>					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
@@ -4313,9 +4314,9 @@ LOAD 1,000 OR MORE)]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="49"
-						y="96"
-						width="117"
+						x="69"
+						y="93"
+						width="97"
 						height="12"
 						key="staticText-671"/>
 					<box></box>
@@ -6520,6 +6521,17 @@ STEEL/CONCRETE TANK]]></text>
 					<graphicElement stretchType="NoStretch"/>
 				</line>
 				</elementGroup><!-- End 4 !-->
+				<image  onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="6"
+						y="45"
+						width="55"
+						height="43"
+						key="image-2"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch"/>
+					<imageExpression class="java.net.URL"><![CDATA[$F{qrcode}]]></imageExpression>
+				</image>
 			</band>
 			</groupHeader>
 			<groupFooter>
