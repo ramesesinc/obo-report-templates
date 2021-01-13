@@ -116,9 +116,8 @@
 	<field name="occupancytype.division.objid" class="java.lang.String"/>
 	<field name="qrcode" class="java.net.URL"/>
 	<field name="applicant.id.type.caption" class="java.lang.String"/>
-	<field name="applicant.id.type.title" class="java.lang.String"/>
-	<field name="supervisor.id.type.title" class="java.lang.String"/>
-	<field name="lotowner.id.type.title" class="java.lang.String"/>
+	<field name="supervisor.id.type.caption" class="java.lang.String"/>
+	<field name="lotowner.id.type.caption" class="java.lang.String"/>
 	<field name="buildingcost" class="java.lang.Number"/>
 	<field name="electrical.projectcost" class="java.lang.Number"/>
 	<field name="mechanical.projectcost" class="java.lang.Number"/>
@@ -286,7 +285,7 @@ $P{LGU_NAME}.toString().toUpperCase()]]></textFieldExpression>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="335"
+						x="466"
 						y="109"
 						width="100"
 						height="12"
@@ -5509,7 +5508,7 @@ STEEL/CONCRETE TANK]]></text>
 					<reportElement
 						x="94"
 						y="462"
-						width="77"
+						width="125"
 						height="11"
 						key="textField-300"/>
 					<box leftPadding="3" rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
@@ -6216,7 +6215,7 @@ STEEL/CONCRETE TANK]]></text>
 				<elementGroup><!--  Start: 3 !-->
 				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="336"
+						x="467"
 						y="122"
 						width="100"
 						height="13"
@@ -6233,7 +6232,7 @@ STEEL/CONCRETE TANK]]></text>
 				</textField>
 				<line direction="TopDown">
 					<reportElement
-						x="345"
+						x="476"
 						y="122"
 						width="0"
 						height="13"
@@ -6242,7 +6241,7 @@ STEEL/CONCRETE TANK]]></text>
 				</line>
 				<line direction="TopDown">
 					<reportElement
-						x="355"
+						x="486"
 						y="122"
 						width="0"
 						height="13"
@@ -6251,7 +6250,7 @@ STEEL/CONCRETE TANK]]></text>
 				</line>
 				<line direction="TopDown">
 					<reportElement
-						x="365"
+						x="496"
 						y="122"
 						width="0"
 						height="13"
@@ -6260,7 +6259,7 @@ STEEL/CONCRETE TANK]]></text>
 				</line>
 				<line direction="TopDown">
 					<reportElement
-						x="375"
+						x="506"
 						y="122"
 						width="0"
 						height="13"
@@ -6270,7 +6269,7 @@ STEEL/CONCRETE TANK]]></text>
 				</elementGroup><!-- End 3 !-->
 				<line direction="TopDown">
 					<reportElement
-						x="385"
+						x="516"
 						y="122"
 						width="0"
 						height="13"
@@ -6280,7 +6279,7 @@ STEEL/CONCRETE TANK]]></text>
 				<elementGroup><!--  Start: 4 !-->
 				<line direction="TopDown">
 					<reportElement
-						x="395"
+						x="526"
 						y="122"
 						width="0"
 						height="13"
@@ -6289,7 +6288,7 @@ STEEL/CONCRETE TANK]]></text>
 				</line>
 				<line direction="TopDown">
 					<reportElement
-						x="405"
+						x="536"
 						y="122"
 						width="0"
 						height="13"
@@ -6298,7 +6297,7 @@ STEEL/CONCRETE TANK]]></text>
 				</line>
 				<line direction="TopDown">
 					<reportElement
-						x="415"
+						x="546"
 						y="122"
 						width="0"
 						height="13"
@@ -6307,7 +6306,7 @@ STEEL/CONCRETE TANK]]></text>
 				</line>
 				<line direction="TopDown">
 					<reportElement
-						x="425"
+						x="556"
 						y="122"
 						width="0"
 						height="13"
@@ -6678,7 +6677,7 @@ STEEL/CONCRETE TANK]]></text>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.type.title}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.type.caption}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -6692,7 +6691,7 @@ STEEL/CONCRETE TANK]]></text>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{supervisor.id.type.title}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{supervisor.id.type.caption}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -6708,7 +6707,7 @@ STEEL/CONCRETE TANK]]></text>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{lotowner.id.type.title}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{lotowner.id.type.caption}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -6724,7 +6723,7 @@ STEEL/CONCRETE TANK]]></text>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.type.title}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.type.caption}]]></textFieldExpression>
 				</textField>
 			</band>
 			</groupHeader>
