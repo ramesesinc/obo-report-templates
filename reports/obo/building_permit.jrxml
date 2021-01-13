@@ -1928,9 +1928,9 @@ LOAD 1,000 OR MORE)]]></text>
 				</textField>
 				<staticText>
 					<reportElement
-						x="100"
+						x="89"
 						y="687"
-						width="73"
+						width="57"
 						height="11"
 						key="staticText-448"/>
 					<box leftPadding="5" topPadding="2">					<topPen lineWidth="0.0" lineStyle="Solid"/>
@@ -1962,7 +1962,7 @@ LOAD 1,000 OR MORE)]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="61"
+						x="50"
 						y="687"
 						width="39"
 						height="11"
@@ -1978,9 +1978,9 @@ LOAD 1,000 OR MORE)]]></text>
 				</textField>
 				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="151"
+						x="136"
 						y="686"
-						width="35"
+						width="45"
 						height="12"
 						key="textField-193">
 							<printWhenExpression><![CDATA[($F{applicant.id.type.name} == "ctc")]]></printWhenExpression>
@@ -5450,7 +5450,7 @@ STEEL/CONCRETE TANK]]></text>
 				</textField>
 				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="287"
+						x="312"
 						y="462"
 						width="81"
 						height="11"
@@ -6713,7 +6713,7 @@ STEEL/CONCRETE TANK]]></text>
 					<reportElement
 						x="0"
 						y="686"
-						width="88"
+						width="70"
 						height="11"
 						key="textField-332">
 							<printWhenExpression><![CDATA[($F{applicant.id.type.name} == "ctc")]]></printWhenExpression>
