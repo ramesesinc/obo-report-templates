@@ -127,6 +127,7 @@
 	<field name="mechanical.equipmentcost" class="java.lang.Number"/>
 	<field name="electronic.equipmentcost" class="java.lang.Number"/>
 	<field name="plumbing.equipmentcost" class="java.lang.Number"/>
+	<field name="location.lotarea" class="java.lang.Number"/>
 
 
 		<group  name="P1" >
@@ -324,8 +325,8 @@ $P{LGU_NAME}.toString().toUpperCase()]]></textFieldExpression>
 				</textField>
 				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="430"
-						y="10"
+						x="106"
+						y="0"
 						width="70"
 						height="60"
 						key="image-1"/>
@@ -763,7 +764,7 @@ LOAD LESS THAN 1,000)]]></text>
 				<staticText>
 					<reportElement
 						x="19"
-						y="417"
+						y="424"
 						width="152"
 						height="9"
 						key="staticText-217"/>
@@ -1422,7 +1423,7 @@ LOAD 1,000 OR MORE)]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="7"
-						y="417"
+						y="424"
 						width="8"
 						height="7"
 						key="textField-144"/>
@@ -4256,7 +4257,7 @@ LOAD 1,000 OR MORE)]]></text>
 					<reportElement
 						x="30"
 						y="345"
-						width="34"
+						width="58"
 						height="7"
 						key="staticText-676"/>
 					<box></box>
@@ -4371,7 +4372,7 @@ LODGING HOUSE]]></text>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="4" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[( $F{occupancytype.objid} == "B108" ) ? "X" : null]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -4401,7 +4402,7 @@ LODGING HOUSE]]></text>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="4" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[( $F{occupancytype.group.objid}=="B" && !$F{occupancytype.objid}.matches("B109|B105|B110|B103") ) ? "X" : null]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[( $F{occupancytype.group.objid}=="B" && !$F{occupancytype.objid}.matches("B109|B105|B110|B103|B108") ) ? "X" : null]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
@@ -4437,50 +4438,19 @@ LODGING HOUSE]]></text>
 					<reportElement
 						x="30"
 						y="386"
-						width="66"
+						width="141"
 						height="7"
 						key="staticText-683"/>
 					<box></box>
 					<textElement textAlignment="Left" verticalAlignment="Top">
 						<font size="5"/>
 					</textElement>
-				<text><![CDATA[SCHOOL BUILDING]]></text>
-				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="105"
-						y="386"
-						width="7"
-						height="6"
-						key="textField-266"/>
-					<box>					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.5" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="4" isBold="true"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[( $F{occupancytype.objid} == "C101" ) ? "X" : null]]></textFieldExpression>
-				</textField>
-				<staticText>
-					<reportElement
-						x="114"
-						y="386"
-						width="56"
-						height="13"
-						key="staticText-684"/>
-					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
-						<font size="5"/>
-					</textElement>
-				<text><![CDATA[SCHOOL AUDITORIUM
-GYMNASIUM]]></text>
+				<text><![CDATA[SCHOOL BUILDING, SCHOOL AUDITORIUM GYMNASIUM]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="20"
-						y="394"
+						y="395"
 						width="7"
 						height="6"
 						key="textField-267"/>
@@ -4497,7 +4467,7 @@ GYMNASIUM]]></text>
 				<staticText>
 					<reportElement
 						x="30"
-						y="394"
+						y="395"
 						width="66"
 						height="7"
 						key="staticText-685"/>
@@ -4505,42 +4475,12 @@ GYMNASIUM]]></text>
 					<textElement textAlignment="Left" verticalAlignment="Top">
 						<font size="5"/>
 					</textElement>
-				<text><![CDATA[CIVIC CENTER]]></text>
+				<text><![CDATA[CIVIC CENTER, CLUBHOUSE]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="20"
-						y="402"
-						width="7"
-						height="6"
-						key="textField-268"/>
-					<box>					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.5" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="4" isBold="true"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[( $F{occupancytype.objid} == "C105" ) ? "X" : null]]></textFieldExpression>
-				</textField>
-				<staticText>
-					<reportElement
-						x="30"
-						y="402"
-						width="66"
-						height="7"
-						key="staticText-686"/>
-					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
-						<font size="5"/>
-					</textElement>
-				<text><![CDATA[CLUBHOUSE]]></text>
-				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="20"
-						y="410"
+						y="411"
 						width="7"
 						height="6"
 						key="textField-269"/>
@@ -4552,12 +4492,12 @@ GYMNASIUM]]></text>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="4" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[($F{occupancytype.group.objid}=="C" && !$F{occupancytype.objid}.matches("C101|C105|C106") ) ? "X" : null]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{occupancytype.group.objid}=="C" && !$F{occupancytype.objid}.matches("C101|C105|C106|C107|C108") ) ? "X" : null]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
 						x="30"
-						y="410"
+						y="411"
 						width="34"
 						height="7"
 						key="staticText-687"/>
@@ -4570,7 +4510,7 @@ GYMNASIUM]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="105"
-						y="401"
+						y="394"
 						width="7"
 						height="6"
 						key="textField-270"/>
@@ -4587,7 +4527,7 @@ GYMNASIUM]]></text>
 				<staticText>
 					<reportElement
 						x="114"
-						y="401"
+						y="394"
 						width="56"
 						height="13"
 						key="staticText-688"/>
@@ -4600,7 +4540,7 @@ GYMNASIUM]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="20"
-						y="451"
+						y="450"
 						width="7"
 						height="6"
 						key="textField-271"/>
@@ -4617,7 +4557,7 @@ GYMNASIUM]]></text>
 				<staticText>
 					<reportElement
 						x="30"
-						y="451"
+						y="450"
 						width="34"
 						height="7"
 						key="staticText-689"/>
@@ -4630,7 +4570,7 @@ GYMNASIUM]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="20"
-						y="443"
+						y="403"
 						width="7"
 						height="6"
 						key="textField-272"/>
@@ -4642,12 +4582,12 @@ GYMNASIUM]]></text>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="4" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[( $F{occupancytype.objid}.matches("C107|C108") ) ? "X" : null]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
 						x="30"
-						y="443"
+						y="403"
 						width="66"
 						height="7"
 						key="staticText-690"/>
@@ -4660,7 +4600,7 @@ GYMNASIUM]]></text>
 				<staticText>
 					<reportElement
 						x="30"
-						y="435"
+						y="442"
 						width="66"
 						height="7"
 						key="staticText-691"/>
@@ -4673,7 +4613,7 @@ GYMNASIUM]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="20"
-						y="435"
+						y="442"
 						width="7"
 						height="6"
 						key="textField-273"/>
@@ -4690,7 +4630,7 @@ GYMNASIUM]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="20"
-						y="427"
+						y="434"
 						width="7"
 						height="6"
 						key="textField-274"/>
@@ -4707,7 +4647,7 @@ GYMNASIUM]]></text>
 				<staticText>
 					<reportElement
 						x="30"
-						y="427"
+						y="434"
 						width="103"
 						height="7"
 						key="staticText-692"/>
@@ -6089,8 +6029,8 @@ STEEL/CONCRETE TANK]]></text>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="0"
-						y="28"
+						x="460"
+						y="37"
 						width="114"
 						height="12"
 						key="textField"/>
@@ -6102,8 +6042,8 @@ STEEL/CONCRETE TANK]]></text>
 				</textField>
 				<staticText>
 					<reportElement
-						x="0"
-						y="18"
+						x="460"
+						y="26"
 						width="115"
 						height="11"
 						key="staticText-746"/>
@@ -6300,8 +6240,8 @@ STEEL/CONCRETE TANK]]></text>
 				</elementGroup><!-- End 4 !-->
 				<image  onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="6"
-						y="45"
+						x="493"
+						y="57"
 						width="55"
 						height="43"
 						key="image-2"/>
@@ -6729,6 +6669,31 @@ STEEL/CONCRETE TANK]]></text>
 						key="line-28"/>
 					<graphicElement stretchType="NoStretch"/>
 				</line>
+				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="378"
+						y="0"
+						width="70"
+						height="60"
+						key="image-3"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch"/>
+					<imageExpression class="java.lang.String"><![CDATA["images/obologo.png"]]></imageExpression>
+				</image>
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="95"
+						y="503"
+						width="60"
+						height="11"
+						key="textField-333"/>
+					<box leftPadding="3" rightPadding="3">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{location.lotarea}]]></textFieldExpression>
+				</textField>
 			</band>
 			</groupHeader>
 			<groupFooter>
