@@ -134,6 +134,22 @@
 			<groupExpression><![CDATA[]]></groupExpression>
 			<groupHeader>
 			<band height="947"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="686"
+						width="70"
+						height="11"
+						key="textField-332">
+							<printWhenExpression><![CDATA[($F{applicant.id.type.name} == "ctc")]]></printWhenExpression>
+						</reportElement>
+					<box leftPadding="5" topPadding="2">					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.type.caption} + "  " + $F{applicant.id.idno}]]></textFieldExpression>
+				</textField>
 				<staticText>
 					<reportElement
 						x="0"
@@ -6602,22 +6618,6 @@ STEEL/CONCRETE TANK]]></text>
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{lotowner.id.type.caption} + ' ' + $F{applicant.id.idno}]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="0"
-						y="686"
-						width="70"
-						height="11"
-						key="textField-332">
-							<printWhenExpression><![CDATA[($F{applicant.id.type.name} == "ctc")]]></printWhenExpression>
-						</reportElement>
-					<box leftPadding="5" topPadding="2">					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.type.caption} + "  " + $F{applicant.id.idno}]]></textFieldExpression>
 				</textField>
 				<line direction="TopDown">
 					<reportElement
