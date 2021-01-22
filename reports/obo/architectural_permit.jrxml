@@ -398,13 +398,15 @@
 				</textField>
 				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="430"
-						y="18"
-						width="70"
-						height="60"
+						x="106"
+						y="21"
+						width="47"
+						height="47"
 						key="image-1"/>
 					<box></box>
-					<graphicElement stretchType="NoStretch"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+</graphicElement>
 					<imageExpression class="java.lang.String"><![CDATA["images/lgulogo.png"]]></imageExpression>
 				</image>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
@@ -2627,9 +2629,9 @@
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="0"
+						x="35"
 						y="674"
-						width="275"
+						width="150"
 						height="12"
 						key="textField-128"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
@@ -2991,9 +2993,9 @@
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="284"
+						x="319"
 						y="674"
-						width="275"
+						width="150"
 						height="12"
 						key="textField-138"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
@@ -3240,6 +3242,19 @@
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{supervisor.tin}]]></textFieldExpression>
 				</textField>
+				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="413"
+						y="21"
+						width="47"
+						height="47"
+						key="image-2"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+</graphicElement>
+					<imageExpression class="java.lang.String"><![CDATA["images/obologo.png"]]></imageExpression>
+				</image>
 			</band>
 			</groupHeader>
 			<groupFooter>
