@@ -325,13 +325,15 @@ $P{LGU_NAME}.toString().toUpperCase()]]></textFieldExpression>
 				</textField>
 				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="106"
-						y="0"
-						width="70"
-						height="60"
+						x="128"
+						y="6"
+						width="45"
+						height="45"
 						key="image-1"/>
 					<box></box>
-					<graphicElement stretchType="NoStretch"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+</graphicElement>
 					<imageExpression class="java.lang.String"><![CDATA["images/lgulogo.png"]]></imageExpression>
 				</image>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
@@ -6030,12 +6032,12 @@ STEEL/CONCRETE TANK]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="460"
-						y="37"
-						width="114"
+						y="13"
+						width="115"
 						height="12"
 						key="textField"/>
 					<box leftPadding="5"></box>
-					<textElement>
+					<textElement textAlignment="Center">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{objid}]]></textFieldExpression>
@@ -6043,12 +6045,12 @@ STEEL/CONCRETE TANK]]></text>
 				<staticText>
 					<reportElement
 						x="460"
-						y="26"
+						y="2"
 						width="115"
 						height="11"
 						key="staticText-746"/>
 					<box leftPadding="5"></box>
-					<textElement>
+					<textElement textAlignment="Center">
 						<font size="7"/>
 					</textElement>
 				<text><![CDATA[TRACKING NO]]></text>
@@ -6240,13 +6242,15 @@ STEEL/CONCRETE TANK]]></text>
 				</elementGroup><!-- End 4 !-->
 				<image  onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="493"
-						y="57"
+						x="496"
+						y="25"
 						width="55"
 						height="43"
 						key="image-2"/>
 					<box></box>
-					<graphicElement stretchType="NoStretch"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+</graphicElement>
 					<imageExpression class="java.net.URL"><![CDATA[$F{qrcode}]]></imageExpression>
 				</image>
 				<staticText>
@@ -6671,13 +6675,15 @@ STEEL/CONCRETE TANK]]></text>
 				</line>
 				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="378"
-						y="0"
-						width="70"
-						height="60"
+						x="375"
+						y="5"
+						width="47"
+						height="47"
 						key="image-3"/>
 					<box></box>
-					<graphicElement stretchType="NoStretch"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+</graphicElement>
 					<imageExpression class="java.lang.String"><![CDATA["images/obologo.png"]]></imageExpression>
 				</image>
 				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
