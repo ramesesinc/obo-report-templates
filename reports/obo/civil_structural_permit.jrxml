@@ -2094,9 +2094,9 @@
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="0"
+						x="35"
 						y="554"
-						width="275"
+						width="150"
 						height="12"
 						key="textField-177"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
@@ -2456,9 +2456,9 @@
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="284"
+						x="319"
 						y="554"
-						width="275"
+						width="150"
 						height="12"
 						key="textField-187"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>

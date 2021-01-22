@@ -134,6 +134,9 @@
 	<field name="qrcode" class="java.net.URL"/>
 	<field name="objid" class="java.lang.String"/>
 	<field name="supervisor.id.type.caption" class="java.lang.String"/>
+	<field name="supervisor.id.idno" class="java.lang.String"/>
+	<field name="supervisor.id.dtissued" class="java.util.Date"/>
+	<field name="contractor.id.placeissued" class="java.lang.String"/>
 
 
 		<group  name="P1" >
@@ -2233,27 +2236,27 @@
 				</line>
 				<line direction="TopDown">
 					<reportElement
-						x="182"
+						x="196"
 						y="653"
-						width="121"
+						width="100"
 						height="0"
 						key="line-33"/>
 					<graphicElement stretchType="NoStretch"/>
 				</line>
 				<line direction="TopDown">
 					<reportElement
-						x="325"
+						x="313"
 						y="653"
-						width="121"
+						width="108"
 						height="0"
 						key="line-34"/>
 					<graphicElement stretchType="NoStretch"/>
 				</line>
 				<line direction="TopDown">
 					<reportElement
-						x="456"
+						x="438"
 						y="653"
-						width="99"
+						width="105"
 						height="0"
 						key="line-35"/>
 					<graphicElement stretchType="NoStretch"/>
@@ -2273,9 +2276,9 @@
 				</staticText>
 				<staticText>
 					<reportElement
-						x="344"
+						x="313"
 						y="654"
-						width="89"
+						width="108"
 						height="12"
 						key="staticText-245"/>
 					<box></box>
@@ -2286,9 +2289,9 @@
 				</staticText>
 				<staticText>
 					<reportElement
-						x="461"
+						x="438"
 						y="654"
-						width="89"
+						width="105"
 						height="12"
 						key="staticText-246"/>
 					<box></box>
@@ -2299,8 +2302,8 @@
 				</staticText>
 				<staticText>
 					<reportElement
-						x="-1"
-						y="678"
+						x="0"
+						y="677"
 						width="191"
 						height="12"
 						key="staticText-247"/>
@@ -2310,29 +2313,11 @@
 					</textElement>
 				<text><![CDATA[ LICENSED ARCHITECT OR CIVIL ENGINEER]]></text>
 				</staticText>
-				<line direction="TopDown">
-					<reportElement
-						x="34"
-						y="676"
-						width="121"
-						height="0"
-						key="line-36"/>
-					<graphicElement stretchType="NoStretch"/>
-				</line>
-				<line direction="TopDown">
-					<reportElement
-						x="185"
-						y="676"
-						width="121"
-						height="0"
-						key="line-37"/>
-					<graphicElement stretchType="NoStretch"/>
-				</line>
 				<staticText>
 					<reportElement
-						x="347"
+						x="313"
 						y="678"
-						width="89"
+						width="108"
 						height="12"
 						key="staticText-249"/>
 					<box></box>
@@ -2341,20 +2326,11 @@
 					</textElement>
 				<text><![CDATA[Date Issued ]]></text>
 				</staticText>
-				<line direction="TopDown">
-					<reportElement
-						x="328"
-						y="676"
-						width="121"
-						height="0"
-						key="line-38"/>
-					<graphicElement stretchType="NoStretch"/>
-				</line>
 				<staticText>
 					<reportElement
-						x="464"
+						x="438"
 						y="678"
-						width="89"
+						width="105"
 						height="12"
 						key="staticText-250"/>
 					<box></box>
@@ -2363,15 +2339,6 @@
 					</textElement>
 				<text><![CDATA[Place Issued]]></text>
 				</staticText>
-				<line direction="TopDown">
-					<reportElement
-						x="459"
-						y="676"
-						width="99"
-						height="0"
-						key="line-39"/>
-					<graphicElement stretchType="NoStretch"/>
-				</line>
 				<staticText>
 					<reportElement
 						x="5"
@@ -2421,7 +2388,7 @@
 						key="staticText-254"/>
 					<box></box>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font size="8"/>
+						<font size="6"/>
 					</textElement>
 				<text><![CDATA[Doc. No. ]]></text>
 				</staticText>
@@ -2434,7 +2401,7 @@
 						key="staticText-255"/>
 					<box></box>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font size="8"/>
+						<font size="6"/>
 					</textElement>
 				<text><![CDATA[Page No]]></text>
 				</staticText>
@@ -2447,7 +2414,7 @@
 						key="staticText-256"/>
 					<box></box>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font size="8"/>
+						<font size="6"/>
 					</textElement>
 				<text><![CDATA[Book No.]]></text>
 				</staticText>
@@ -2460,7 +2427,7 @@
 						key="staticText-257"/>
 					<box></box>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font size="8"/>
+						<font size="6"/>
 					</textElement>
 				<text><![CDATA[Series No.]]></text>
 				</staticText>
@@ -2492,23 +2459,23 @@
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="28"
-						y="643"
+						x="31"
+						y="642"
 						width="119"
 						height="14"
 						key="textField-144"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{applicant.firstname}, $F{applicant.middlename}, $F{applicant.lastname})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="352"
+						x="313"
 						y="641"
-						width="73"
+						width="108"
 						height="12"
 						key="textField-145">
 							<printWhenExpression><![CDATA[($F{applicant.id.type.name} == "ctc")]]></printWhenExpression>
@@ -2522,9 +2489,9 @@
 				</textField>
 				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="454"
+						x="438"
 						y="641"
-						width="104"
+						width="105"
 						height="12"
 						key="textField-146">
 							<printWhenExpression><![CDATA[($F{applicant.id.type.name} == "ctc")]]></printWhenExpression>
@@ -2538,7 +2505,7 @@
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="188"
+						x="196"
 						y="640"
 						width="100"
 						height="12"
@@ -2554,14 +2521,14 @@
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="34"
-						y="666"
+						x="30"
+						y="662"
 						width="119"
 						height="14"
 						key="textField-148"/>
 					<box>					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{designprofessional.firstname}, $F{designprofessional.middlename}, $F{designprofessional.lastname})]]></textFieldExpression>
@@ -2934,29 +2901,29 @@
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="198"
-						y="678"
-						width="88"
+						x="196"
+						y="676"
+						width="100"
 						height="14"
 						key="textField-153"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
+						<font pdfFontName="Helvetica" size="8" isBold="false" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{supervisor.id.type.caption}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="198"
-						y="655"
-						width="88"
+						x="196"
+						y="651"
+						width="100"
 						height="14"
 						key="textField-154"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
+						<font pdfFontName="Helvetica" size="8" isBold="false" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.type.caption}]]></textFieldExpression>
 				</textField>
@@ -3029,6 +2996,48 @@
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[null]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="196"
+						y="664"
+						width="100"
+						height="14"
+						key="textField-160"/>
+					<box>					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{supervisor.id.idno}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="313"
+						y="665"
+						width="108"
+						height="14"
+						key="textField-161"/>
+					<box>					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{supervisor.id.dtissued}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="438"
+						y="664"
+						width="105"
+						height="14"
+						key="textField-162"/>
+					<box>					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="6" isBold="true" isUnderline="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{contractor.id.placeissued}]]></textFieldExpression>
 				</textField>
 			</band>
 			</groupHeader>
