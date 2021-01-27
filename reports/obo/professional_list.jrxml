@@ -25,7 +25,7 @@
 	<import value="net.sf.jasperreports.engine.data.*" />
 
 
-	<field name="section.title" class="java.lang.String"/>
+	<field name="section" class="java.lang.String"/>
 	<field name="firstname" class="java.lang.String"/>
 	<field name="lastname" class="java.lang.String"/>
 	<field name="middlename" class="java.lang.String"/>
@@ -240,7 +240,7 @@
 					<textElement verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{section.title}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{section}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement

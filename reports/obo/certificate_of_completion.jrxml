@@ -2608,7 +2608,7 @@
 					</textElement>
 				<textFieldExpression   class="java.util.Date"><![CDATA[$F{bldgpermit.dtexpectedcompletion}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="###0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="212"
 						y="262"
@@ -2621,7 +2621,7 @@
 					</textElement>
 				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{bldgpermit.totalfloorarea}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="###0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="212"
 						y="272"
@@ -2634,7 +2634,7 @@
 					</textElement>
 				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{bldgpermit.numfloors}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="###0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="212"
 						y="283"
@@ -2751,7 +2751,7 @@
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.placeissued}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="###0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="408"
 						y="283"
@@ -2764,7 +2764,7 @@
 					</textElement>
 				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{actualnumunits}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="###0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="408"
 						y="272"
@@ -2777,7 +2777,7 @@
 					</textElement>
 				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{actualnumfloors}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="###0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="408"
 						y="262"
@@ -2968,7 +2968,7 @@
 					<reportElement
 						x="5"
 						y="596"
-						width="50"
+						width="66"
 						height="12"
 						key="textField-67"/>
 					<box></box>
@@ -2986,7 +2986,7 @@
 						key="textField-68"/>
 					<box></box>
 					<textElement verticalAlignment="Middle">
-						<font fontName="Arial" size="7"/>
+						<font fontName="Arial" size="6"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.type.title}]]></textFieldExpression>
 				</textField>
