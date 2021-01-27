@@ -1472,7 +1472,7 @@
 						key="textField-30"/>
 					<box>					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{designprofessional.firstname}, $F{designprofessional.middlename}, $F{designprofessional.lastname})]]></textFieldExpression>

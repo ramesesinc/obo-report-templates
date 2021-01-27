@@ -24,6 +24,8 @@
 	<import value="net.sf.jasperreports.engine.*" />
 	<import value="net.sf.jasperreports.engine.data.*" />
 
+	<parameter name="LGU_NAME" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="PROVINCE_NAME" isForPrompting="false" class="java.lang.String"/>
 
 	<field name="designprofessional.prc.placeissued" class="java.lang.String"/>
 	<field name="designprofessional.prc.dtvalid" class="java.util.Date"/>
@@ -420,7 +422,7 @@
 					<textElement textAlignment="Center">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.capitalize( $F{org.fullname} ? $F{org.fullname} : $F{org.group.fullname})]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[( $P{PROVINCE_NAME} ? $P{PROVINCE_NAME} : $P{LGU_NAME})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -433,7 +435,7 @@
 					<textElement textAlignment="Center">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.capitalize($F{org.group.fullname} ? $F{org.group.fullname} : null)]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[( $P{PROVINCE_NAME} ? $P{LGU_NAME} : null)]]></textFieldExpression>
 				</textField>
 				<line direction="TopDown">
 					<reportElement

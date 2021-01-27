@@ -33,12 +33,12 @@
 	<field name="org.title" class="java.lang.String"/>
 	<field name="org.group.fullname" class="java.lang.String"/>
 	<field name="org.fullname" class="java.lang.String"/>
-	<field name="location.barangay.name" class="java.lang.String"/>
-	<field name="location.street" class="java.lang.String"/>
-	<field name="location.subdivision" class="java.lang.String"/>
-	<field name="location.unitno" class="java.lang.String"/>
-	<field name="location.blockno" class="java.lang.String"/>
-	<field name="location.lotno" class="java.lang.String"/>
+	<field name="bldgpermit.location.barangay.name" class="java.lang.String"/>
+	<field name="bldgpermit.location.street" class="java.lang.String"/>
+	<field name="bldgpermit.location.subdivision" class="java.lang.String"/>
+	<field name="bldgpermit.location.unitno" class="java.lang.String"/>
+	<field name="bldgpermit.location.blockno" class="java.lang.String"/>
+	<field name="bldgpermit.location.lotno" class="java.lang.String"/>
 	<field name="applicant.mobileno" class="java.lang.String"/>
 	<field name="applicant.phoneno" class="java.lang.String"/>
 	<field name="applicant.address.citymunicipality" class="java.lang.String"/>
@@ -162,6 +162,15 @@
 	<field name="bldgpermit.permitno" class="java.lang.String"/>
 	<field name="bldgpermit.dtissued" class="java.util.Date"/>
 	<field name="dtfiled" class="java.util.Date"/>
+	<field name="qrcode" class="java.net.URL"/>
+	<field name="objid" class="java.lang.String"/>
+	<field name="bldgpermit.dtproposedconstruction" class="java.util.Date"/>
+	<field name="bldgpermit.dtexpectedcompletion" class="java.util.Date"/>
+	<field name="bldgpermit.totalfloorarea" class="java.lang.Number"/>
+	<field name="bldgpermit.numfloors" class="java.lang.Number"/>
+	<field name="bldgpermit.numunits" class="java.lang.Number"/>
+	<field name="supervisor.id.type.title" class="java.lang.String"/>
+	<field name="applicant.id.type.title" class="java.lang.String"/>
 
 
 		<group  name="P1" >
@@ -234,12 +243,12 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="54"
+						y="56"
 						width="559"
 						height="16"
 						key="staticText-3"/>
 					<box></box>
-					<textElement textAlignment="Center">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="10" isBold="true"/>
 					</textElement>
 				<text><![CDATA[OFFICE OF THE BUILDING OFFICIAL]]></text>
@@ -247,7 +256,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="73"
+						y="77"
 						width="559"
 						height="18"
 						key="staticText-4"/>
@@ -257,32 +266,6 @@
 					</textElement>
 				<text><![CDATA[CERTITFICATE OF COMPLETION]]></text>
 				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="0"
-						y="24"
-						width="559"
-						height="12"
-						key="textField-1"/>
-					<box></box>
-					<textElement textAlignment="Center">
-						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[( $P{PROVINCE_NAME} ? $P{PROVINCE_NAME} : $P{LGU_NAME})]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="0"
-						y="35"
-						width="559"
-						height="12"
-						key="textField-2"/>
-					<box></box>
-					<textElement textAlignment="Center">
-						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.capitalize($F{org.group.fullname} ? $F{org.group.fullname} : null)]]></textFieldExpression>
-				</textField>
 				<line direction="TopDown">
 					<reportElement
 						x="100"
@@ -504,42 +487,16 @@
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="95"
+						x="94"
 						y="199"
-						width="92"
+						width="243"
 						height="12"
 						key="textField-11"/>
 					<box leftPadding="2" rightPadding="2"></box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
+					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{applicant.address.bldgno}, $F{applicant.address.bldgname}, $F{applicant.address.unitno}, $F{applicant.address.subdivision}, $F{applicant.address.street})]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="187"
-						y="199"
-						width="66"
-						height="12"
-						key="textField-12"/>
-					<box leftPadding="2" rightPadding="2"></box>
-					<textElement verticalAlignment="Middle">
-						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.address.barangay.name}]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="253"
-						y="199"
-						width="84"
-						height="12"
-						key="textField-13"/>
-					<box leftPadding="2" rightPadding="2"></box>
-					<textElement verticalAlignment="Middle">
-						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.address.citymunicipality}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{applicant.address.bldgno}, $F{applicant.address.bldgname}, $F{applicant.address.unitno}, $F{applicant.address.subdivision}, $F{applicant.address.street}, $F{applicant.address.barangay.name},$F{applicant.address.citymunicipality})]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -566,7 +523,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{location.lotno}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{bldgpermit.location.lotno}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -580,7 +537,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{location.blockno}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{bldgpermit.location.blockno}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -594,7 +551,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{location.street}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{bldgpermit.location.street}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -608,7 +565,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{location.barangay.name}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{bldgpermit.location.barangay.name}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -2203,19 +2160,6 @@
 				<staticText>
 					<reportElement
 						x="358"
-						y="621"
-						width="51"
-						height="12"
-						key="staticText-475"/>
-					<box></box>
-					<textElement verticalAlignment="Middle">
-						<font fontName="Arial" size="7"/>
-					</textElement>
-				<text><![CDATA[CTC No.]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="358"
 						y="635"
 						width="51"
 						height="11"
@@ -2283,19 +2227,6 @@
 						<font fontName="Arial" size="7"/>
 					</textElement>
 				<text><![CDATA[]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="5"
-						y="596"
-						width="51"
-						height="12"
-						key="staticText-481"/>
-					<box></box>
-					<textElement verticalAlignment="Middle">
-						<font fontName="Arial" size="7"/>
-					</textElement>
-				<text><![CDATA[CTC No.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -2557,7 +2488,7 @@
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{supervisor.id.dtissued}]]></textFieldExpression>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{supervisor.id.dtissued}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -2625,7 +2556,7 @@
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{contractor.tin}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="475"
 						y="509"
@@ -2651,7 +2582,7 @@
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{contractor.pcab.idno}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" pattern="###0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="316"
 						y="306"
@@ -2662,9 +2593,9 @@
 					<textElement textAlignment="Right" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{totalmaterialcost}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{totalmaterialcost}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="212"
 						y="252"
@@ -2675,7 +2606,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{dtactualcompleted}]]></textFieldExpression>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{bldgpermit.dtexpectedcompletion}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -2688,7 +2619,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{actualtotalfloorarea}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{bldgpermit.totalfloorarea}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -2701,7 +2632,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{actualnumfloors}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{bldgpermit.numfloors}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -2714,9 +2645,9 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{actualnumunits}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{bldgpermit.numunits}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="212"
 						y="242"
@@ -2727,9 +2658,9 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{dtactualstarted}]]></textFieldExpression>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{bldgpermit.dtproposedconstruction}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="316"
 						y="389"
@@ -2740,9 +2671,9 @@
 					<textElement textAlignment="Right" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{totalmaterialcost}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{totalmaterialcost}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="316"
 						y="424"
@@ -2753,9 +2684,9 @@
 					<textElement textAlignment="Right" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{totalequipmentcost}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{totalequipmentcost}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="316"
 						y="436"
@@ -2766,9 +2697,9 @@
 					<textElement textAlignment="Right" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{totalothercost}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{totalothercost}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="316"
 						y="460"
@@ -2779,7 +2710,7 @@
 					<textElement textAlignment="Right" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{actualprojectcost}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{actualprojectcost}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -2805,7 +2736,7 @@
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.dtissued}]]></textFieldExpression>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{applicant.id.dtissued}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -2831,7 +2762,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{actualnumunits}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{actualnumunits}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -2844,7 +2775,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{actualnumfloors}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{actualnumfloors}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -2857,9 +2788,9 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{actualtotalfloorarea}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{actualtotalfloorarea}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="408"
 						y="252"
@@ -2870,9 +2801,9 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{dtactualcompleted}]]></textFieldExpression>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{dtactualcompleted}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" pattern="MM/dd/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="408"
 						y="242"
@@ -2883,7 +2814,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true" isUnderline="false"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{dtactualstarted}]]></textFieldExpression>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{dtactualstarted}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -2940,7 +2871,124 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{dtfiled}]]></textFieldExpression>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{dtfiled}]]></textFieldExpression>
+				</textField>
+				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="128"
+						y="6"
+						width="45"
+						height="45"
+						key="image-1"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+</graphicElement>
+					<imageExpression class="java.lang.String"><![CDATA["images/lgulogo.png"]]></imageExpression>
+				</image>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="24"
+						width="559"
+						height="12"
+						key="textField-64"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{LGU_NAME}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="35"
+						width="559"
+						height="12"
+						key="textField-65"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{PROVINCE_NAME}]]></textFieldExpression>
+				</textField>
+				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="375"
+						y="5"
+						width="47"
+						height="47"
+						key="image-2"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+</graphicElement>
+					<imageExpression class="java.lang.String"><![CDATA["images/obologo.png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement
+						x="444"
+						y="2"
+						width="115"
+						height="11"
+						key="staticText-638"/>
+					<box leftPadding="5"></box>
+					<textElement textAlignment="Center">
+						<font size="7"/>
+					</textElement>
+				<text><![CDATA[TRACKING NO]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="444"
+						y="13"
+						width="115"
+						height="12"
+						key="textField-66"/>
+					<box leftPadding="5"></box>
+					<textElement textAlignment="Center">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{objid}]]></textFieldExpression>
+				</textField>
+				<image  onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="480"
+						y="24"
+						width="55"
+						height="43"
+						key="image-3"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+</graphicElement>
+					<imageExpression class="java.net.URL"><![CDATA[$F{qrcode}]]></imageExpression>
+				</image>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="5"
+						y="596"
+						width="50"
+						height="12"
+						key="textField-67"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{supervisor.id.type.title}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="358"
+						y="621"
+						width="50"
+						height="12"
+						key="textField-68"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.id.type.title}]]></textFieldExpression>
 				</textField>
 			</band>
 			</groupHeader>

@@ -320,6 +320,8 @@
 	<field name="worktypes.demolition" class="java.lang.String"/>
 	<field name="applicant.id.type.caption" class="java.lang.String"/>
 	<field name="lotowner.id.type.caption" class="java.lang.String"/>
+	<field name="qrcode" class="java.net.URL"/>
+	<field name="objid" class="java.lang.String"/>
 
 
 		<group  name="P1" >
@@ -434,19 +436,6 @@
 					</textElement>
 				<text><![CDATA[MP NO.]]></text>
 				</staticText>
-				<staticText>
-					<reportElement
-						x="401"
-						y="112"
-						width="158"
-						height="12"
-						key="staticText-7"/>
-					<box leftPadding="5" rightPadding="10"></box>
-					<textElement textAlignment="Right">
-						<font size="8"/>
-					</textElement>
-				<text><![CDATA[BUILDING PERMIT NO.]]></text>
-				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
@@ -472,59 +461,6 @@
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[( $P{PROVINCE_NAME} ? $P{LGU_NAME} : null)]]></textFieldExpression>
-				</textField>
-				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="430"
-						y="15"
-						width="70"
-						height="60"
-						key="image-1"/>
-					<box></box>
-					<graphicElement stretchType="NoStretch"/>
-					<imageExpression class="java.lang.String"><![CDATA["images/lgulogo.png"]]></imageExpression>
-				</image>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="0"
-						y="124"
-						width="158"
-						height="14"
-						key="textField-3"/>
-					<box leftPadding="5">					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="9" isBold="true"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{appid}]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="206"
-						y="124"
-						width="158"
-						height="14"
-						key="textField-4"/>
-					<box leftPadding="5">					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Left" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="9" isBold="true"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{epno}]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="401"
-						y="124"
-						width="158"
-						height="14"
-						key="textField-5"/>
-					<box leftPadding="5" rightPadding="10">					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Right" verticalAlignment="Top">
-						<font pdfFontName="Helvetica-Bold" size="9" isBold="true"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{bldgpermitno}]]></textFieldExpression>
 				</textField>
 				<line direction="TopDown">
 					<reportElement
@@ -1600,7 +1536,7 @@
 						key="textField-122"/>
 					<box>					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{designprofessional.firstname}, $F{designprofessional.middlename}, $F{designprofessional.lastname})]]></textFieldExpression>
@@ -2137,7 +2073,7 @@
 						key="textField-144"/>
 					<box>					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{supervisor.firstname}, $F{supervisor.middlename}, $F{supervisor.lastname})]]></textFieldExpression>
@@ -3388,6 +3324,378 @@
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{applicant.address.bldgno}, $F{applicant.address.bldgname}, $F{applicant.address.unitno}, $F{applicant.address.subdivision}, $F{applicant.address.street}, $F{applicant.address.barangay.name}, $F{applicant.address.citymunicipality})]]></textFieldExpression>
 				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="4"
+						y="124"
+						width="100"
+						height="13"
+						key="textField-204"/>
+					<box leftPadding="5" rightPadding="5">					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="6" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="14"
+						y="124"
+						width="0"
+						height="13"
+						key="line-38"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="24"
+						y="124"
+						width="0"
+						height="13"
+						key="line-39"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="34"
+						y="124"
+						width="0"
+						height="13"
+						key="line-40"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="44"
+						y="124"
+						width="0"
+						height="13"
+						key="line-41"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="54"
+						y="124"
+						width="0"
+						height="13"
+						key="line-42"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="64"
+						y="124"
+						width="0"
+						height="13"
+						key="line-43"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="74"
+						y="124"
+						width="0"
+						height="13"
+						key="line-44"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="84"
+						y="124"
+						width="0"
+						height="13"
+						key="line-45"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="94"
+						y="124"
+						width="0"
+						height="13"
+						key="line-46"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="206"
+						y="124"
+						width="100"
+						height="13"
+						key="textField-205"/>
+					<box leftPadding="5" rightPadding="5">					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="6" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="216"
+						y="124"
+						width="0"
+						height="13"
+						key="line-47"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="226"
+						y="124"
+						width="0"
+						height="13"
+						key="line-48"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="236"
+						y="124"
+						width="0"
+						height="13"
+						key="line-49"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="246"
+						y="124"
+						width="0"
+						height="13"
+						key="line-50"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="256"
+						y="124"
+						width="0"
+						height="13"
+						key="line-51"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="266"
+						y="124"
+						width="0"
+						height="13"
+						key="line-52"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="276"
+						y="124"
+						width="0"
+						height="13"
+						key="line-53"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="286"
+						y="124"
+						width="0"
+						height="13"
+						key="line-54"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="296"
+						y="124"
+						width="0"
+						height="13"
+						key="line-55"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="431"
+						y="124"
+						width="100"
+						height="13"
+						key="textField-206"/>
+					<box leftPadding="5" rightPadding="5">					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="6" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="441"
+						y="124"
+						width="0"
+						height="13"
+						key="line-56"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="451"
+						y="124"
+						width="0"
+						height="13"
+						key="line-57"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="461"
+						y="124"
+						width="0"
+						height="13"
+						key="line-58"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="471"
+						y="124"
+						width="0"
+						height="13"
+						key="line-59"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="481"
+						y="124"
+						width="0"
+						height="13"
+						key="line-60"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="491"
+						y="124"
+						width="0"
+						height="13"
+						key="line-61"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="501"
+						y="124"
+						width="0"
+						height="13"
+						key="line-62"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="511"
+						y="124"
+						width="0"
+						height="13"
+						key="line-63"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="521"
+						y="124"
+						width="0"
+						height="13"
+						key="line-64"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<image  onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="480"
+						y="24"
+						width="55"
+						height="43"
+						key="image-1"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+</graphicElement>
+					<imageExpression class="java.net.URL"><![CDATA[$F{qrcode}]]></imageExpression>
+				</image>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="444"
+						y="12"
+						width="115"
+						height="12"
+						key="textField-207"/>
+					<box leftPadding="5"></box>
+					<textElement textAlignment="Center">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{objid}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="444"
+						y="1"
+						width="115"
+						height="11"
+						key="staticText-335"/>
+					<box leftPadding="5"></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="7"/>
+					</textElement>
+				<text><![CDATA[TRACKING NO]]></text>
+				</staticText>
+				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="402"
+						y="20"
+						width="47"
+						height="47"
+						key="image-2"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+</graphicElement>
+					<imageExpression class="java.lang.String"><![CDATA["images/obologo.png"]]></imageExpression>
+				</image>
+				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="116"
+						y="20"
+						width="47"
+						height="47"
+						key="image-3"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+</graphicElement>
+					<imageExpression class="java.lang.String"><![CDATA["images/lgulogo.png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement
+						x="431"
+						y="113"
+						width="128"
+						height="12"
+						key="staticText-336"/>
+					<box leftPadding="5" rightPadding="10"></box>
+					<textElement textAlignment="Left">
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[BUILDING PERMIT NO.]]></text>
+				</staticText>
 			</band>
 			</groupHeader>
 			<groupFooter>
@@ -3525,7 +3833,7 @@
 						key="textField-69"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{applicant.firstname}, $F{applicant.middlename}, $F{applicant.lastname})]]></textFieldExpression>
@@ -3593,7 +3901,7 @@
 						key="textField-71"/>
 					<box>					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Center" verticalAlignment="Top">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{lotowner.firstname}, $F{lotowner.middlename}, $F{lotowner.lastname})]]></textFieldExpression>
