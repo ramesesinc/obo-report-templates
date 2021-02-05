@@ -3618,45 +3618,6 @@
 						key="line-64"/>
 					<graphicElement stretchType="NoStretch"/>
 				</line>
-				<image  onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="480"
-						y="24"
-						width="55"
-						height="43"
-						key="image-1"/>
-					<box></box>
-					<graphicElement stretchType="NoStretch">
-					<pen lineWidth="0.0" lineStyle="Solid"/>
-</graphicElement>
-					<imageExpression class="java.net.URL"><![CDATA[$F{qrcode}]]></imageExpression>
-				</image>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="444"
-						y="12"
-						width="115"
-						height="12"
-						key="textField-207"/>
-					<box leftPadding="5"></box>
-					<textElement textAlignment="Center">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{objid}]]></textFieldExpression>
-				</textField>
-				<staticText>
-					<reportElement
-						x="444"
-						y="1"
-						width="115"
-						height="11"
-						key="staticText-335"/>
-					<box leftPadding="5"></box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font size="7"/>
-					</textElement>
-				<text><![CDATA[TRACKING NO]]></text>
-				</staticText>
 				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="402"

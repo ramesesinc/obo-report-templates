@@ -6045,32 +6045,6 @@ STEEL/CONCRETE TANK]]></text>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{supervisor.profession}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="461"
-						y="13"
-						width="115"
-						height="12"
-						key="textField"/>
-					<box leftPadding="5"></box>
-					<textElement textAlignment="Center">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{objid}]]></textFieldExpression>
-				</textField>
-				<staticText>
-					<reportElement
-						x="461"
-						y="2"
-						width="115"
-						height="11"
-						key="staticText-746"/>
-					<box leftPadding="5"></box>
-					<textElement textAlignment="Center">
-						<font size="7"/>
-					</textElement>
-				<text><![CDATA[TRACKING NO]]></text>
-				</staticText>
 				<elementGroup><!--  Start: 2 !-->
 				<line direction="TopDown">
 					<reportElement
@@ -6256,19 +6230,6 @@ STEEL/CONCRETE TANK]]></text>
 					<graphicElement stretchType="NoStretch"/>
 				</line>
 				</elementGroup><!-- End 4 !-->
-				<image  onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="497"
-						y="25"
-						width="55"
-						height="43"
-						key="image-2"/>
-					<box></box>
-					<graphicElement stretchType="NoStretch">
-					<pen lineWidth="0.0" lineStyle="Solid"/>
-</graphicElement>
-					<imageExpression class="java.net.URL"><![CDATA[$F{qrcode}]]></imageExpression>
-				</image>
 				<staticText>
 					<reportElement
 						x="3"
