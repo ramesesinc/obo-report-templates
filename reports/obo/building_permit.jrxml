@@ -129,6 +129,7 @@
 	<field name="plumbing.equipmentcost" class="java.lang.Number"/>
 	<field name="location.lotarea" class="java.lang.Number"/>
 	<field name="controlno" class="java.lang.String"/>
+	<field name="state" class="java.lang.String"/>
 
 
 		<group  name="P1" >
@@ -6689,7 +6690,7 @@ STEEL/CONCRETE TANK]]></text>
 						width="552"
 						height="536"
 						key="image-4">
-							<printWhenExpression><![CDATA[$F{controlno} == null]]></printWhenExpression>
+							<printWhenExpression><![CDATA[!$F{state}?.equalsIgnoreCase('end')]]></printWhenExpression>
 						</reportElement>
 					<box></box>
 					<graphicElement stretchType="NoStretch"/>

@@ -323,6 +323,7 @@
 	<field name="qrcode" class="java.net.URL"/>
 	<field name="objid" class="java.lang.String"/>
 	<field name="controlno" class="java.lang.String"/>
+	<field name="state" class="java.lang.String"/>
 
 
 		<group  name="P1" >
@@ -4979,7 +4980,7 @@ plastic shall be used in construction of electrical signs.]]></text>
 						width="554"
 						height="648"
 						key="image-4">
-							<printWhenExpression><![CDATA[$F{controlno} == null]]></printWhenExpression>
+							<printWhenExpression><![CDATA[!$F{state}?.equalsIgnoreCase('end')]]></printWhenExpression>
 						</reportElement>
 					<box></box>
 					<graphicElement stretchType="NoStretch"/>
