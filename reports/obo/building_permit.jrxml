@@ -6663,6 +6663,43 @@ STEEL/CONCRETE TANK]]></text>
 					</textElement>
 				<textFieldExpression   class="java.lang.Number"><![CDATA[$F{location.lotarea}]]></textFieldExpression>
 				</textField>
+				<image  onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="493"
+						y="25"
+						width="55"
+						height="43"
+						key="image-5"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch"/>
+					<imageExpression class="java.net.URL"><![CDATA[$F{qrcode}]]></imageExpression>
+				</image>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="457"
+						y="13"
+						width="115"
+						height="12"
+						key="textField-334"/>
+					<box leftPadding="5"></box>
+					<textElement textAlignment="Center">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{objid}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="457"
+						y="2"
+						width="115"
+						height="11"
+						key="staticText-761"/>
+					<box leftPadding="5"></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="7"/>
+					</textElement>
+				<text><![CDATA[TRACKING NO]]></text>
+				</staticText>
 			</band>
 			</groupHeader>
 			<groupFooter>
