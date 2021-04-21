@@ -134,6 +134,7 @@
 	<field name="lotowner.id.type.caption" class="java.lang.String"/>
 	<field name="qrcode" class="java.net.URL"/>
 	<field name="objid" class="java.lang.String"/>
+	<field name="controlno" class="java.lang.String"/>
 
 
 		<group  name="P1" >
@@ -3370,7 +3371,20 @@ Regulations and to the following conditions:]]></text>
 			</groupFooter>
 		</group>
 		<background>
-			<band height="0"  isSplitAllowed="true" >
+			<band height="788"  isSplitAllowed="true" >
+				<image  onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="64"
+						width="554"
+						height="648"
+						key="image-4">
+							<printWhenExpression><![CDATA[$F{controlno} == null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<graphicElement stretchType="NoStretch"/>
+					<imageExpression class="java.lang.String"><![CDATA["images/draft.png"]]></imageExpression>
+				</image>
 			</band>
 		</background>
 		<title>
