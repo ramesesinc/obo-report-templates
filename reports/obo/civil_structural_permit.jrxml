@@ -2398,7 +2398,7 @@
 					<textElement verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[SUPERVISOR / IN-CHARGE OF ARCHITECTURAL WORKS]]></text>
+				<text><![CDATA[SUPERVISOR / IN-CHARGE OF CIVIL/STRUCTURAL WORKS]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -4357,7 +4357,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{permit.issuedby.name}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{permit.issuedby.title}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement

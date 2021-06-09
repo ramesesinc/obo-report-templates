@@ -1115,7 +1115,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 					<textElement>
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[BOX 5]]></text>
+				<text><![CDATA[BOX 4]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -1128,7 +1128,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 					<textElement>
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[BOX 6]]></text>
+				<text><![CDATA[BOX 5]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -1731,7 +1731,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 					<textElement>
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[BOX 3]]></text>
+				<text><![CDATA[BOX 2]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -2024,7 +2024,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 					<textElement>
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[BOX 4]]></text>
+				<text><![CDATA[BOX 3]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -2181,10 +2181,10 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 						key="staticText-237"/>
 					<box leftPadding="5">					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Left">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
 					</textElement>
-				<text><![CDATA[SUPERVISOR / IN-CHARGE OF ELECTRICAL WORKS]]></text>
+				<text><![CDATA[FULL-TIME INSPECTOR AND SUPERVISOR OF CONSTRUCTION WORKS]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -2679,7 +2679,7 @@ ECLOSURE AND OCCUPANCY PERMIT]]></text>
 					<textElement verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[BOX 7 (TO BE ACCOMPLISHED BY THE BUILDING OFFICIAL)]]></text>
+				<text><![CDATA[BOX 7 (TO BE ACCOMPLISHED BY THE PROCESSING AND EVALUATION DIVISION)]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -3019,7 +3019,7 @@ authorities exercising regulatory function affecting buildings and other related
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{permit.issuedby.name}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{permit.issuedby.title}]]></textFieldExpression>
 				</textField>
 				<rectangle>
 					<reportElement

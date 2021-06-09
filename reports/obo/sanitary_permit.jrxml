@@ -2183,7 +2183,7 @@
 					<textElement textAlignment="Left">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[SUPERVISOR / IN-CHARGE OF ELECTRICAL WORKS]]></text>
+				<text><![CDATA[SUPERVISOR / IN-CHARGE OF SANITARY WORKS]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -3440,7 +3440,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{permit.issuedby.name}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{permit.issuedby.title}]]></textFieldExpression>
 				</textField>
 				<rectangle>
 					<reportElement

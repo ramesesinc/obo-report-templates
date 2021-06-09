@@ -1117,7 +1117,7 @@
 					<textElement>
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[BOX 4]]></text>
+				<text><![CDATA[BOX 4 (TO BE ACCOMPLESHED BY THE APPLICANT)]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -3057,27 +3057,22 @@
 					<reportElement
 						mode="Transparent"
 						x="0"
+						y="21"
+						width="559"
+						height="121"
+						key="rectangle-29"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
+				<rectangle>
+					<reportElement
+						mode="Transparent"
+						x="0"
 						y="419"
 						width="559"
 						height="369"
 						key="rectangle-39"/>
 					<graphicElement stretchType="NoStretch"/>
 				</rectangle>
-				<staticText>
-					<reportElement
-						x="0"
-						y="113"
-						width="559"
-						height="12"
-						key="staticText-123"/>
-					<box leftPadding="5"></box>
-					<textElement verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
-					</textElement>
-				<text><![CDATA[BOX 7
-
-]]></text>
-				</staticText>
 				<staticText>
 					<reportElement
 						x="0"
@@ -3178,18 +3173,8 @@
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{permit.issuedby.name}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{permit.issuedby.title}]]></textFieldExpression>
 				</textField>
-				<rectangle>
-					<reportElement
-						mode="Transparent"
-						x="0"
-						y="21"
-						width="559"
-						height="121"
-						key="rectangle-29"/>
-					<graphicElement stretchType="NoStretch"/>
-				</rectangle>
 				<staticText>
 					<reportElement
 						x="146"
@@ -3898,14 +3883,14 @@
 					<reportElement
 						x="0"
 						y="144"
-						width="275"
+						width="364"
 						height="12"
 						key="staticText-317"/>
 					<box leftPadding="5"></box>
 					<textElement>
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[BOX 7]]></text>
+				<text><![CDATA[BOX 7 (TO BE ACCOMPLISHED BY THE PROCESSING AND EVALUATION DIVISION)]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -3918,7 +3903,7 @@
 					<textElement>
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[BOX 8]]></text>
+				<text><![CDATA[BOX 8 (TO BE ACCOMPLISHED BY THE BUILDING OFFICIAL)]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -4103,6 +4088,19 @@
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[d.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="6"
+						y="52"
+						width="114"
+						height="12"
+						key="staticText-336"/>
+					<box></box>
+					<textElement textAlignment="Left">
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[TYPE OF FENCING:]]></text>
 				</staticText>
 			</band>
 			</groupHeader>

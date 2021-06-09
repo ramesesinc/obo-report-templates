@@ -414,7 +414,7 @@
 					<textElement>
 						<font size="8"/>
 					</textElement>
-				<text><![CDATA[MP NO.]]></text>
+				<text><![CDATA[ELP NO.]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -1730,7 +1730,7 @@
 					<textElement textAlignment="Left">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[SUPERVISOR / IN-CHARGE OF ELECTRICAL WORKS]]></text>
+				<text><![CDATA[SUPERVISOR / IN-CHARGE OF ELECTRONICS WORKS]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -3969,7 +3969,7 @@ Philippines, the National Building Code and its IRR.]]></text>
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{permit.issuedby.name}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{permit.issuedby.title}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement

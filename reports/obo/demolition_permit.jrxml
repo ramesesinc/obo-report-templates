@@ -411,7 +411,7 @@
 					<textElement>
 						<font size="8"/>
 					</textElement>
-				<text><![CDATA[MP NO.]]></text>
+				<text><![CDATA[DP NO.]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -3066,7 +3066,7 @@ telephone and water installations have been disconnected.]]></text>
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{permit.issuedby.name}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{permit.issuedby.title}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement

@@ -2043,7 +2043,7 @@
 					<textElement textAlignment="Left">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[SUPERVISOR / IN-CHARGE OF ELECTRICAL WORKS]]></text>
+				<text><![CDATA[SUPERVISOR / IN-CHARGE OF PLUMBING WORKS]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -5782,7 +5782,7 @@ FIXTURES]]></text>
 					<textElement textAlignment="Justified" verticalAlignment="Top" markup="html">
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
-				<text><![CDATA[That prior to any commencement of plumbing works, a duly accomplished prescribed “Notice of Construction” shall be submitted to the Office of the Building Official.]]></text>
+				<text><![CDATA[That prior to any commencement of plumbing works, a duly accomplished prescribed <b>“Notice of Construction”</b> shall be submitted to the Office of the Building Official.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -5962,7 +5962,7 @@ FIXTURES]]></text>
 					<textElement textAlignment="Center" verticalAlignment="Top">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$F{permit.issuedby.name}]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{permit.issuedby.title}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
