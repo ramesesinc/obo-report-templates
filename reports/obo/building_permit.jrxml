@@ -6748,7 +6748,7 @@ STEEL/CONCRETE TANK]]></text>
 						x="162"
 						y="21"
 						width="0"
-						height="375"
+						height="364"
 						key="line-30"/>
 					<graphicElement stretchType="NoStretch"/>
 				</line>
@@ -6896,7 +6896,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="193"
+						y="181"
 						width="576"
 						height="0"
 						key="line-38"/>
@@ -6905,7 +6905,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="176"
+						y="164"
 						width="576"
 						height="0"
 						key="line-39"/>
@@ -6914,7 +6914,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="159"
+						y="147"
 						width="576"
 						height="0"
 						key="line-40"/>
@@ -6923,7 +6923,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="142"
+						y="130"
 						width="576"
 						height="0"
 						key="line-41"/>
@@ -6932,7 +6932,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="260"
+						y="248"
 						width="576"
 						height="0"
 						key="line-42"/>
@@ -6941,7 +6941,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="244"
+						y="232"
 						width="576"
 						height="0"
 						key="line-43"/>
@@ -6950,7 +6950,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="227"
+						y="215"
 						width="576"
 						height="0"
 						key="line-44"/>
@@ -6959,7 +6959,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="210"
+						y="198"
 						width="576"
 						height="0"
 						key="line-45"/>
@@ -6968,7 +6968,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="397"
+						y="385"
 						width="576"
 						height="0"
 						key="line-46"/>
@@ -6977,7 +6977,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="380"
+						y="368"
 						width="576"
 						height="0"
 						key="line-47"/>
@@ -6986,7 +6986,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="364"
+						y="352"
 						width="576"
 						height="0"
 						key="line-48"/>
@@ -6995,7 +6995,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="344"
+						y="332"
 						width="576"
 						height="0"
 						key="line-49"/>
@@ -7004,7 +7004,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="327"
+						y="315"
 						width="576"
 						height="0"
 						key="line-50"/>
@@ -7013,7 +7013,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="310"
+						y="298"
 						width="576"
 						height="0"
 						key="line-51"/>
@@ -7022,7 +7022,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="293"
+						y="281"
 						width="576"
 						height="0"
 						key="line-52"/>
@@ -7031,7 +7031,7 @@ DUE]]></text>
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="277"
+						y="265"
 						width="576"
 						height="0"
 						key="line-53"/>
@@ -7104,29 +7104,12 @@ ADMINISTRATOR):]]></text>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica" size="7" isBold="false"/>
 					</textElement>
-				<text><![CDATA[FILIN]]></text>
+				<text><![CDATA[FILING FEE]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
 						x="21"
-						y="129"
-						width="122"
-						height="11"
-						key="staticText-772"/>
-					<box leftPadding="5">					<topPen lineWidth="0.0" lineStyle="Solid"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid"/>
-</box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font pdfFontName="Helvetica" size="7" isBold="false"/>
-					</textElement>
-				<text><![CDATA[G FEE]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="21"
-						y="143"
+						y="131"
 						width="138"
 						height="16"
 						key="staticText-773"/>
@@ -7143,7 +7126,7 @@ ADMINISTRATOR):]]></text>
 				<staticText>
 					<reportElement
 						x="21"
-						y="160"
+						y="148"
 						width="138"
 						height="16"
 						key="staticText-774"/>
@@ -7160,7 +7143,7 @@ ADMINISTRATOR):]]></text>
 				<staticText>
 					<reportElement
 						x="21"
-						y="194"
+						y="182"
 						width="138"
 						height="16"
 						key="staticText-775"/>
@@ -7177,7 +7160,7 @@ ADMINISTRATOR):]]></text>
 				<staticText>
 					<reportElement
 						x="21"
-						y="177"
+						y="165"
 						width="138"
 						height="16"
 						key="staticText-776"/>
@@ -7194,7 +7177,7 @@ ADMINISTRATOR):]]></text>
 				<staticText>
 					<reportElement
 						x="21"
-						y="261"
+						y="249"
 						width="138"
 						height="16"
 						key="staticText-777"/>
@@ -7211,7 +7194,7 @@ ADMINISTRATOR):]]></text>
 				<staticText>
 					<reportElement
 						x="21"
-						y="244"
+						y="232"
 						width="138"
 						height="16"
 						key="staticText-778"/>
@@ -7228,7 +7211,7 @@ ADMINISTRATOR):]]></text>
 				<staticText>
 					<reportElement
 						x="21"
-						y="228"
+						y="216"
 						width="138"
 						height="16"
 						key="staticText-779"/>
@@ -7245,7 +7228,7 @@ ADMINISTRATOR):]]></text>
 				<staticText>
 					<reportElement
 						x="21"
-						y="211"
+						y="199"
 						width="138"
 						height="16"
 						key="staticText-780"/>
@@ -7262,7 +7245,7 @@ ADMINISTRATOR):]]></text>
 				<staticText>
 					<reportElement
 						x="21"
-						y="381"
+						y="369"
 						width="138"
 						height="16"
 						key="staticText-781"/>
@@ -7279,7 +7262,7 @@ ADMINISTRATOR):]]></text>
 				<staticText>
 					<reportElement
 						x="21"
-						y="364"
+						y="352"
 						width="138"
 						height="16"
 						key="staticText-782"/>
@@ -7296,7 +7279,7 @@ ADMINISTRATOR):]]></text>
 				<staticText>
 					<reportElement
 						x="21"
-						y="328"
+						y="316"
 						width="138"
 						height="16"
 						key="staticText-783"/>
@@ -7313,7 +7296,7 @@ ADMINISTRATOR):]]></text>
 				<staticText>
 					<reportElement
 						x="21"
-						y="311"
+						y="299"
 						width="138"
 						height="16"
 						key="staticText-784"/>
@@ -7330,7 +7313,7 @@ ADMINISTRATOR):]]></text>
 				<staticText>
 					<reportElement
 						x="21"
-						y="294"
+						y="282"
 						width="138"
 						height="16"
 						key="staticText-785"/>
@@ -7347,7 +7330,7 @@ ADMINISTRATOR):]]></text>
 				<staticText>
 					<reportElement
 						x="21"
-						y="277"
+						y="265"
 						width="138"
 						height="16"
 						key="staticText-786"/>
@@ -7364,7 +7347,7 @@ ADMINISTRATOR):]]></text>
 				<staticText>
 					<reportElement
 						x="2"
-						y="344"
+						y="332"
 						width="158"
 						height="20"
 						key="staticText-787"/>
@@ -7381,7 +7364,7 @@ ADMINISTRATOR):]]></text>
 				<staticText>
 					<reportElement
 						x="4"
-						y="401"
+						y="394"
 						width="229"
 						height="20"
 						key="staticText-788"/>
@@ -7417,16 +7400,7 @@ ADMINISTRATOR):]]></text>
 				<rectangle>
 					<reportElement
 						x="6"
-						y="129"
-						width="13"
-						height="10"
-						key="rectangle-5"/>
-					<graphicElement stretchType="NoStretch"/>
-				</rectangle>
-				<rectangle>
-					<reportElement
-						x="6"
-						y="146"
+						y="134"
 						width="13"
 						height="10"
 						key="rectangle-6"/>
@@ -7435,7 +7409,7 @@ ADMINISTRATOR):]]></text>
 				<rectangle>
 					<reportElement
 						x="6"
-						y="163"
+						y="151"
 						width="13"
 						height="10"
 						key="rectangle-7"/>
@@ -7444,7 +7418,7 @@ ADMINISTRATOR):]]></text>
 				<rectangle>
 					<reportElement
 						x="6"
-						y="196"
+						y="184"
 						width="13"
 						height="10"
 						key="rectangle-8"/>
@@ -7453,7 +7427,7 @@ ADMINISTRATOR):]]></text>
 				<rectangle>
 					<reportElement
 						x="6"
-						y="179"
+						y="167"
 						width="13"
 						height="10"
 						key="rectangle-9"/>
@@ -7462,7 +7436,7 @@ ADMINISTRATOR):]]></text>
 				<rectangle>
 					<reportElement
 						x="6"
-						y="264"
+						y="252"
 						width="13"
 						height="10"
 						key="rectangle-10"/>
@@ -7471,7 +7445,7 @@ ADMINISTRATOR):]]></text>
 				<rectangle>
 					<reportElement
 						x="6"
-						y="247"
+						y="235"
 						width="13"
 						height="10"
 						key="rectangle-11"/>
@@ -7480,7 +7454,7 @@ ADMINISTRATOR):]]></text>
 				<rectangle>
 					<reportElement
 						x="6"
-						y="231"
+						y="219"
 						width="13"
 						height="10"
 						key="rectangle-12"/>
@@ -7489,7 +7463,7 @@ ADMINISTRATOR):]]></text>
 				<rectangle>
 					<reportElement
 						x="6"
-						y="214"
+						y="202"
 						width="13"
 						height="10"
 						key="rectangle-13"/>
@@ -7498,7 +7472,7 @@ ADMINISTRATOR):]]></text>
 				<rectangle>
 					<reportElement
 						x="6"
-						y="313"
+						y="301"
 						width="13"
 						height="10"
 						key="rectangle-14"/>
@@ -7507,7 +7481,7 @@ ADMINISTRATOR):]]></text>
 				<rectangle>
 					<reportElement
 						x="6"
-						y="296"
+						y="284"
 						width="13"
 						height="10"
 						key="rectangle-15"/>
@@ -7516,7 +7490,7 @@ ADMINISTRATOR):]]></text>
 				<rectangle>
 					<reportElement
 						x="6"
-						y="280"
+						y="268"
 						width="13"
 						height="10"
 						key="rectangle-16"/>
@@ -7525,7 +7499,7 @@ ADMINISTRATOR):]]></text>
 				<rectangle>
 					<reportElement
 						x="6"
-						y="330"
+						y="318"
 						width="13"
 						height="10"
 						key="rectangle-17"/>
@@ -7534,7 +7508,7 @@ ADMINISTRATOR):]]></text>
 				<rectangle>
 					<reportElement
 						x="6"
-						y="383"
+						y="371"
 						width="13"
 						height="10"
 						key="rectangle-18"/>
@@ -7543,7 +7517,7 @@ ADMINISTRATOR):]]></text>
 				<rectangle>
 					<reportElement
 						x="6"
-						y="367"
+						y="355"
 						width="13"
 						height="10"
 						key="rectangle-19"/>
@@ -7578,7 +7552,7 @@ ADMINISTRATOR):]]></text>
 					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
+					<textElement textAlignment="Left" verticalAlignment="Top">
 						<font pdfFontName="Helvetica" size="7" isBold="false"/>
 					</textElement>
 				<text><![CDATA[1.]]></text>
@@ -7595,7 +7569,7 @@ ADMINISTRATOR):]]></text>
 					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
+					<textElement textAlignment="Left" verticalAlignment="Top">
 						<font pdfFontName="Helvetica" size="7" isBold="false"/>
 					</textElement>
 				<text><![CDATA[2.]]></text>
@@ -7678,6 +7652,15 @@ the Data Privacy Act of 2012 and other applicable laws.]]></text>
 					</textElement>
 				<text><![CDATA[SIGNATURE OVER PRINTED NAME OF OWNER/APPLICANT]]></text>
 				</staticText>
+				<rectangle>
+					<reportElement
+						x="7"
+						y="80"
+						width="13"
+						height="10"
+						key="rectangle-20"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
 			</band>
 			</groupHeader>
 			<groupFooter>
