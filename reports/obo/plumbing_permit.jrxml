@@ -329,6 +329,16 @@
 				<rectangle>
 					<reportElement
 						mode="Transparent"
+						x="1"
+						y="374"
+						width="558"
+						height="262"
+						key="rectangle-28"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
+				<rectangle>
+					<reportElement
+						mode="Transparent"
 						x="0"
 						y="159"
 						width="559"
