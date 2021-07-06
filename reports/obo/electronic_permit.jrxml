@@ -2169,9 +2169,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 						y="392"
 						width="12"
 						height="10"
-						key="textField-179">
-							<printWhenExpression><![CDATA[($F{worktypes}.source)]]></printWhenExpression>
-						</reportElement>
+						key="textField-179"/>
 					<box>					<topPen lineWidth="0.5" lineStyle="Solid"/>
 					<leftPen lineWidth="0.5" lineStyle="Solid"/>
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
@@ -2188,9 +2186,7 @@ EQUIPMENT, APPARATUS, DEVICE AND/OR COMPONENT (Specify)
 						y="406"
 						width="12"
 						height="10"
-						key="textField-183">
-							<printWhenExpression><![CDATA[($F{worktypes}.source)]]></printWhenExpression>
-						</reportElement>
+						key="textField-183"/>
 					<box>					<topPen lineWidth="0.5" lineStyle="Solid"/>
 					<leftPen lineWidth="0.5" lineStyle="Solid"/>
 					<bottomPen lineWidth="0.5" lineStyle="Solid"/>

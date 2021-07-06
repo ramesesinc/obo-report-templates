@@ -317,6 +317,7 @@
 			<band height="788"  isSplitAllowed="true" >
 				<rectangle>
 					<reportElement
+						mode="Transparent"
 						x="0"
 						y="556"
 						width="559"
@@ -868,7 +869,7 @@
 					</textElement>
 				<text><![CDATA[BOX 1 (TO BE ACCOMPLISHED IN PRINT BY THE OWNER/APPLICANT)]]></text>
 				</staticText>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="107"
 						y="173"
@@ -881,7 +882,7 @@
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.lastname}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="257"
 						y="173"
@@ -1103,7 +1104,7 @@
 						width="108"
 						height="12"
 						key="textField-26"/>
-					<box></box>
+					<box rightPadding="5"></box>
 					<textElement>
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
@@ -2104,32 +2105,6 @@
 					</textElement>
 				<text><![CDATA[BOX 4]]></text>
 				</staticText>
-				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="402"
-						y="20"
-						width="47"
-						height="47"
-						key="image-2"/>
-					<box></box>
-					<graphicElement stretchType="NoStretch">
-					<pen lineWidth="0.0" lineStyle="Solid"/>
-</graphicElement>
-					<imageExpression class="java.lang.String"><![CDATA["images/obologo.png"]]></imageExpression>
-				</image>
-				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="116"
-						y="20"
-						width="47"
-						height="47"
-						key="image-3"/>
-					<box></box>
-					<graphicElement stretchType="NoStretch">
-					<pen lineWidth="0.0" lineStyle="Solid"/>
-</graphicElement>
-					<imageExpression class="java.lang.String"><![CDATA["images/lgulogo.png"]]></imageExpression>
-				</image>
 				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="4"
@@ -2759,6 +2734,32 @@
 					</textElement>
 				<text><![CDATA[TRACKING NO]]></text>
 				</staticText>
+				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="7"
+						y="24"
+						width="84"
+						height="75"
+						key="image-6"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+</graphicElement>
+					<imageExpression class="java.lang.String"><![CDATA["images/lgulogo.png"]]></imageExpression>
+				</image>
+				<image  scaleImage="RetainShape" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="380"
+						y="24"
+						width="88"
+						height="74"
+						key="image-7"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+</graphicElement>
+					<imageExpression class="java.lang.String"><![CDATA["images/obologo.png"]]></imageExpression>
+				</image>
 			</band>
 			</groupHeader>
 			<groupFooter>
@@ -2919,11 +2920,11 @@ telephone and water installations have been disconnected.]]></text>
 					<reportElement
 						x="33"
 						y="175"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-167"/>
 					<box leftPadding="5"></box>
-					<textElement>
+					<textElement textAlignment="Left">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[1.]]></text>
@@ -2932,11 +2933,11 @@ telephone and water installations have been disconnected.]]></text>
 					<reportElement
 						x="33"
 						y="212"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-168"/>
 					<box leftPadding="5"></box>
-					<textElement>
+					<textElement textAlignment="Left">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[2.]]></text>
@@ -2945,11 +2946,11 @@ telephone and water installations have been disconnected.]]></text>
 					<reportElement
 						x="33"
 						y="236"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-169"/>
 					<box leftPadding="5"></box>
-					<textElement>
+					<textElement textAlignment="Left">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[3.]]></text>
@@ -2958,11 +2959,11 @@ telephone and water installations have been disconnected.]]></text>
 					<reportElement
 						x="33"
 						y="258"
-						width="12"
+						width="18"
 						height="12"
 						key="staticText-170"/>
 					<box leftPadding="5"></box>
-					<textElement>
+					<textElement textAlignment="Left">
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[4.]]></text>
@@ -2970,7 +2971,7 @@ telephone and water installations have been disconnected.]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="618"
+						y="626"
 						width="559"
 						height="16"
 						key="staticText-174"/>
@@ -3188,9 +3189,9 @@ telephone and water installations have been disconnected.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="80"
+						x="71"
 						y="295"
-						width="12"
+						width="21"
 						height="12"
 						key="staticText-326"/>
 					<box leftPadding="5"></box>
@@ -3230,9 +3231,9 @@ utilities shall be removed]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="81"
+						x="72"
 						y="326"
-						width="12"
+						width="21"
 						height="12"
 						key="staticText-329"/>
 					<box leftPadding="5"></box>
@@ -3243,9 +3244,9 @@ utilities shall be removed]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="81"
+						x="72"
 						y="356"
-						width="12"
+						width="21"
 						height="12"
 						key="staticText-330"/>
 					<box leftPadding="5"></box>
@@ -3270,9 +3271,9 @@ company at or outside the property line.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="83"
+						x="74"
 						y="448"
-						width="12"
+						width="21"
 						height="12"
 						key="staticText-332"/>
 					<box leftPadding="5"></box>
@@ -3314,9 +3315,9 @@ concerned.]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="83"
+						x="74"
 						y="418"
-						width="12"
+						width="21"
 						height="12"
 						key="staticText-335"/>
 					<box leftPadding="5"></box>
@@ -3343,9 +3344,9 @@ approval or cooperation obtained.
 				</staticText>
 				<staticText>
 					<reportElement
-						x="82"
+						x="73"
 						y="387"
-						width="12"
+						width="21"
 						height="12"
 						key="staticText-337"/>
 					<box leftPadding="5"></box>
@@ -3356,9 +3357,9 @@ approval or cooperation obtained.
 				</staticText>
 				<staticText>
 					<reportElement
-						x="83"
+						x="74"
 						y="508"
-						width="12"
+						width="21"
 						height="12"
 						key="staticText-338"/>
 					<box leftPadding="5"></box>
@@ -3396,9 +3397,9 @@ engaged in the demolition work using such entrances/exits in the performance of 
 				</staticText>
 				<staticText>
 					<reportElement
-						x="83"
+						x="74"
 						y="478"
-						width="12"
+						width="21"
 						height="12"
 						key="staticText-341"/>
 					<box leftPadding="5"></box>
@@ -3407,6 +3408,76 @@ engaged in the demolition work using such entrances/exits in the performance of 
 					</textElement>
 				<text><![CDATA[vii.]]></text>
 				</staticText>
+				<staticText>
+					<reportElement
+						x="33"
+						y="587"
+						width="18"
+						height="12"
+						key="staticText-353"/>
+					<box leftPadding="5"></box>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[6.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="33"
+						y="547"
+						width="18"
+						height="12"
+						key="staticText-354"/>
+					<box leftPadding="5"></box>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[5.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="60"
+						y="546"
+						width="486"
+						height="30"
+						key="staticText-355"/>
+					<box leftPadding="5"></box>
+					<textElement textAlignment="Justified" verticalAlignment="Top">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[At least five (5) days before actual demolition work is started, you are required to advise the Office of the Building Official in writing.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="60"
+						y="587"
+						width="486"
+						height="30"
+						key="staticText-356"/>
+					<box leftPadding="5"></box>
+					<textElement textAlignment="Justified" verticalAlignment="Top">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[Strict compliance with the above conditions is required subject to monitoring by this Office of the Building Official and revocation of this permit in case of violation.]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="283"
+						y="134"
+						width="245"
+						height="0"
+						key="line-77"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="21"
+						y="149"
+						width="513"
+						height="0"
+						key="line-78"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
 			</band>
 			</groupHeader>
 			<groupFooter>
