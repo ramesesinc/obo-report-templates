@@ -130,6 +130,7 @@
 	<field name="location.lotarea" class="java.lang.Number"/>
 	<field name="controlno" class="java.lang.String"/>
 	<field name="state" class="java.lang.String"/>
+	<field name="address.city/municipality" class="java.lang.String"/>
 
 
 		<group  name="P1" >
@@ -991,7 +992,7 @@ LOAD 1,000 OR MORE)]]></text>
 					<reportElement
 						x="0"
 						y="205"
-						width="218"
+						width="219"
 						height="11"
 						key="textField-114"/>
 					<box leftPadding="5" rightPadding="5"></box>
@@ -999,19 +1000,6 @@ LOAD 1,000 OR MORE)]]></text>
 						<font pdfFontName="Helvetica-Bold" size="6" isBold="true"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA[com.rameses.osiris2.reports.ReportUtil.join(" ", $F{applicant.address.bldgno}, $F{applicant.address.bldgname}, $F{applicant.address.unitno}, $F{applicant.address.subdivision}, $F{applicant.address.street}, $F{applicant.address.barangay.name})]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
-					<reportElement
-						x="218"
-						y="205"
-						width="93"
-						height="11"
-						key="textField-116"/>
-					<box rightPadding="5"></box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="6" isBold="true"/>
-					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$P{LGU_NAME}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -6760,6 +6748,19 @@ STEEL/CONCRETE TANK]]></text>
 					</textElement>
 				<text><![CDATA[CLUBHOUSE]]></text>
 				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="220"
+						y="206"
+						width="91"
+						height="9"
+						key="textField"/>
+					<box></box>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{applicant.address.citymunicipality}]]></textFieldExpression>
+				</textField>
 			</band>
 			</groupHeader>
 			<groupFooter>
