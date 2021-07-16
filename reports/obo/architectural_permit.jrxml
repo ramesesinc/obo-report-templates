@@ -5135,9 +5135,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 						y="725"
 						width="192"
 						height="14"
-						key="textField-157">
-							<printWhenExpression><![CDATA[($F{permit.issuedby.name} != null)]]></printWhenExpression>
-						</reportElement>
+						key="textField-157"/>
 					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
 					<topPen lineWidth="0.0" lineStyle="Solid"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid"/>
@@ -5213,7 +5211,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 						width="559"
 						height="16"
 						key="staticText-347">
-							<printWhenExpression><![CDATA[$P{ARCHITECTURAL_OFFICIAL} !=null]]></printWhenExpression>
+							<printWhenExpression><![CDATA[$P{ARCHITECTURAL_OFFICIAL}!=null]]></printWhenExpression>
 						</reportElement>
 					<box leftPadding="5"></box>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
