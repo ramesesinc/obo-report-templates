@@ -27,6 +27,7 @@
 	<parameter name="PROVINCE_NAME" isForPrompting="false" class="java.lang.String"/>
 	<parameter name="LGU_NAME" isForPrompting="false" class="java.lang.String"/>
 	<parameter name="BUILDING_OFFICIAL" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="ARCHITECTURAL_OFFICIAL" isForPrompting="false" class="java.lang.String"/>
 
 	<field name="designprofessional.prc.placeissued" class="java.lang.String"/>
 	<field name="designprofessional.prc.dtvalid" class="java.util.Date"/>
@@ -3563,6 +3564,18 @@
 				<rectangle>
 					<reportElement
 						mode="Transparent"
+						x="0"
+						y="452"
+						width="559"
+						height="336"
+						key="rectangle-47"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+</graphicElement>
+				</rectangle>
+				<rectangle>
+					<reportElement
+						mode="Transparent"
 						x="284"
 						y="17"
 						width="275"
@@ -4946,22 +4959,10 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 					</textElement>
 				<text><![CDATA[BOX 9]]></text>
 				</staticText>
-				<rectangle>
-					<reportElement
-						mode="Transparent"
-						x="0"
-						y="452"
-						width="559"
-						height="336"
-						key="rectangle-47"/>
-					<graphicElement stretchType="NoStretch">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-</graphicElement>
-				</rectangle>
 				<staticText>
 					<reportElement
 						x="0"
-						y="463"
+						y="457"
 						width="559"
 						height="12"
 						key="staticText-330"/>
@@ -4974,7 +4975,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="493"
+						y="474"
 						width="559"
 						height="16"
 						key="staticText-331"/>
@@ -4987,7 +4988,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="16"
-						y="516"
+						y="497"
 						width="19"
 						height="12"
 						key="staticText-332"/>
@@ -5000,7 +5001,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="36"
-						y="516"
+						y="497"
 						width="508"
 						height="54"
 						key="staticText-333"/>
@@ -5013,7 +5014,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="16"
-						y="567"
+						y="548"
 						width="19"
 						height="12"
 						key="staticText-334"/>
@@ -5026,7 +5027,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="36"
-						y="567"
+						y="548"
 						width="508"
 						height="26"
 						key="staticText-335"/>
@@ -5039,7 +5040,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="16"
-						y="591"
+						y="572"
 						width="19"
 						height="12"
 						key="staticText-336"/>
@@ -5052,7 +5053,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="36"
-						y="591"
+						y="572"
 						width="508"
 						height="32"
 						key="staticText-337"/>
@@ -5066,7 +5067,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="16"
-						y="615"
+						y="596"
 						width="19"
 						height="12"
 						key="staticText-338"/>
@@ -5079,7 +5080,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="36"
-						y="616"
+						y="597"
 						width="508"
 						height="42"
 						key="staticText-339"/>
@@ -5092,7 +5093,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="16"
-						y="657"
+						y="638"
 						width="19"
 						height="12"
 						key="staticText-340"/>
@@ -5105,7 +5106,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="36"
-						y="658"
+						y="639"
 						width="508"
 						height="12"
 						key="staticText-341"/>
@@ -5118,7 +5119,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="686"
+						y="712"
 						width="559"
 						height="16"
 						key="staticText-342"/>
@@ -5131,7 +5132,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="183"
-						y="722"
+						y="725"
 						width="192"
 						height="14"
 						key="textField-157">
@@ -5151,7 +5152,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="738"
+						y="741"
 						width="559"
 						height="12"
 						key="textField-159"/>
@@ -5164,7 +5165,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="750"
+						y="753"
 						width="559"
 						height="12"
 						key="staticText-343"/>
@@ -5177,7 +5178,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="226"
-						y="762"
+						y="765"
 						width="33"
 						height="12"
 						key="staticText-344"/>
@@ -5190,7 +5191,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="252"
-						y="762"
+						y="765"
 						width="81"
 						height="12"
 						key="staticText-345"/>
@@ -5201,6 +5202,91 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 					</textElement>
 				<text><![CDATA[]]></text>
 				</staticText>
+				<elementGroup><!--  Start: 4 !-->
+				<elementGroup><!--  Start: 4.3 !-->
+				<elementGroup><!--  Start: 3.2 !-->
+				<elementGroup><!--  Start: 2.1 !-->
+				<staticText>
+					<reportElement
+						x="0"
+						y="659"
+						width="559"
+						height="16"
+						key="staticText-347">
+							<printWhenExpression><![CDATA[$P{ARCHITECTURAL_OFFICIAL} !=null]]></printWhenExpression>
+						</reportElement>
+					<box leftPadding="5"></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<text><![CDATA[RECOMMENDING APPROVAL:]]></text>
+				</staticText>
+				</elementGroup><!-- End 4.3.2.1 !-->
+				</elementGroup><!-- End 4.3.2 !-->
+				</elementGroup><!-- End 4.3 !-->
+				</elementGroup><!-- End 4 !-->
+				<elementGroup><!--  Start: 5 !-->
+				<elementGroup><!--  Start: 5.4 !-->
+				<elementGroup><!--  Start: 4.2 !-->
+				<elementGroup><!--  Start: 2.1 !-->
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="694"
+						width="559"
+						height="12"
+						key="textField-166">
+							<printWhenExpression><![CDATA[$P{ARCHITECTURAL_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["OFFICE OF CITY OFFICIAL"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="682"
+						width="559"
+						height="12"
+						key="textField-167">
+							<printWhenExpression><![CDATA[$P{ARCHITECTURAL_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["ARCHITECT"]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 5.4.2.1 !-->
+				</elementGroup><!-- End 5.4.2 !-->
+				</elementGroup><!-- End 5.4 !-->
+				<elementGroup><!--  Start: 5.2 !-->
+				<elementGroup><!--  Start: 2.1 !-->
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="183"
+						y="668"
+						width="192"
+						height="14"
+						key="textField-168">
+							<printWhenExpression><![CDATA[($F{permit.issuedby.name} != null)]]></printWhenExpression>
+						</reportElement>
+					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{ARCHITECTURAL_OFFICIAL}]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 5.2.1 !-->
+				</elementGroup><!-- End 5.2 !-->
+				</elementGroup><!-- End 5 !-->
 			</band>
 			</groupHeader>
 			<groupFooter>
