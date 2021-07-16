@@ -27,6 +27,7 @@
 	<parameter name="PROVINCE_NAME" isForPrompting="false" class="java.lang.String"/>
 	<parameter name="LGU_NAME" isForPrompting="false" class="java.lang.String"/>
 	<parameter name="BUILDING_OFFICIAL" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="CIVIL_OFFICIAL" isForPrompting="false" class="java.lang.String"/>
 
 	<field name="designprofessional.prc.placeissued" class="java.lang.String"/>
 	<field name="designprofessional.prc.dtvalid" class="java.util.Date"/>
@@ -4312,7 +4313,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="544"
+						y="611"
 						width="559"
 						height="16"
 						key="staticText-342"/>
@@ -4325,7 +4326,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="183"
-						y="582"
+						y="649"
 						width="192"
 						height="14"
 						key="textField-157">
@@ -4345,7 +4346,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="596"
+						y="663"
 						width="559"
 						height="12"
 						key="textField-159"/>
@@ -4358,7 +4359,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="608"
+						y="675"
 						width="559"
 						height="12"
 						key="staticText-343"/>
@@ -4371,7 +4372,7 @@
 				<staticText>
 					<reportElement
 						x="226"
-						y="620"
+						y="687"
 						width="33"
 						height="12"
 						key="staticText-344"/>
@@ -4384,7 +4385,7 @@
 				<staticText>
 					<reportElement
 						x="252"
-						y="620"
+						y="687"
 						width="81"
 						height="12"
 						key="staticText-345"/>
@@ -4394,6 +4395,71 @@
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
 				<text><![CDATA[]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="575"
+						width="559"
+						height="12"
+						key="textField-199">
+							<printWhenExpression><![CDATA[$P{CIVIL_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["OFFICE OF CITY OFFICIAL"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="563"
+						width="559"
+						height="12"
+						key="textField-200">
+							<printWhenExpression><![CDATA[$P{CIVIL_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["ARCHITECT"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="183"
+						y="549"
+						width="192"
+						height="14"
+						key="textField-201">
+							<printWhenExpression><![CDATA[($F{permit.issuedby.name} != null)]]></printWhenExpression>
+						</reportElement>
+					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="0"
+						y="540"
+						width="559"
+						height="16"
+						key="staticText-389">
+							<printWhenExpression><![CDATA[$P{CIVIL_OFFICIAL} !=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<text><![CDATA[RECOMMENDING APPROVAL:]]></text>
 				</staticText>
 			</band>
 			</groupHeader>
