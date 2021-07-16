@@ -4329,9 +4329,7 @@
 						y="649"
 						width="192"
 						height="14"
-						key="textField-157">
-							<printWhenExpression><![CDATA[($F{permit.issuedby.name} != null)]]></printWhenExpression>
-						</reportElement>
+						key="textField-157"/>
 					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
 					<topPen lineWidth="0.0" lineStyle="Solid"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid"/>
@@ -4457,7 +4455,7 @@
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[RECOMMENDING APPROVAL:]]></text>
+				<text><![CDATA[ RECOMMENDING APPROVAL:]]></text>
 				</staticText>
 			</band>
 			</groupHeader>
