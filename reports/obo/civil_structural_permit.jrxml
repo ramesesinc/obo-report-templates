@@ -4432,9 +4432,7 @@
 						y="549"
 						width="192"
 						height="14"
-						key="textField-201">
-							<printWhenExpression><![CDATA[($F{permit.issuedby.name} != null)]]></printWhenExpression>
-						</reportElement>
+						key="textField-201"/>
 					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
 					<topPen lineWidth="0.0" lineStyle="Solid"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid"/>
@@ -4444,7 +4442,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{CIVIL_OFFICIAL}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
