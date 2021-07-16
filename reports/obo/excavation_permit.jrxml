@@ -3268,7 +3268,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="702"
+						y="711"
 						width="559"
 						height="16"
 						key="staticText-174"/>
@@ -3281,7 +3281,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="751"
+						y="753"
 						width="559"
 						height="12"
 						key="staticText-175"/>
@@ -3294,7 +3294,7 @@
 				<staticText>
 					<reportElement
 						x="226"
-						y="763"
+						y="765"
 						width="33"
 						height="12"
 						key="staticText-176"/>
@@ -3307,7 +3307,7 @@
 				<staticText>
 					<reportElement
 						x="252"
-						y="763"
+						y="765"
 						width="81"
 						height="12"
 						key="staticText-177"/>
@@ -3321,7 +3321,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="739"
+						y="741"
 						width="559"
 						height="12"
 						key="textField-92"/>
@@ -3334,7 +3334,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="183"
-						y="725"
+						y="727"
 						width="192"
 						height="14"
 						key="textField-93"/>
@@ -3754,9 +3754,9 @@
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="0"
-						y="675"
-						width="559"
+						x="31"
+						y="693"
+						width="229"
 						height="12"
 						key="textField-226">
 							<printWhenExpression><![CDATA[$P{EXCAVATION_OFFICIAL}!=null]]></printWhenExpression>
@@ -3769,9 +3769,9 @@
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="0"
-						y="663"
-						width="559"
+						x="31"
+						y="681"
+						width="229"
 						height="12"
 						key="textField-227">
 							<printWhenExpression><![CDATA[$P{EXCAVATION_OFFICIAL}!=null]]></printWhenExpression>
@@ -3784,9 +3784,9 @@
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="183"
-						y="649"
-						width="192"
+						x="31"
+						y="667"
+						width="229"
 						height="14"
 						key="textField-228"
 						isRemoveLineWhenBlank="true">
@@ -3795,7 +3795,7 @@
 					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
 					<topPen lineWidth="0.0" lineStyle="Solid"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -3806,7 +3806,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="640"
+						y="633"
 						width="559"
 						height="16"
 						key="staticText-359">

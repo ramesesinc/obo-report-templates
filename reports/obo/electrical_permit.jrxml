@@ -3836,7 +3836,7 @@ CONSTRUCTION]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="646"
+						y="678"
 						width="559"
 						height="16"
 						key="staticText-174"/>
@@ -3849,7 +3849,7 @@ CONSTRUCTION]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="698"
+						y="722"
 						width="559"
 						height="12"
 						key="staticText-175"/>
@@ -3862,7 +3862,7 @@ CONSTRUCTION]]></text>
 				<staticText>
 					<reportElement
 						x="226"
-						y="710"
+						y="734"
 						width="33"
 						height="12"
 						key="staticText-176"/>
@@ -3875,7 +3875,7 @@ CONSTRUCTION]]></text>
 				<staticText>
 					<reportElement
 						x="252"
-						y="710"
+						y="734"
 						width="81"
 						height="12"
 						key="staticText-177"/>
@@ -3889,7 +3889,7 @@ CONSTRUCTION]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="686"
+						y="710"
 						width="559"
 						height="12"
 						key="textField-92"/>
@@ -3902,7 +3902,7 @@ CONSTRUCTION]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="183"
-						y="670"
+						y="694"
 						width="192"
 						height="14"
 						key="textField-93"/>
@@ -3920,7 +3920,7 @@ CONSTRUCTION]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="591"
+						y="579"
 						width="559"
 						height="16"
 						key="staticText-179">
@@ -3934,9 +3934,9 @@ CONSTRUCTION]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="183"
-						y="600"
-						width="192"
+						x="17"
+						y="612"
+						width="182"
 						height="14"
 						key="textField-100"
 						isRemoveLineWhenBlank="true">
@@ -3945,7 +3945,7 @@ CONSTRUCTION]]></text>
 					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
 					<topPen lineWidth="0.0" lineStyle="Solid"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -3955,9 +3955,9 @@ CONSTRUCTION]]></text>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="0"
-						y="614"
-						width="559"
+						x="17"
+						y="626"
+						width="182"
 						height="12"
 						key="textField-101">
 							<printWhenExpression><![CDATA[$P{ELECTRICAL_OFFICIAL}!=null]]></printWhenExpression>
@@ -3970,9 +3970,9 @@ CONSTRUCTION]]></text>
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="0"
-						y="626"
-						width="559"
+						x="17"
+						y="638"
+						width="182"
 						height="12"
 						key="textField-102">
 							<printWhenExpression><![CDATA[$P{ELECTRICAL_OFFICIAL}!=null]]></printWhenExpression>

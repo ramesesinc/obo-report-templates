@@ -2843,7 +2843,7 @@
 						x="0"
 						y="95"
 						width="559"
-						height="681"
+						height="693"
 						key="rectangle-24"/>
 					<graphicElement stretchType="NoStretch">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
@@ -2972,7 +2972,7 @@ telephone and water installations have been disconnected.]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="681"
+						y="703"
 						width="559"
 						height="16"
 						key="staticText-174"/>
@@ -2985,7 +2985,7 @@ telephone and water installations have been disconnected.]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="729"
+						y="747"
 						width="559"
 						height="12"
 						key="staticText-175"/>
@@ -2998,7 +2998,7 @@ telephone and water installations have been disconnected.]]></text>
 				<staticText>
 					<reportElement
 						x="226"
-						y="741"
+						y="759"
 						width="33"
 						height="12"
 						key="staticText-176"/>
@@ -3011,7 +3011,7 @@ telephone and water installations have been disconnected.]]></text>
 				<staticText>
 					<reportElement
 						x="252"
-						y="741"
+						y="759"
 						width="81"
 						height="12"
 						key="staticText-177"/>
@@ -3025,7 +3025,7 @@ telephone and water installations have been disconnected.]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="717"
+						y="735"
 						width="559"
 						height="12"
 						key="textField-92"/>
@@ -3038,7 +3038,7 @@ telephone and water installations have been disconnected.]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="183"
-						y="703"
+						y="721"
 						width="192"
 						height="14"
 						key="textField-93"/>
@@ -3496,9 +3496,9 @@ engaged in the demolition work using such entrances/exits in the performance of 
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="183"
-						y="633"
-						width="192"
+						x="21"
+						y="656"
+						width="183"
 						height="14"
 						key="textField-171"
 						isRemoveLineWhenBlank="true">
@@ -3507,7 +3507,7 @@ engaged in the demolition work using such entrances/exits in the performance of 
 					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
 					<topPen lineWidth="0.0" lineStyle="Solid"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -3517,9 +3517,9 @@ engaged in the demolition work using such entrances/exits in the performance of 
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="0"
-						y="647"
-						width="559"
+						x="21"
+						y="670"
+						width="183"
 						height="12"
 						key="textField-172">
 							<printWhenExpression><![CDATA[$P{DEMOLITION_OFFICIAL}!=null]]></printWhenExpression>
@@ -3532,9 +3532,9 @@ engaged in the demolition work using such entrances/exits in the performance of 
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="0"
-						y="659"
-						width="559"
+						x="21"
+						y="682"
+						width="183"
 						height="12"
 						key="textField-173">
 							<printWhenExpression><![CDATA[$P{DEMOLITION_OFFICIAL}!=null]]></printWhenExpression>

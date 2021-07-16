@@ -4975,7 +4975,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="474"
+						y="472"
 						width="559"
 						height="16"
 						key="staticText-331"/>
@@ -4988,7 +4988,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="16"
-						y="497"
+						y="487"
 						width="19"
 						height="12"
 						key="staticText-332"/>
@@ -5001,7 +5001,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="36"
-						y="497"
+						y="487"
 						width="508"
 						height="54"
 						key="staticText-333"/>
@@ -5014,7 +5014,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="16"
-						y="548"
+						y="538"
 						width="19"
 						height="12"
 						key="staticText-334"/>
@@ -5027,7 +5027,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="36"
-						y="548"
+						y="538"
 						width="508"
 						height="26"
 						key="staticText-335"/>
@@ -5040,7 +5040,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="16"
-						y="572"
+						y="562"
 						width="19"
 						height="12"
 						key="staticText-336"/>
@@ -5053,7 +5053,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="36"
-						y="572"
+						y="562"
 						width="508"
 						height="32"
 						key="staticText-337"/>
@@ -5067,7 +5067,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="16"
-						y="596"
+						y="586"
 						width="19"
 						height="12"
 						key="staticText-338"/>
@@ -5080,7 +5080,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="36"
-						y="597"
+						y="587"
 						width="508"
 						height="42"
 						key="staticText-339"/>
@@ -5093,7 +5093,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="16"
-						y="638"
+						y="628"
 						width="19"
 						height="12"
 						key="staticText-340"/>
@@ -5106,7 +5106,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="36"
-						y="639"
+						y="629"
 						width="508"
 						height="12"
 						key="staticText-341"/>
@@ -5119,7 +5119,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="712"
+						y="718"
 						width="559"
 						height="16"
 						key="staticText-342"/>
@@ -5132,7 +5132,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="183"
-						y="725"
+						y="729"
 						width="192"
 						height="14"
 						key="textField-157"/>
@@ -5150,7 +5150,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="741"
+						y="745"
 						width="559"
 						height="12"
 						key="textField-159"/>
@@ -5163,7 +5163,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="753"
+						y="757"
 						width="559"
 						height="12"
 						key="staticText-343"/>
@@ -5189,7 +5189,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="252"
-						y="765"
+						y="769"
 						width="81"
 						height="12"
 						key="staticText-345"/>
@@ -5207,7 +5207,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="659"
+						y="651"
 						width="559"
 						height="16"
 						key="staticText-347">
@@ -5230,8 +5230,8 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="694"
-						width="559"
+						y="701"
+						width="228"
 						height="12"
 						key="textField-166">
 							<printWhenExpression><![CDATA[$P{ARCHITECTURAL_OFFICIAL}!=null]]></printWhenExpression>
@@ -5245,8 +5245,8 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="682"
-						width="559"
+						y="690"
+						width="228"
 						height="12"
 						key="textField-167">
 							<printWhenExpression><![CDATA[$P{ARCHITECTURAL_OFFICIAL}!=null]]></printWhenExpression>
@@ -5264,9 +5264,9 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<elementGroup><!--  Start: 2.1 !-->
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="183"
-						y="668"
-						width="192"
+						x="45"
+						y="678"
+						width="149"
 						height="14"
 						key="textField-168"
 						isRemoveLineWhenBlank="true">
@@ -5275,7 +5275,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
 					<topPen lineWidth="0.0" lineStyle="Solid"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">

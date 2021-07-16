@@ -4396,7 +4396,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="660"
+						y="667"
 						width="559"
 						height="16"
 						key="staticText-174"/>
@@ -4409,7 +4409,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="712"
+						y="719"
 						width="559"
 						height="12"
 						key="staticText-175"/>
@@ -4422,7 +4422,7 @@
 				<staticText>
 					<reportElement
 						x="226"
-						y="724"
+						y="731"
 						width="33"
 						height="12"
 						key="staticText-176"/>
@@ -4435,7 +4435,7 @@
 				<staticText>
 					<reportElement
 						x="252"
-						y="724"
+						y="731"
 						width="81"
 						height="12"
 						key="staticText-177"/>
@@ -4449,7 +4449,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="700"
+						y="707"
 						width="559"
 						height="12"
 						key="textField-92"/>
@@ -4462,7 +4462,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="183"
-						y="687"
+						y="694"
 						width="192"
 						height="14"
 						key="textField-93"/>
@@ -4509,9 +4509,9 @@
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="0"
-						y="626"
-						width="559"
+						x="24"
+						y="639"
+						width="199"
 						height="12"
 						key="textField-152">
 							<printWhenExpression><![CDATA[$P{MECHANICAL_OFFICIAL}!=null]]></printWhenExpression>
@@ -4524,9 +4524,9 @@
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="0"
-						y="614"
-						width="559"
+						x="24"
+						y="627"
+						width="199"
 						height="12"
 						key="textField-153">
 							<printWhenExpression><![CDATA[$P{MECHANICAL_OFFICIAL}!=null]]></printWhenExpression>
@@ -4539,9 +4539,9 @@
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="183"
-						y="600"
-						width="192"
+						x="24"
+						y="613"
+						width="199"
 						height="14"
 						key="textField-154"
 						isRemoveLineWhenBlank="true">
@@ -4550,7 +4550,7 @@
 					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
 					<topPen lineWidth="0.0" lineStyle="Solid"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -4561,7 +4561,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="591"
+						y="569"
 						width="559"
 						height="16"
 						key="staticText-243">

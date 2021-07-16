@@ -4313,7 +4313,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="611"
+						y="617"
 						width="559"
 						height="16"
 						key="staticText-342"/>
@@ -4396,9 +4396,9 @@
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="0"
-						y="575"
-						width="559"
+						x="17"
+						y="588"
+						width="185"
 						height="12"
 						key="textField-199">
 							<printWhenExpression><![CDATA[$P{CIVIL_OFFICIAL}!=null]]></printWhenExpression>
@@ -4411,9 +4411,9 @@
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="0"
-						y="563"
-						width="559"
+						x="17"
+						y="576"
+						width="185"
 						height="12"
 						key="textField-200">
 							<printWhenExpression><![CDATA[$P{CIVIL_OFFICIAL}!=null]]></printWhenExpression>
@@ -4426,9 +4426,9 @@
 				</textField>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
-						x="183"
-						y="549"
-						width="192"
+						x="17"
+						y="562"
+						width="185"
 						height="14"
 						key="textField-201"
 						isRemoveLineWhenBlank="true">
@@ -4437,7 +4437,7 @@
 					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
 					<topPen lineWidth="0.0" lineStyle="Solid"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -4448,7 +4448,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="540"
+						y="525"
 						width="559"
 						height="16"
 						key="staticText-389">
