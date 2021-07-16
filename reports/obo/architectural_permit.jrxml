@@ -5238,7 +5238,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 						</reportElement>
 					<box></box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA["OFFICE OF CITY OFFICIAL"]]></textFieldExpression>
 				</textField>
@@ -5253,7 +5253,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 						</reportElement>
 					<box></box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA["ARCHITECT"]]></textFieldExpression>
 				</textField>

@@ -3526,7 +3526,7 @@ engaged in the demolition work using such entrances/exits in the performance of 
 						</reportElement>
 					<box></box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA["STRUCTURAL ENGINEER"]]></textFieldExpression>
 				</textField>
@@ -3541,7 +3541,7 @@ engaged in the demolition work using such entrances/exits in the performance of 
 						</reportElement>
 					<box></box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA["OFFICE OF CITY OFFICIAL"]]></textFieldExpression>
 				</textField>
