@@ -4430,7 +4430,8 @@
 						y="549"
 						width="192"
 						height="14"
-						key="textField-201"/>
+						key="textField-201"
+						isRemoveLineWhenBlank="true"/>
 					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
 					<topPen lineWidth="0.0" lineStyle="Solid"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid"/>

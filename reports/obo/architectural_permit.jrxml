@@ -5270,9 +5270,8 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 						y="668"
 						width="192"
 						height="14"
-						key="textField-168">
-							<printWhenExpression><![CDATA[($F{permit.issuedby.name} != null)]]></printWhenExpression>
-						</reportElement>
+						key="textField-168"
+						isRemoveLineWhenBlank="true"/>
 					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
 					<topPen lineWidth="0.0" lineStyle="Solid"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid"/>
