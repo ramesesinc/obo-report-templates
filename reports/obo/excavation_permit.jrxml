@@ -27,6 +27,7 @@
 	<parameter name="PROVINCE_NAME" isForPrompting="false" class="java.lang.String"/>
 	<parameter name="LGU_NAME" isForPrompting="false" class="java.lang.String"/>
 	<parameter name="BUILDING_OFFICIAL" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="EXCAVATION_OFFICIAL" isForPrompting="false" class="java.lang.String"/>
 
 	<field name="designprofessional.prc.placeissued" class="java.lang.String"/>
 	<field name="designprofessional.prc.dtvalid" class="java.util.Date"/>
@@ -3102,7 +3103,7 @@
 						x="0"
 						y="94"
 						width="559"
-						height="663"
+						height="694"
 						key="rectangle-33"/>
 					<graphicElement stretchType="NoStretch"/>
 				</rectangle>
@@ -3267,7 +3268,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="653"
+						y="702"
 						width="559"
 						height="16"
 						key="staticText-174"/>
@@ -3280,7 +3281,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="706"
+						y="751"
 						width="559"
 						height="12"
 						key="staticText-175"/>
@@ -3293,7 +3294,7 @@
 				<staticText>
 					<reportElement
 						x="226"
-						y="718"
+						y="763"
 						width="33"
 						height="12"
 						key="staticText-176"/>
@@ -3306,7 +3307,7 @@
 				<staticText>
 					<reportElement
 						x="252"
-						y="718"
+						y="763"
 						width="81"
 						height="12"
 						key="staticText-177"/>
@@ -3320,7 +3321,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="694"
+						y="739"
 						width="559"
 						height="12"
 						key="textField-92"/>
@@ -3333,7 +3334,7 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="183"
-						y="680"
+						y="725"
 						width="192"
 						height="14"
 						key="textField-93"/>
@@ -3750,6 +3751,72 @@
 						<font pdfFontName="Helvetica" size="8" isBold="false"/>
 					</textElement>
 				<text><![CDATA[For excavations more than fifty (50) cubic meters and more than two (2) meters in depth, the owner/permittee shall post a cash bond of fifty thousand pesos (P 50, 000.00) for the first fifty (50) cubic meters and three hundred pesos (P 300.00) for every cubic meter thereafter to be deposited with the O.B.O. Said excavations shall not exceed one hundred (100) cubic meters or three (3) meters in depth until the building permit is issued and shall not be left open without any work being done in the site for more than one hundred twenty (120) days, otherwise, the cash bond shall be forfeited in favor of the government to cover the expense for the necessary restoration should the owner/permittee fail to restore the same. If the bond is insufficient to effect the necessary restoration, additional cost to be incurred to complete the restoration shall be charged to the account of the owner/permittee or to whoever shall assume ownership of the property.]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="675"
+						width="559"
+						height="12"
+						key="textField-226">
+							<printWhenExpression><![CDATA[$P{EXCAVATION_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["OFFICE OF CITY OFFICIAL"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="663"
+						width="559"
+						height="12"
+						key="textField-227">
+							<printWhenExpression><![CDATA[$P{EXCAVATION_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["STRUCTURAL ENGINEER"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="183"
+						y="649"
+						width="192"
+						height="14"
+						key="textField-228"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[$P{EXCAVATION_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{EXCAVATION_OFFICIAL}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="0"
+						y="640"
+						width="559"
+						height="16"
+						key="staticText-359">
+							<printWhenExpression><![CDATA[$P{EXCAVATION_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<text><![CDATA[  RECOMMENDING APPROVAL:]]></text>
 				</staticText>
 			</band>
 			</groupHeader>

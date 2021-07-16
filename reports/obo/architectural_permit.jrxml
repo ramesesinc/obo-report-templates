@@ -5219,7 +5219,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[RECOMMENDING APPROVAL:]]></text>
+				<text><![CDATA[ RECOMMENDING APPROVAL:]]></text>
 				</staticText>
 				</elementGroup><!-- End 4.3.2.1 !-->
 				</elementGroup><!-- End 4.3.2 !-->
@@ -5229,7 +5229,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 				<elementGroup><!--  Start: 5.4 !-->
 				<elementGroup><!--  Start: 4.2 !-->
 				<elementGroup><!--  Start: 2.1 !-->
-				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
 						y="694"
@@ -5244,7 +5244,7 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 					</textElement>
 				<textFieldExpression   class="java.lang.String"><![CDATA["OFFICE OF CITY OFFICIAL"]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
 						y="682"
@@ -5271,7 +5271,9 @@ STAIRS, FIRE ESCAPES, CABINETS AND PARTITIONS]]></text>
 						width="192"
 						height="14"
 						key="textField-168"
-						isRemoveLineWhenBlank="true"/>
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[$P{ARCHITECTURAL_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
 					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
 					<topPen lineWidth="0.0" lineStyle="Solid"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid"/>

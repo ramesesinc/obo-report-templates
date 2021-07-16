@@ -27,6 +27,7 @@
 	<parameter name="LGU_NAME" isForPrompting="false" class="java.lang.String"/>
 	<parameter name="PROVINCE_NAME" isForPrompting="false" class="java.lang.String"/>
 	<parameter name="BUILDING_OFFICIAL" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="DEMOLITION_OFFICIAL" isForPrompting="false" class="java.lang.String"/>
 
 	<field name="designprofessional.prc.placeissued" class="java.lang.String"/>
 	<field name="designprofessional.prc.dtvalid" class="java.util.Date"/>
@@ -2842,7 +2843,7 @@
 						x="0"
 						y="95"
 						width="559"
-						height="637"
+						height="681"
 						key="rectangle-24"/>
 					<graphicElement stretchType="NoStretch">
 					<pen lineWidth="0.5" lineStyle="Solid"/>
@@ -2971,7 +2972,7 @@ telephone and water installations have been disconnected.]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="626"
+						y="681"
 						width="559"
 						height="16"
 						key="staticText-174"/>
@@ -2984,7 +2985,7 @@ telephone and water installations have been disconnected.]]></text>
 				<staticText>
 					<reportElement
 						x="0"
-						y="694"
+						y="729"
 						width="559"
 						height="12"
 						key="staticText-175"/>
@@ -2997,7 +2998,7 @@ telephone and water installations have been disconnected.]]></text>
 				<staticText>
 					<reportElement
 						x="226"
-						y="706"
+						y="741"
 						width="33"
 						height="12"
 						key="staticText-176"/>
@@ -3010,7 +3011,7 @@ telephone and water installations have been disconnected.]]></text>
 				<staticText>
 					<reportElement
 						x="252"
-						y="706"
+						y="741"
 						width="81"
 						height="12"
 						key="staticText-177"/>
@@ -3024,7 +3025,7 @@ telephone and water installations have been disconnected.]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="0"
-						y="682"
+						y="717"
 						width="559"
 						height="12"
 						key="textField-92"/>
@@ -3037,7 +3038,7 @@ telephone and water installations have been disconnected.]]></text>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						x="183"
-						y="668"
+						y="703"
 						width="192"
 						height="14"
 						key="textField-93"/>
@@ -3478,6 +3479,72 @@ engaged in the demolition work using such entrances/exits in the performance of 
 						key="line-78"/>
 					<graphicElement stretchType="NoStretch"/>
 				</line>
+				<staticText>
+					<reportElement
+						x="0"
+						y="624"
+						width="559"
+						height="16"
+						key="staticText-357">
+							<printWhenExpression><![CDATA[$P{DEMOLITION_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<text><![CDATA[  RECOMMENDING APPROVAL:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="183"
+						y="633"
+						width="192"
+						height="14"
+						key="textField-171"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[$P{DEMOLITION_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{DEMOLITION_OFFICIAL}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="647"
+						width="559"
+						height="12"
+						key="textField-172">
+							<printWhenExpression><![CDATA[$P{DEMOLITION_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["STRUCTURAL ENGINEER"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="659"
+						width="559"
+						height="12"
+						key="textField-173">
+							<printWhenExpression><![CDATA[$P{DEMOLITION_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["OFFICE OF CITY OFFICIAL"]]></textFieldExpression>
+				</textField>
 			</band>
 			</groupHeader>
 			<groupFooter>

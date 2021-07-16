@@ -4431,7 +4431,9 @@
 						width="192"
 						height="14"
 						key="textField-201"
-						isRemoveLineWhenBlank="true"/>
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[$P{CIVIL_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
 					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
 					<topPen lineWidth="0.0" lineStyle="Solid"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid"/>
@@ -4450,13 +4452,13 @@
 						width="559"
 						height="16"
 						key="staticText-389">
-							<printWhenExpression><![CDATA[$P{CIVIL_OFFICIAL} !=null]]></printWhenExpression>
+							<printWhenExpression><![CDATA[$P{CIVIL_OFFICIAL}!=null]]></printWhenExpression>
 						</reportElement>
 					<box></box>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
-				<text><![CDATA[ RECOMMENDING APPROVAL:]]></text>
+				<text><![CDATA[  RECOMMENDING APPROVAL:]]></text>
 				</staticText>
 			</band>
 			</groupHeader>

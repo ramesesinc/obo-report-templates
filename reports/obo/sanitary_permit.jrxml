@@ -27,6 +27,7 @@
 	<parameter name="LGU_NAME" isForPrompting="false" class="java.lang.String"/>
 	<parameter name="PROVINCE_NAME" isForPrompting="false" class="java.lang.String"/>
 	<parameter name="BUILDING_OFFICIAL" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="SANITARY_OFFICIAL" isForPrompting="false" class="java.lang.String"/>
 
 	<field name="designprofessional.prc.placeissued" class="java.lang.String"/>
 	<field name="designprofessional.prc.dtvalid" class="java.util.Date"/>
@@ -3344,7 +3345,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="558"
+						y="571"
 						width="559"
 						height="16"
 						key="staticText-174"/>
@@ -4021,6 +4022,72 @@
 						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
 					</textElement>
 				<text><![CDATA[PERMIT IS HEREBY ISSUED SUBJECT TO THE FOLLOWING:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="538"
+						width="559"
+						height="12"
+						key="textField-177">
+							<printWhenExpression><![CDATA[$P{SANITARY_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["OFFICE OF CITY OFFICIAL"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="526"
+						width="559"
+						height="12"
+						key="textField-178">
+							<printWhenExpression><![CDATA[$P{SANITARY_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["SANITARY ENGINEER"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="183"
+						y="512"
+						width="192"
+						height="14"
+						key="textField-179"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[$P{SANITARY_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{SANITARY_OFFICIAL}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="0"
+						y="503"
+						width="559"
+						height="16"
+						key="staticText-324">
+							<printWhenExpression><![CDATA[$P{SANITARY_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<text><![CDATA[  RECOMMENDING APPROVAL:]]></text>
 				</staticText>
 			</band>
 			</groupHeader>

@@ -27,6 +27,7 @@
 	<parameter name="LGU_NAME" isForPrompting="false" class="java.lang.String"/>
 	<parameter name="PROVINCE_NAME" isForPrompting="false" class="java.lang.String"/>
 	<parameter name="BUILDING_OFFICIAL" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="MECHANICAL_OFFICIAL" isForPrompting="false" class="java.lang.String"/>
 
 	<field name="designprofessional.prc.placeissued" class="java.lang.String"/>
 	<field name="designprofessional.prc.dtvalid" class="java.util.Date"/>
@@ -4395,7 +4396,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="618"
+						y="660"
 						width="559"
 						height="16"
 						key="staticText-174"/>
@@ -4505,6 +4506,72 @@
 						<font size="8"/>
 					</textElement>
 				<text><![CDATA[]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="626"
+						width="559"
+						height="12"
+						key="textField-152">
+							<printWhenExpression><![CDATA[$P{MECHANICAL_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["OFFICE OF CITY OFFICIAL"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="614"
+						width="559"
+						height="12"
+						key="textField-153">
+							<printWhenExpression><![CDATA[$P{MECHANICAL_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["MECHANICAL ENGINEER"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="183"
+						y="600"
+						width="192"
+						height="14"
+						key="textField-154"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[$P{MECHANICAL_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{MECHANICAL_OFFICIAL}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="0"
+						y="591"
+						width="559"
+						height="16"
+						key="staticText-243">
+							<printWhenExpression><![CDATA[$P{MECHANICAL_OFFICIAL}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<text><![CDATA[  RECOMMENDING APPROVAL:]]></text>
 				</staticText>
 			</band>
 			</groupHeader>
